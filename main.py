@@ -38,14 +38,14 @@ def data_preparation(config):
                 return df
             elif 'add_feature_df.csv' in files:
                 df = read_checkpoint('add_feature_df.csv')
-                df = group_data(df, derived_data_dir=config['derived_data_dir'], save_dir=config['save_dir'], save_csv=config['save_output'])
+                df = group_data(df, feature_mapping_dir=config['feature_mapping_dir'], save_dir=config['save_dir'], save_csv=config['save_output'])
                 df = data_bining(df, save_dir=config['save_dir'], save_csv=config['save_output'])
                 print("Found add_feature_df.csv! continue from here....")
                 return df
             elif  'clean_df.csv' in files:
                 df = read_checkpoint('clean_df.csv')
                 df = add_features(df, save_dir=config['save_dir'], save_csv=config['save_output'])
-                df = group_data(df, derived_data_dir=config['derived_data_dir'], save_dir=config['save_dir'], save_csv=config['save_output'])
+                df = group_data(df, feature_mapping_dir=config['feature_mapping_dir'], save_dir=config['save_dir'], save_csv=config['save_output'])
                 df = data_bining(df, save_dir=config['save_dir'], save_csv=config['save_output'])
                 print("Found clean_df.csv! continue from here....")
                 return df
@@ -53,7 +53,7 @@ def data_preparation(config):
                 df = read_checkpoint('label_df.csv')
                 df = data_cleaning(df=df, derived_data_dir=config['derived_data_dir'], save_dir=config['save_dir'], save_csv=config['save_output'])
                 df = add_features(df, save_dir=config['save_dir'], save_csv=config['save_output'])
-                df = group_data(df, derived_data_dir=config['derived_data_dir'], save_dir=config['save_dir'], save_csv=config['save_output'])
+                df = group_data(df, feature_mapping_dir=config['feature_mapping_dir'], save_dir=config['save_dir'], save_csv=config['save_output'])
                 df = data_bining(df, save_dir=config['save_dir'], save_csv=config['save_output'])
                 print("Found label_df.csv! continue from here....")
                 return df
@@ -62,7 +62,7 @@ def data_preparation(config):
                 df = generate_label(df=df, save_dir=config['save_dir'], save_csv=config['save_output'])
                 df = data_cleaning(df=df, derived_data_dir=config['derived_data_dir'], save_dir=config['save_dir'], save_csv=config['save_output'])
                 df = add_features(df, save_dir=config['save_dir'], save_csv=config['save_output'])
-                df = group_data(df, derived_data_dir=config['derived_data_dir'], save_dir=config['save_dir'], save_csv=config['save_output'])
+                df = group_data(df, feature_mapping_dir=config['feature_mapping_dir'], save_dir=config['save_dir'], save_csv=config['save_output'])
                 df = data_bining(df, save_dir=config['save_dir'], save_csv=config['save_output'])
                 print("Found data_extraction_df.csv! continue from here....")
                 return df
@@ -70,14 +70,14 @@ def data_preparation(config):
   print("Starting from scratch ... loading df from input_file")
   # Check if the input file exists
   if not os.path.exists(config['input_file']):
-      raise FileNotFoundError(f"{input_file} not found.")
+      raise FileNotFoundError(f"{config['input_file']} not found.")
   df = pd.read_csv(config['input_file'], low_memory=False, dtype={'contact_nric_masked': str})
 
   df = data_extraction(df=df, config=config)
   df = generate_label(df=df, save_dir = config['save_dir'], save_csv = config['save_output'])
   df = data_cleaning(df=df, derived_data_dir = config['derived_data_dir'], save_dir = config['save_dir'], save_csv = config['save_output'])
   df = add_features(df, save_dir = config['save_dir'], save_csv = config['save_output'])
-  df = group_data(df, derived_data_dir = config['derived_data_dir'], save_dir = config['save_dir'], save_csv = config['save_output'])
+  df = group_data(df, feature_mapping_dir = config['feature_mapping_dir'], save_dir = config['save_dir'], save_csv = config['save_output'])
   df = data_bining(df, save_dir = config['save_dir'], save_csv = config['save_output'])
 
   return df

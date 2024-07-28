@@ -1,21 +1,46 @@
-import pandas as pd
 import os
-from tqdm import tqdm
 import warnings
+import pandas as pd
+from tqdm import tqdm
+
 
 def read_columns_to_extract(columns_file):
-    """Reads the columns to extract from the CSV file."""
+    """
+    Reads the columns to extract from the CSV file.
+    
+    Args:
+    columns_file (str): Path to the CSV file containing the column names to extract.
+    
+    Returns:
+    list: A list of column names to extract.
+    """
     columns_to_extract_df = pd.read_csv(columns_file)
     return columns_to_extract_df['column_name'].tolist()
 
 def check_columns_presence(df, required_columns, context=""):
-    """Checks for the presence of required columns in the DataFrame."""
+    """
+    Checks for the presence of required columns in the DataFrame.
+    
+    Args:
+    df (pd.DataFrame): The DataFrame to check.
+    required_columns (list): A list of required column names.
+    context (str): A string indicating the context for the check (for error messages).
+    
+    Raises:
+    ValueError: If any required columns are missing from the DataFrame.
+    """
     missing_columns = [col for col in required_columns if col not in df.columns]
     if missing_columns:
         raise ValueError(f"Missing columns in DataFrame {context}: {missing_columns}")
 
 def convert_date_columns(df, date_columns):
-    """Converts specified columns to datetime."""
+    """
+    Converts specified columns to datetime.
+    
+    Args:
+    df (pd.DataFrame): The DataFrame containing the columns to convert.
+    date_columns (list): A list of column names to convert to datetime.
+    """
     for column in date_columns:
         df[column] = pd.to_datetime(df[column], errors='coerce')
 
@@ -138,7 +163,6 @@ def data_extraction(df, config):
         print(f"Using data from {config['evaluation_start_date']} to {config['evaluation_end_date']} for evaluation")
         # Extract start and end dates from the config
         start_date = pd.to_datetime(config['evaluation_start_date'], errors='coerce')
-
         # Check for end date, if not available or out of range, use the latest date from spa_date and raise a warning
         end_date = pd.to_datetime(config['evaluation_end_date'], errors='coerce')
 
@@ -168,8 +192,11 @@ def data_extraction(df, config):
         # Check for data after the end_date
         after_end_date_df = output_df[output_df['spa_date'] > end_date]
         if not after_end_date_df.empty:
-            print(f"Data after {end_date} exists but will be ignored in the evaluation.")
-            print(f"Number of rows ignored: {len(after_end_date_df)}")
+            print(f"Data after {end_date} exists but will be appended back to the training df")
+            print(f"Number of rows appended: {len(after_end_date_df)}")
+
+            # Append after_end_date_df back to output_df
+            output_df = pd.concat([output_df, after_end_date_df])
             
 
     print("Data extraction phase completed!")

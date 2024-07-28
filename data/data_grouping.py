@@ -2,9 +2,9 @@ import os
 from IPython.core.application import default
 import pandas as pd
 
-def group_salutation(df, derived_data_dir):
+def group_salutation(df, feature_mapping_dir):
 
-  file_path = os.path.join(derived_data_dir, 'feature_mapping - salutation.csv')
+  file_path = os.path.join(feature_mapping_dir, 'feature_mapping - salutation.csv')
   # Check if the file path exists
   if not os.path.exists(file_path):
       raise FileNotFoundError(f"The file {file_path} does not exist.")
@@ -38,9 +38,9 @@ def group_salutation(df, derived_data_dir):
   print("Done grouping salutation")
   return df
 
-def group_nationality(df, derived_data_dir):
+def group_nationality(df, feature_mapping_dir):
 
-  file_path = os.path.join(derived_data_dir, 'feature_mapping - nationality.csv')
+  file_path = os.path.join(feature_mapping_dir, 'feature_mapping - nationality.csv')
   # Check if the file path exists
   if not os.path.exists(file_path):
       raise FileNotFoundError(f"The file {file_path} does not exist.")
@@ -69,9 +69,9 @@ def group_nationality(df, derived_data_dir):
   print("Done grouping nationality")
   return df
 
-def group_occupation(df, derived_data_dir):
+def group_occupation(df, feature_mapping_dir):
 
-  file_path = os.path.join(derived_data_dir, 'feature_mapping - occupation.csv')
+  file_path = os.path.join(feature_mapping_dir, 'feature_mapping - occupation.csv')
   # Check if the file path exists
   if not os.path.exists(file_path):
       raise FileNotFoundError(f"The file {file_path} does not exist.")
@@ -100,9 +100,9 @@ def group_occupation(df, derived_data_dir):
   print("Done grouping occupation")
   return df
 
-def group_financier(df, derived_data_dir):
+def group_financier(df, feature_mapping_dir):
 
-  file_path = os.path.join(derived_data_dir, 'feature_mapping - financier.csv')
+  file_path = os.path.join(feature_mapping_dir, 'feature_mapping - financier.csv')
   # Check if the file path exists
   if not os.path.exists(file_path):
       raise FileNotFoundError(f"The file {file_path} does not exist.")
@@ -130,9 +130,9 @@ def group_financier(df, derived_data_dir):
   print("Done grouping financier_name")
   return df
 
-def group_race(df, derived_data_dir):
+def group_race(df, feature_mapping_dir):
 
-  file_path = os.path.join(derived_data_dir, 'feature_mapping - race.csv')
+  file_path = os.path.join(feature_mapping_dir, 'feature_mapping - race.csv')
   # Check if the file path exists
   if not os.path.exists(file_path):
       raise FileNotFoundError(f"The file {file_path} does not exist.")
@@ -160,9 +160,9 @@ def group_race(df, derived_data_dir):
   print("Done grouping race")
   return df
 
-def group_contact_city(df, derived_data_dir):
+def group_contact_city(df, feature_mapping_dir):
 
-  file_path = os.path.join(derived_data_dir, 'feature_mapping - city.csv')
+  file_path = os.path.join(feature_mapping_dir, 'feature_mapping - city.csv')
   # Check if the file path exists
   if not os.path.exists(file_path):
       raise FileNotFoundError(f"The file {file_path} does not exist.")
@@ -190,9 +190,9 @@ def group_contact_city(df, derived_data_dir):
   print("Done grouping contact_city")
   return df
 
-def group_annual_income(df, derived_data_dir):
+def group_annual_income(df, feature_mapping_dir):
 
-  file_path = os.path.join(derived_data_dir, 'feature_mapping - annual_income.csv')
+  file_path = os.path.join(feature_mapping_dir, 'feature_mapping - annual_income.csv')
   # Check if the file path exists
   if not os.path.exists(file_path):
       raise FileNotFoundError(f"The file {file_path} does not exist.")
@@ -224,18 +224,18 @@ def group_annual_income(df, derived_data_dir):
   return df
 
 
-def group_data(df, derived_data_dir=None, save_dir=None, save_csv=False):
+def group_data(df, feature_mapping_dir=None, save_dir=None, save_csv=False):
   print("Data grouping in progress...")
-  if derived_data_dir == None:
+  if feature_mapping_dir == None:
       raise ValueError(f"Derived data directory is missing")
 
-  df = group_salutation(df, derived_data_dir)
-  df = group_nationality(df, derived_data_dir)
-  df = group_occupation(df, derived_data_dir)
-  df = group_financier(df, derived_data_dir)
-  df = group_race(df, derived_data_dir)
-  df = group_contact_city(df, derived_data_dir)
-  df = group_annual_income(df, derived_data_dir)
+  df = group_salutation(df, feature_mapping_dir)
+  df = group_nationality(df, feature_mapping_dir)
+  df = group_occupation(df, feature_mapping_dir)
+  df = group_financier(df, feature_mapping_dir)
+  df = group_race(df, feature_mapping_dir)
+  df = group_contact_city(df, feature_mapping_dir)
+  df = group_annual_income(df, feature_mapping_dir)
 
 
   print("Data grouping phase completed!")

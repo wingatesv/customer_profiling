@@ -1,6 +1,7 @@
 # Data preparation
 input_file: /content/drive/MyDrive/raw_data/raw_data.csv
 derived_data_dir: /content/customer_profiling/derived_data/
+feature_mapping_dir: /content/customer_profiling/feature_mapping/
 save_dir: /content/customer_profiling/output/
 save_output: True
 data_extraction_columns_file: /content/customer_profiling/columns/columns_to_extract.csv
