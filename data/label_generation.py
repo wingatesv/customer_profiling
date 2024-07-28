@@ -4,10 +4,14 @@ from datetime import datetime
 import os
 from tqdm import tqdm
 
+from data.data_cleaning import write_report
+
 def generate_label(df, config):
     print("Starting repeat purchase training label generation...")
     save_dir=config['save_dir']
     save_csv=config['save_output']
+    data_report_dir = config['data_report_dir']
+    report_file_path = os.path.join(data_report_dir, 'train_label_gen_report.txt')
     # Convert contact_nric_masked to string using .loc
     df.loc[:, 'contact_nric_masked'] = df['contact_nric_masked'].astype(str)
     
@@ -27,6 +31,9 @@ def generate_label(df, config):
         group = group.sort_values(by='spa_date')
         transaction_count = len(group)
 
+        report_content = f"Customer {name} has {transaction_count} transactions. \n"
+        write_report(report_content, report_file_path)
+            
         if transaction_count == 1:
             row = group.iloc[0]
             row_copy = row.copy()
@@ -37,6 +44,9 @@ def generate_label(df, config):
             row_copy['repeat_spa_stamp_date'] = pd.Timestamp('2022-12-31').date()
             row_copy['repeat_spa_date'] = pd.Timestamp('2022-12-31').date()
             repeated_purchase_df = pd.concat([repeated_purchase_df, row_copy.to_frame().T])
+
+            report_content = f"1 purchase for customer {name}, Label = N \n"
+            write_report(report_content, report_file_path)
         else:
             # Handle first transaction
             first_row = group.iloc[0].copy()
@@ -47,6 +57,9 @@ def generate_label(df, config):
             first_row['repeat_spa_stamp_date'] = group.iloc[1]['spa_stamp_date'].date()
             first_row['repeat_spa_date'] = group.iloc[1]['spa_date'].date()
             repeated_purchase_df = pd.concat([repeated_purchase_df, first_row.to_frame().T])
+
+            report_content = f"2nd purchase for customer {name}, Label = Y \n"
+            write_report(report_content, report_file_path)
 
             # Handle middle transactions
             for i in range(1, transaction_count - 1):
@@ -59,6 +72,9 @@ def generate_label(df, config):
                 row['repeat_spa_date'] = group.iloc[i + 1]['spa_date'].date()
                 repeated_purchase_df = pd.concat([repeated_purchase_df, row.to_frame().T])
 
+                report_content = f"{i + 2}th purchase for customer {name}, Label = Y \n"
+                write_report(report_content, report_file_path)
+
             # Handle last transaction
             last_row = group.iloc[-1].copy()
             last_row['label'] = 'N'
@@ -68,6 +84,10 @@ def generate_label(df, config):
             last_row['repeat_spa_stamp_date'] = pd.Timestamp('2022-12-31').date()
             last_row['repeat_spa_date'] = pd.Timestamp('2022-12-31').date()
             repeated_purchase_df = pd.concat([repeated_purchase_df, last_row.to_frame().T])
+
+            report_content = f"Last row for customer {name}, Label = N \n"
+            write_report(report_content, report_file_path)
+            
 
     print("Training label generation completed!")
 

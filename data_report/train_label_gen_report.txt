@@ -1,0 +1,2811 @@
+Customer -1000250771383069442 has 1 transactions. 
+1 purchase for customer -1000250771383069442, Label = N 
+Customer -1000469836289824632 has 2 transactions. 
+2nd purchase for customer -1000469836289824632, Label = Y 
+Last row for customer -1000469836289824632, Label = N 
+Customer -10006390199235099 has 1 transactions. 
+1 purchase for customer -10006390199235099, Label = N 
+Customer -100329616699389339 has 1 transactions. 
+1 purchase for customer -100329616699389339, Label = N 
+Customer -1003657108012024252 has 1 transactions. 
+1 purchase for customer -1003657108012024252, Label = N 
+Customer -1004197296064225716 has 1 transactions. 
+1 purchase for customer -1004197296064225716, Label = N 
+Customer -1004291312082543029 has 1 transactions. 
+1 purchase for customer -1004291312082543029, Label = N 
+Customer -1004485288241826533 has 1 transactions. 
+1 purchase for customer -1004485288241826533, Label = N 
+Customer -1004890281388064051 has 1 transactions. 
+1 purchase for customer -1004890281388064051, Label = N 
+Customer -1005045144905250941 has 2 transactions. 
+2nd purchase for customer -1005045144905250941, Label = Y 
+Last row for customer -1005045144905250941, Label = N 
+Customer -1005197353573905828 has 1 transactions. 
+1 purchase for customer -1005197353573905828, Label = N 
+Customer -1005651013185591273 has 1 transactions. 
+1 purchase for customer -1005651013185591273, Label = N 
+Customer -1005925658187948454 has 1 transactions. 
+1 purchase for customer -1005925658187948454, Label = N 
+Customer -100627963623497888 has 1 transactions. 
+1 purchase for customer -100627963623497888, Label = N 
+Customer -1006578873674687502 has 1 transactions. 
+1 purchase for customer -1006578873674687502, Label = N 
+Customer -1007368847352584640 has 1 transactions. 
+1 purchase for customer -1007368847352584640, Label = N 
+Customer -1008240333858346026 has 1 transactions. 
+1 purchase for customer -1008240333858346026, Label = N 
+Customer -1008532033196035527 has 1 transactions. 
+1 purchase for customer -1008532033196035527, Label = N 
+Customer -1008792274909627838 has 1 transactions. 
+1 purchase for customer -1008792274909627838, Label = N 
+Customer -1009684194279333058 has 1 transactions. 
+1 purchase for customer -1009684194279333058, Label = N 
+Customer -1010541868153541780 has 1 transactions. 
+1 purchase for customer -1010541868153541780, Label = N 
+Customer -101132407171921225 has 1 transactions. 
+1 purchase for customer -101132407171921225, Label = N 
+Customer -1011490586138003214 has 1 transactions. 
+1 purchase for customer -1011490586138003214, Label = N 
+Customer -1013440430319315613 has 1 transactions. 
+1 purchase for customer -1013440430319315613, Label = N 
+Customer -1014551995888958751 has 1 transactions. 
+1 purchase for customer -1014551995888958751, Label = N 
+Customer -1014983633531485952 has 1 transactions. 
+1 purchase for customer -1014983633531485952, Label = N 
+Customer -1015082105539864759 has 1 transactions. 
+1 purchase for customer -1015082105539864759, Label = N 
+Customer -1015221989070110913 has 2 transactions. 
+2nd purchase for customer -1015221989070110913, Label = Y 
+Last row for customer -1015221989070110913, Label = N 
+Customer -1015711919456306470 has 2 transactions. 
+2nd purchase for customer -1015711919456306470, Label = Y 
+Last row for customer -1015711919456306470, Label = N 
+Customer -1016572755446574225 has 1 transactions. 
+1 purchase for customer -1016572755446574225, Label = N 
+Customer -1016996757010657226 has 1 transactions. 
+1 purchase for customer -1016996757010657226, Label = N 
+Customer -1018114141222483723 has 1 transactions. 
+1 purchase for customer -1018114141222483723, Label = N 
+Customer -1020538070904199361 has 1 transactions. 
+1 purchase for customer -1020538070904199361, Label = N 
+Customer -1020830129034569526 has 1 transactions. 
+1 purchase for customer -1020830129034569526, Label = N 
+Customer -1021199489341692088 has 2 transactions. 
+2nd purchase for customer -1021199489341692088, Label = Y 
+Last row for customer -1021199489341692088, Label = N 
+Customer -1022910823151253960 has 1 transactions. 
+1 purchase for customer -1022910823151253960, Label = N 
+Customer -1023298033931926454 has 1 transactions. 
+1 purchase for customer -1023298033931926454, Label = N 
+Customer -1023700321613099346 has 1 transactions. 
+1 purchase for customer -1023700321613099346, Label = N 
+Customer -1024128432267712477 has 1 transactions. 
+1 purchase for customer -1024128432267712477, Label = N 
+Customer -1024284100445419032 has 1 transactions. 
+1 purchase for customer -1024284100445419032, Label = N 
+Customer -1024973549485344940 has 1 transactions. 
+1 purchase for customer -1024973549485344940, Label = N 
+Customer -1025989212340384704 has 1 transactions. 
+1 purchase for customer -1025989212340384704, Label = N 
+Customer -1026620572793581141 has 1 transactions. 
+1 purchase for customer -1026620572793581141, Label = N 
+Customer -1026694260753704272 has 1 transactions. 
+1 purchase for customer -1026694260753704272, Label = N 
+Customer -102693319244096248 has 1 transactions. 
+1 purchase for customer -102693319244096248, Label = N 
+Customer -1027010061561538962 has 1 transactions. 
+1 purchase for customer -1027010061561538962, Label = N 
+Customer -1027123069620625947 has 1 transactions. 
+1 purchase for customer -1027123069620625947, Label = N 
+Customer -1030564763840498760 has 1 transactions. 
+1 purchase for customer -1030564763840498760, Label = N 
+Customer -1031101614880736157 has 1 transactions. 
+1 purchase for customer -1031101614880736157, Label = N 
+Customer -1031808327170899138 has 1 transactions. 
+1 purchase for customer -1031808327170899138, Label = N 
+Customer -1031949620674938380 has 1 transactions. 
+1 purchase for customer -1031949620674938380, Label = N 
+Customer -1032730579748246460 has 1 transactions. 
+1 purchase for customer -1032730579748246460, Label = N 
+Customer -1033938389304093141 has 1 transactions. 
+1 purchase for customer -1033938389304093141, Label = N 
+Customer -1034901777341844413 has 2 transactions. 
+2nd purchase for customer -1034901777341844413, Label = Y 
+Last row for customer -1034901777341844413, Label = N 
+Customer -1035496461871844989 has 3 transactions. 
+2nd purchase for customer -1035496461871844989, Label = Y 
+3th purchase for customer -1035496461871844989, Label = Y 
+Last row for customer -1035496461871844989, Label = N 
+Customer -1036501523204252772 has 1 transactions. 
+1 purchase for customer -1036501523204252772, Label = N 
+Customer -1036768092331338901 has 1 transactions. 
+1 purchase for customer -1036768092331338901, Label = N 
+Customer -1038694269216468570 has 1 transactions. 
+1 purchase for customer -1038694269216468570, Label = N 
+Customer -1039327030333163152 has 1 transactions. 
+1 purchase for customer -1039327030333163152, Label = N 
+Customer -1039721087458006927 has 1 transactions. 
+1 purchase for customer -1039721087458006927, Label = N 
+Customer -1041045792879600888 has 1 transactions. 
+1 purchase for customer -1041045792879600888, Label = N 
+Customer -1041233195401069639 has 1 transactions. 
+1 purchase for customer -1041233195401069639, Label = N 
+Customer -1041321995194672989 has 1 transactions. 
+1 purchase for customer -1041321995194672989, Label = N 
+Customer -104209025880434093 has 1 transactions. 
+1 purchase for customer -104209025880434093, Label = N 
+Customer -1042363743377635699 has 1 transactions. 
+1 purchase for customer -1042363743377635699, Label = N 
+Customer -1042870457569167877 has 1 transactions. 
+1 purchase for customer -1042870457569167877, Label = N 
+Customer -1043258417229661447 has 1 transactions. 
+1 purchase for customer -1043258417229661447, Label = N 
+Customer -1043393364466377034 has 1 transactions. 
+1 purchase for customer -1043393364466377034, Label = N 
+Customer -1043493497215312398 has 1 transactions. 
+1 purchase for customer -1043493497215312398, Label = N 
+Customer -1043659360078969703 has 1 transactions. 
+1 purchase for customer -1043659360078969703, Label = N 
+Customer -1043797256820501732 has 1 transactions. 
+1 purchase for customer -1043797256820501732, Label = N 
+Customer -1044529754575184796 has 1 transactions. 
+1 purchase for customer -1044529754575184796, Label = N 
+Customer -104529697290548669 has 1 transactions. 
+1 purchase for customer -104529697290548669, Label = N 
+Customer -1046092131960734871 has 1 transactions. 
+1 purchase for customer -1046092131960734871, Label = N 
+Customer -1046597153538064014 has 1 transactions. 
+1 purchase for customer -1046597153538064014, Label = N 
+Customer -1046948567089944054 has 1 transactions. 
+1 purchase for customer -1046948567089944054, Label = N 
+Customer -1047743413213791004 has 1 transactions. 
+1 purchase for customer -1047743413213791004, Label = N 
+Customer -1048092273817372919 has 1 transactions. 
+1 purchase for customer -1048092273817372919, Label = N 
+Customer -104874319140959114 has 1 transactions. 
+1 purchase for customer -104874319140959114, Label = N 
+Customer -1049097961939662578 has 1 transactions. 
+1 purchase for customer -1049097961939662578, Label = N 
+Customer -1049784989585678964 has 1 transactions. 
+1 purchase for customer -1049784989585678964, Label = N 
+Customer -1050547013957836243 has 1 transactions. 
+1 purchase for customer -1050547013957836243, Label = N 
+Customer -1051044597911014368 has 1 transactions. 
+1 purchase for customer -1051044597911014368, Label = N 
+Customer -1052135686921500919 has 1 transactions. 
+1 purchase for customer -1052135686921500919, Label = N 
+Customer -1052787111103850074 has 1 transactions. 
+1 purchase for customer -1052787111103850074, Label = N 
+Customer -1052965740839525715 has 1 transactions. 
+1 purchase for customer -1052965740839525715, Label = N 
+Customer -1053062123109928838 has 1 transactions. 
+1 purchase for customer -1053062123109928838, Label = N 
+Customer -1054384537143290515 has 1 transactions. 
+1 purchase for customer -1054384537143290515, Label = N 
+Customer -1055457614251111095 has 1 transactions. 
+1 purchase for customer -1055457614251111095, Label = N 
+Customer -1055857929361326699 has 1 transactions. 
+1 purchase for customer -1055857929361326699, Label = N 
+Customer -1056241349635815760 has 1 transactions. 
+1 purchase for customer -1056241349635815760, Label = N 
+Customer -105684019820547979 has 1 transactions. 
+1 purchase for customer -105684019820547979, Label = N 
+Customer -1057864587364885804 has 1 transactions. 
+1 purchase for customer -1057864587364885804, Label = N 
+Customer -1057889529022061806 has 1 transactions. 
+1 purchase for customer -1057889529022061806, Label = N 
+Customer -1058318516121978356 has 1 transactions. 
+1 purchase for customer -1058318516121978356, Label = N 
+Customer -1058840347250673498 has 1 transactions. 
+1 purchase for customer -1058840347250673498, Label = N 
+Customer -1060388688766014169 has 1 transactions. 
+1 purchase for customer -1060388688766014169, Label = N 
+Customer -1060644692324249416 has 1 transactions. 
+1 purchase for customer -1060644692324249416, Label = N 
+Customer -106075795829005694 has 1 transactions. 
+1 purchase for customer -106075795829005694, Label = N 
+Customer -1060794795274357704 has 1 transactions. 
+1 purchase for customer -1060794795274357704, Label = N 
+Customer -1061535138576969456 has 1 transactions. 
+1 purchase for customer -1061535138576969456, Label = N 
+Customer -1061544948617026539 has 2 transactions. 
+2nd purchase for customer -1061544948617026539, Label = Y 
+Last row for customer -1061544948617026539, Label = N 
+Customer -1062896669786196921 has 1 transactions. 
+1 purchase for customer -1062896669786196921, Label = N 
+Customer -1064837769548196131 has 1 transactions. 
+1 purchase for customer -1064837769548196131, Label = N 
+Customer -1065372456534400349 has 2 transactions. 
+2nd purchase for customer -1065372456534400349, Label = Y 
+Last row for customer -1065372456534400349, Label = N 
+Customer -106580287081524099 has 1 transactions. 
+1 purchase for customer -106580287081524099, Label = N 
+Customer -1066094373803347271 has 2 transactions. 
+2nd purchase for customer -1066094373803347271, Label = Y 
+Last row for customer -1066094373803347271, Label = N 
+Customer -106621694915532786 has 1 transactions. 
+1 purchase for customer -106621694915532786, Label = N 
+Customer -1068372035405712247 has 1 transactions. 
+1 purchase for customer -1068372035405712247, Label = N 
+Customer -1068528562612917874 has 2 transactions. 
+2nd purchase for customer -1068528562612917874, Label = Y 
+Last row for customer -1068528562612917874, Label = N 
+Customer -1068584711811107591 has 1 transactions. 
+1 purchase for customer -1068584711811107591, Label = N 
+Customer -1069062299414682461 has 1 transactions. 
+1 purchase for customer -1069062299414682461, Label = N 
+Customer -1069360804162352299 has 1 transactions. 
+1 purchase for customer -1069360804162352299, Label = N 
+Customer -1069806943791625259 has 1 transactions. 
+1 purchase for customer -1069806943791625259, Label = N 
+Customer -1069933343361789886 has 1 transactions. 
+1 purchase for customer -1069933343361789886, Label = N 
+Customer -1069995706551710330 has 1 transactions. 
+1 purchase for customer -1069995706551710330, Label = N 
+Customer -107043325850307781 has 1 transactions. 
+1 purchase for customer -107043325850307781, Label = N 
+Customer -1071658220235294839 has 1 transactions. 
+1 purchase for customer -1071658220235294839, Label = N 
+Customer -1071721848398921315 has 1 transactions. 
+1 purchase for customer -1071721848398921315, Label = N 
+Customer -1072195858589669874 has 1 transactions. 
+1 purchase for customer -1072195858589669874, Label = N 
+Customer -1072277925713661693 has 1 transactions. 
+1 purchase for customer -1072277925713661693, Label = N 
+Customer -1072315294769512630 has 1 transactions. 
+1 purchase for customer -1072315294769512630, Label = N 
+Customer -107237914412776824 has 1 transactions. 
+1 purchase for customer -107237914412776824, Label = N 
+Customer -1072538691155026615 has 1 transactions. 
+1 purchase for customer -1072538691155026615, Label = N 
+Customer -1072783369914031877 has 1 transactions. 
+1 purchase for customer -1072783369914031877, Label = N 
+Customer -107329871278721324 has 1 transactions. 
+1 purchase for customer -107329871278721324, Label = N 
+Customer -107349251898584332 has 2 transactions. 
+2nd purchase for customer -107349251898584332, Label = Y 
+Last row for customer -107349251898584332, Label = N 
+Customer -1074126409240669859 has 1 transactions. 
+1 purchase for customer -1074126409240669859, Label = N 
+Customer -1074288528832155347 has 1 transactions. 
+1 purchase for customer -1074288528832155347, Label = N 
+Customer -1074747094555034525 has 1 transactions. 
+1 purchase for customer -1074747094555034525, Label = N 
+Customer -1075298041994749720 has 1 transactions. 
+1 purchase for customer -1075298041994749720, Label = N 
+Customer -1075465989268940600 has 1 transactions. 
+1 purchase for customer -1075465989268940600, Label = N 
+Customer -1075913862154367033 has 1 transactions. 
+1 purchase for customer -1075913862154367033, Label = N 
+Customer -1076436025073335180 has 1 transactions. 
+1 purchase for customer -1076436025073335180, Label = N 
+Customer -1077124514616468185 has 1 transactions. 
+1 purchase for customer -1077124514616468185, Label = N 
+Customer -107959585860520554 has 1 transactions. 
+1 purchase for customer -107959585860520554, Label = N 
+Customer -1080196651151289561 has 1 transactions. 
+1 purchase for customer -1080196651151289561, Label = N 
+Customer -1083627808321739962 has 3 transactions. 
+2nd purchase for customer -1083627808321739962, Label = Y 
+3th purchase for customer -1083627808321739962, Label = Y 
+Last row for customer -1083627808321739962, Label = N 
+Customer -1083682121366928919 has 1 transactions. 
+1 purchase for customer -1083682121366928919, Label = N 
+Customer -1084908439061374317 has 1 transactions. 
+1 purchase for customer -1084908439061374317, Label = N 
+Customer -1085624670655783484 has 1 transactions. 
+1 purchase for customer -1085624670655783484, Label = N 
+Customer -1087150369718765555 has 1 transactions. 
+1 purchase for customer -1087150369718765555, Label = N 
+Customer -1087164637658678620 has 1 transactions. 
+1 purchase for customer -1087164637658678620, Label = N 
+Customer -1088414252592885702 has 2 transactions. 
+2nd purchase for customer -1088414252592885702, Label = Y 
+Last row for customer -1088414252592885702, Label = N 
+Customer -1088752779550314267 has 1 transactions. 
+1 purchase for customer -1088752779550314267, Label = N 
+Customer -1089361195775807562 has 1 transactions. 
+1 purchase for customer -1089361195775807562, Label = N 
+Customer -1089733916051843768 has 1 transactions. 
+1 purchase for customer -1089733916051843768, Label = N 
+Customer -1089793622622301052 has 1 transactions. 
+1 purchase for customer -1089793622622301052, Label = N 
+Customer -1090109342026224344 has 1 transactions. 
+1 purchase for customer -1090109342026224344, Label = N 
+Customer -1090201310016951129 has 1 transactions. 
+1 purchase for customer -1090201310016951129, Label = N 
+Customer -1091634560865873563 has 1 transactions. 
+1 purchase for customer -1091634560865873563, Label = N 
+Customer -1092556618227588665 has 1 transactions. 
+1 purchase for customer -1092556618227588665, Label = N 
+Customer -1092760869139283253 has 1 transactions. 
+1 purchase for customer -1092760869139283253, Label = N 
+Customer -1092803744088139588 has 1 transactions. 
+1 purchase for customer -1092803744088139588, Label = N 
+Customer -1093756681556180543 has 1 transactions. 
+1 purchase for customer -1093756681556180543, Label = N 
+Customer -1094239718653256240 has 1 transactions. 
+1 purchase for customer -1094239718653256240, Label = N 
+Customer -1095061260313313273 has 1 transactions. 
+1 purchase for customer -1095061260313313273, Label = N 
+Customer -109720246992743807 has 2 transactions. 
+2nd purchase for customer -109720246992743807, Label = Y 
+Last row for customer -109720246992743807, Label = N 
+Customer -1097744264587606241 has 1 transactions. 
+1 purchase for customer -1097744264587606241, Label = N 
+Customer -1098521995192846853 has 1 transactions. 
+1 purchase for customer -1098521995192846853, Label = N 
+Customer -109909761471773466 has 1 transactions. 
+1 purchase for customer -109909761471773466, Label = N 
+Customer -1099860711035197927 has 1 transactions. 
+1 purchase for customer -1099860711035197927, Label = N 
+Customer -1099908948607520296 has 1 transactions. 
+1 purchase for customer -1099908948607520296, Label = N 
+Customer -1100027119947078517 has 1 transactions. 
+1 purchase for customer -1100027119947078517, Label = N 
+Customer -1100408323025823558 has 1 transactions. 
+1 purchase for customer -1100408323025823558, Label = N 
+Customer -1100515148003130444 has 1 transactions. 
+1 purchase for customer -1100515148003130444, Label = N 
+Customer -1100591422989852723 has 1 transactions. 
+1 purchase for customer -1100591422989852723, Label = N 
+Customer -1100637721958239450 has 2 transactions. 
+2nd purchase for customer -1100637721958239450, Label = Y 
+Last row for customer -1100637721958239450, Label = N 
+Customer -1100750401222675927 has 2 transactions. 
+2nd purchase for customer -1100750401222675927, Label = Y 
+Last row for customer -1100750401222675927, Label = N 
+Customer -1101161293843367865 has 1 transactions. 
+1 purchase for customer -1101161293843367865, Label = N 
+Customer -1101732811270133360 has 1 transactions. 
+1 purchase for customer -1101732811270133360, Label = N 
+Customer -1101871679853392803 has 1 transactions. 
+1 purchase for customer -1101871679853392803, Label = N 
+Customer -1102478406033319501 has 1 transactions. 
+1 purchase for customer -1102478406033319501, Label = N 
+Customer -1103200120497133904 has 1 transactions. 
+1 purchase for customer -1103200120497133904, Label = N 
+Customer -1103261839098216629 has 1 transactions. 
+1 purchase for customer -1103261839098216629, Label = N 
+Customer -1104091632148613962 has 1 transactions. 
+1 purchase for customer -1104091632148613962, Label = N 
+Customer -1104305055678380658 has 1 transactions. 
+1 purchase for customer -1104305055678380658, Label = N 
+Customer -1104333491799438203 has 1 transactions. 
+1 purchase for customer -1104333491799438203, Label = N 
+Customer -1106384234607144092 has 1 transactions. 
+1 purchase for customer -1106384234607144092, Label = N 
+Customer -1106671406721408122 has 1 transactions. 
+1 purchase for customer -1106671406721408122, Label = N 
+Customer -1106741198325927796 has 2 transactions. 
+2nd purchase for customer -1106741198325927796, Label = Y 
+Last row for customer -1106741198325927796, Label = N 
+Customer -1106751523221184753 has 1 transactions. 
+1 purchase for customer -1106751523221184753, Label = N 
+Customer -1106928511506279684 has 1 transactions. 
+1 purchase for customer -1106928511506279684, Label = N 
+Customer -1106975246261678530 has 1 transactions. 
+1 purchase for customer -1106975246261678530, Label = N 
+Customer -1107097911534847293 has 1 transactions. 
+1 purchase for customer -1107097911534847293, Label = N 
+Customer -1107098877684229400 has 1 transactions. 
+1 purchase for customer -1107098877684229400, Label = N 
+Customer -1107220198465466675 has 1 transactions. 
+1 purchase for customer -1107220198465466675, Label = N 
+Customer -1107411021704841394 has 1 transactions. 
+1 purchase for customer -1107411021704841394, Label = N 
+Customer -1107851418344074261 has 1 transactions. 
+1 purchase for customer -1107851418344074261, Label = N 
+Customer -1107916047699601190 has 1 transactions. 
+1 purchase for customer -1107916047699601190, Label = N 
+Customer -1108295551256798511 has 2 transactions. 
+2nd purchase for customer -1108295551256798511, Label = Y 
+Last row for customer -1108295551256798511, Label = N 
+Customer -1109618676905569703 has 1 transactions. 
+1 purchase for customer -1109618676905569703, Label = N 
+Customer -1110148394737783770 has 1 transactions. 
+1 purchase for customer -1110148394737783770, Label = N 
+Customer -1110890782241440552 has 1 transactions. 
+1 purchase for customer -1110890782241440552, Label = N 
+Customer -1110995552312872932 has 1 transactions. 
+1 purchase for customer -1110995552312872932, Label = N 
+Customer -1111090494674912466 has 1 transactions. 
+1 purchase for customer -1111090494674912466, Label = N 
+Customer -1111168839321590635 has 1 transactions. 
+1 purchase for customer -1111168839321590635, Label = N 
+Customer -1111186478783476649 has 2 transactions. 
+2nd purchase for customer -1111186478783476649, Label = Y 
+Last row for customer -1111186478783476649, Label = N 
+Customer -1113332134348877298 has 1 transactions. 
+1 purchase for customer -1113332134348877298, Label = N 
+Customer -1113529552341762335 has 3 transactions. 
+2nd purchase for customer -1113529552341762335, Label = Y 
+3th purchase for customer -1113529552341762335, Label = Y 
+Last row for customer -1113529552341762335, Label = N 
+Customer -1114873486112279833 has 1 transactions. 
+1 purchase for customer -1114873486112279833, Label = N 
+Customer -1115624944072263969 has 1 transactions. 
+1 purchase for customer -1115624944072263969, Label = N 
+Customer -1117155130227055658 has 1 transactions. 
+1 purchase for customer -1117155130227055658, Label = N 
+Customer -1117319468684964151 has 2 transactions. 
+2nd purchase for customer -1117319468684964151, Label = Y 
+Last row for customer -1117319468684964151, Label = N 
+Customer -1117639096318274027 has 1 transactions. 
+1 purchase for customer -1117639096318274027, Label = N 
+Customer -1118263395979873497 has 2 transactions. 
+2nd purchase for customer -1118263395979873497, Label = Y 
+Last row for customer -1118263395979873497, Label = N 
+Customer -1118948350041777326 has 1 transactions. 
+1 purchase for customer -1118948350041777326, Label = N 
+Customer -1119095885493507806 has 1 transactions. 
+1 purchase for customer -1119095885493507806, Label = N 
+Customer -1119420906262116923 has 1 transactions. 
+1 purchase for customer -1119420906262116923, Label = N 
+Customer -1120125187520818659 has 1 transactions. 
+1 purchase for customer -1120125187520818659, Label = N 
+Customer -1122324129307257310 has 2 transactions. 
+2nd purchase for customer -1122324129307257310, Label = Y 
+Last row for customer -1122324129307257310, Label = N 
+Customer -1122757548492017273 has 1 transactions. 
+1 purchase for customer -1122757548492017273, Label = N 
+Customer -1123220631595476580 has 1 transactions. 
+1 purchase for customer -1123220631595476580, Label = N 
+Customer -1123655144920987852 has 1 transactions. 
+1 purchase for customer -1123655144920987852, Label = N 
+Customer -1123702929800761336 has 1 transactions. 
+1 purchase for customer -1123702929800761336, Label = N 
+Customer -1123795811971211973 has 1 transactions. 
+1 purchase for customer -1123795811971211973, Label = N 
+Customer -1125739020094084837 has 1 transactions. 
+1 purchase for customer -1125739020094084837, Label = N 
+Customer -1126455207134445012 has 1 transactions. 
+1 purchase for customer -1126455207134445012, Label = N 
+Customer -1127197137031034579 has 1 transactions. 
+1 purchase for customer -1127197137031034579, Label = N 
+Customer -1127458362790241431 has 1 transactions. 
+1 purchase for customer -1127458362790241431, Label = N 
+Customer -1128195545481042931 has 1 transactions. 
+1 purchase for customer -1128195545481042931, Label = N 
+Customer -1128263007492182166 has 1 transactions. 
+1 purchase for customer -1128263007492182166, Label = N 
+Customer -1128637450255922459 has 1 transactions. 
+1 purchase for customer -1128637450255922459, Label = N 
+Customer -1128815851134142596 has 1 transactions. 
+1 purchase for customer -1128815851134142596, Label = N 
+Customer -1128930934199427978 has 1 transactions. 
+1 purchase for customer -1128930934199427978, Label = N 
+Customer -1128952844864371257 has 1 transactions. 
+1 purchase for customer -1128952844864371257, Label = N 
+Customer -1129053279533778557 has 1 transactions. 
+1 purchase for customer -1129053279533778557, Label = N 
+Customer -1129255193818725743 has 1 transactions. 
+1 purchase for customer -1129255193818725743, Label = N 
+Customer -1129606128422273581 has 1 transactions. 
+1 purchase for customer -1129606128422273581, Label = N 
+Customer -1129818110569891191 has 2 transactions. 
+2nd purchase for customer -1129818110569891191, Label = Y 
+Last row for customer -1129818110569891191, Label = N 
+Customer -1130266152337014504 has 1 transactions. 
+1 purchase for customer -1130266152337014504, Label = N 
+Customer -1130294911062243198 has 1 transactions. 
+1 purchase for customer -1130294911062243198, Label = N 
+Customer -1130561261876299343 has 1 transactions. 
+1 purchase for customer -1130561261876299343, Label = N 
+Customer -1130716720938188052 has 1 transactions. 
+1 purchase for customer -1130716720938188052, Label = N 
+Customer -1131586398099886162 has 1 transactions. 
+1 purchase for customer -1131586398099886162, Label = N 
+Customer -1132221073219973755 has 1 transactions. 
+1 purchase for customer -1132221073219973755, Label = N 
+Customer -1132843820448941357 has 1 transactions. 
+1 purchase for customer -1132843820448941357, Label = N 
+Customer -1132975402823198325 has 1 transactions. 
+1 purchase for customer -1132975402823198325, Label = N 
+Customer -1133888615769678920 has 1 transactions. 
+1 purchase for customer -1133888615769678920, Label = N 
+Customer -11341125735167855 has 1 transactions. 
+1 purchase for customer -11341125735167855, Label = N 
+Customer -1134735239849645663 has 1 transactions. 
+1 purchase for customer -1134735239849645663, Label = N 
+Customer -113500188841882884 has 1 transactions. 
+1 purchase for customer -113500188841882884, Label = N 
+Customer -1135032709451296922 has 1 transactions. 
+1 purchase for customer -1135032709451296922, Label = N 
+Customer -1135742143383692072 has 1 transactions. 
+1 purchase for customer -1135742143383692072, Label = N 
+Customer -1136294800922785907 has 1 transactions. 
+1 purchase for customer -1136294800922785907, Label = N 
+Customer -1136339611505986879 has 1 transactions. 
+1 purchase for customer -1136339611505986879, Label = N 
+Customer -1136667572991732498 has 1 transactions. 
+1 purchase for customer -1136667572991732498, Label = N 
+Customer -1137013045582559404 has 1 transactions. 
+1 purchase for customer -1137013045582559404, Label = N 
+Customer -1138550867489991260 has 1 transactions. 
+1 purchase for customer -1138550867489991260, Label = N 
+Customer -1139398442103954906 has 1 transactions. 
+1 purchase for customer -1139398442103954906, Label = N 
+Customer -1139680351880400608 has 1 transactions. 
+1 purchase for customer -1139680351880400608, Label = N 
+Customer -1140555445552108464 has 1 transactions. 
+1 purchase for customer -1140555445552108464, Label = N 
+Customer -1141823565354448913 has 1 transactions. 
+1 purchase for customer -1141823565354448913, Label = N 
+Customer -1143589132368119708 has 4 transactions. 
+2nd purchase for customer -1143589132368119708, Label = Y 
+3th purchase for customer -1143589132368119708, Label = Y 
+4th purchase for customer -1143589132368119708, Label = Y 
+Last row for customer -1143589132368119708, Label = N 
+Customer -1144082794478835945 has 1 transactions. 
+1 purchase for customer -1144082794478835945, Label = N 
+Customer -1144137190898508542 has 1 transactions. 
+1 purchase for customer -1144137190898508542, Label = N 
+Customer -1144573019959795773 has 1 transactions. 
+1 purchase for customer -1144573019959795773, Label = N 
+Customer -1145112648099214073 has 1 transactions. 
+1 purchase for customer -1145112648099214073, Label = N 
+Customer -114527426459520436 has 1 transactions. 
+1 purchase for customer -114527426459520436, Label = N 
+Customer -114646822892457065 has 1 transactions. 
+1 purchase for customer -114646822892457065, Label = N 
+Customer -1146563916510611164 has 1 transactions. 
+1 purchase for customer -1146563916510611164, Label = N 
+Customer -1147916595915217708 has 1 transactions. 
+1 purchase for customer -1147916595915217708, Label = N 
+Customer -1148522101618874341 has 1 transactions. 
+1 purchase for customer -1148522101618874341, Label = N 
+Customer -1148563876099359663 has 1 transactions. 
+1 purchase for customer -1148563876099359663, Label = N 
+Customer -1148623681777708766 has 1 transactions. 
+1 purchase for customer -1148623681777708766, Label = N 
+Customer -1149043843066018508 has 1 transactions. 
+1 purchase for customer -1149043843066018508, Label = N 
+Customer -1149410169810309092 has 1 transactions. 
+1 purchase for customer -1149410169810309092, Label = N 
+Customer -1149953410413657960 has 1 transactions. 
+1 purchase for customer -1149953410413657960, Label = N 
+Customer -1150774234946695787 has 1 transactions. 
+1 purchase for customer -1150774234946695787, Label = N 
+Customer -115124227781742934 has 1 transactions. 
+1 purchase for customer -115124227781742934, Label = N 
+Customer -1151512580419565120 has 1 transactions. 
+1 purchase for customer -1151512580419565120, Label = N 
+Customer -1152337778092373424 has 1 transactions. 
+1 purchase for customer -1152337778092373424, Label = N 
+Customer -1152707648382255186 has 2 transactions. 
+2nd purchase for customer -1152707648382255186, Label = Y 
+Last row for customer -1152707648382255186, Label = N 
+Customer -1153507642842302173 has 1 transactions. 
+1 purchase for customer -1153507642842302173, Label = N 
+Customer -1154298073990086899 has 1 transactions. 
+1 purchase for customer -1154298073990086899, Label = N 
+Customer -1154549211821722379 has 1 transactions. 
+1 purchase for customer -1154549211821722379, Label = N 
+Customer -1154634994971098266 has 1 transactions. 
+1 purchase for customer -1154634994971098266, Label = N 
+Customer -1154884695851897778 has 1 transactions. 
+1 purchase for customer -1154884695851897778, Label = N 
+Customer -1155131754063224540 has 1 transactions. 
+1 purchase for customer -1155131754063224540, Label = N 
+Customer -1155439637041368124 has 1 transactions. 
+1 purchase for customer -1155439637041368124, Label = N 
+Customer -1155604789210522161 has 1 transactions. 
+1 purchase for customer -1155604789210522161, Label = N 
+Customer -1157017729139739880 has 1 transactions. 
+1 purchase for customer -1157017729139739880, Label = N 
+Customer -1157411243111301047 has 2 transactions. 
+2nd purchase for customer -1157411243111301047, Label = Y 
+Last row for customer -1157411243111301047, Label = N 
+Customer -1157494176977330175 has 1 transactions. 
+1 purchase for customer -1157494176977330175, Label = N 
+Customer -1158592034379365378 has 1 transactions. 
+1 purchase for customer -1158592034379365378, Label = N 
+Customer -1159437471194336252 has 1 transactions. 
+1 purchase for customer -1159437471194336252, Label = N 
+Customer -1159731210764045380 has 1 transactions. 
+1 purchase for customer -1159731210764045380, Label = N 
+Customer -1160345807942870051 has 2 transactions. 
+2nd purchase for customer -1160345807942870051, Label = Y 
+Last row for customer -1160345807942870051, Label = N 
+Customer -1160348352979216977 has 1 transactions. 
+1 purchase for customer -1160348352979216977, Label = N 
+Customer -1161321156620410499 has 1 transactions. 
+1 purchase for customer -1161321156620410499, Label = N 
+Customer -1161436576143843118 has 1 transactions. 
+1 purchase for customer -1161436576143843118, Label = N 
+Customer -1162119023284052277 has 1 transactions. 
+1 purchase for customer -1162119023284052277, Label = N 
+Customer -1162947089292404927 has 1 transactions. 
+1 purchase for customer -1162947089292404927, Label = N 
+Customer -116299603403533291 has 1 transactions. 
+1 purchase for customer -116299603403533291, Label = N 
+Customer -1163080936779120814 has 2 transactions. 
+2nd purchase for customer -1163080936779120814, Label = Y 
+Last row for customer -1163080936779120814, Label = N 
+Customer -1163359357165958957 has 1 transactions. 
+1 purchase for customer -1163359357165958957, Label = N 
+Customer -1164269803755459424 has 6 transactions. 
+2nd purchase for customer -1164269803755459424, Label = Y 
+3th purchase for customer -1164269803755459424, Label = Y 
+4th purchase for customer -1164269803755459424, Label = Y 
+5th purchase for customer -1164269803755459424, Label = Y 
+6th purchase for customer -1164269803755459424, Label = Y 
+Last row for customer -1164269803755459424, Label = N 
+Customer -1165152370554332713 has 2 transactions. 
+2nd purchase for customer -1165152370554332713, Label = Y 
+Last row for customer -1165152370554332713, Label = N 
+Customer -1165178685759716378 has 1 transactions. 
+1 purchase for customer -1165178685759716378, Label = N 
+Customer -116531285030276909 has 1 transactions. 
+1 purchase for customer -116531285030276909, Label = N 
+Customer -1165727595271648261 has 1 transactions. 
+1 purchase for customer -1165727595271648261, Label = N 
+Customer -1166090778181182698 has 1 transactions. 
+1 purchase for customer -1166090778181182698, Label = N 
+Customer -1166376055171853223 has 1 transactions. 
+1 purchase for customer -1166376055171853223, Label = N 
+Customer -1166828519494813968 has 2 transactions. 
+2nd purchase for customer -1166828519494813968, Label = Y 
+Last row for customer -1166828519494813968, Label = N 
+Customer -1166941518812089178 has 1 transactions. 
+1 purchase for customer -1166941518812089178, Label = N 
+Customer -1167850869489821045 has 1 transactions. 
+1 purchase for customer -1167850869489821045, Label = N 
+Customer -1168349071419631736 has 1 transactions. 
+1 purchase for customer -1168349071419631736, Label = N 
+Customer -1168447813831959027 has 1 transactions. 
+1 purchase for customer -1168447813831959027, Label = N 
+Customer -1168996562135943492 has 1 transactions. 
+1 purchase for customer -1168996562135943492, Label = N 
+Customer -1169856575439012835 has 1 transactions. 
+1 purchase for customer -1169856575439012835, Label = N 
+Customer -1170064852779610834 has 1 transactions. 
+1 purchase for customer -1170064852779610834, Label = N 
+Customer -1170548050010668994 has 1 transactions. 
+1 purchase for customer -1170548050010668994, Label = N 
+Customer -1170594810398379400 has 1 transactions. 
+1 purchase for customer -1170594810398379400, Label = N 
+Customer -1170817939491131218 has 1 transactions. 
+1 purchase for customer -1170817939491131218, Label = N 
+Customer -1171191074116078291 has 1 transactions. 
+1 purchase for customer -1171191074116078291, Label = N 
+Customer -1171321992880765048 has 1 transactions. 
+1 purchase for customer -1171321992880765048, Label = N 
+Customer -1172707696288990371 has 1 transactions. 
+1 purchase for customer -1172707696288990371, Label = N 
+Customer -117331121501688767 has 1 transactions. 
+1 purchase for customer -117331121501688767, Label = N 
+Customer -1174186970120266713 has 1 transactions. 
+1 purchase for customer -1174186970120266713, Label = N 
+Customer -1174279269490898254 has 1 transactions. 
+1 purchase for customer -1174279269490898254, Label = N 
+Customer -1175220656225588831 has 1 transactions. 
+1 purchase for customer -1175220656225588831, Label = N 
+Customer -1175837998277078517 has 1 transactions. 
+1 purchase for customer -1175837998277078517, Label = N 
+Customer -1175900706720178964 has 1 transactions. 
+1 purchase for customer -1175900706720178964, Label = N 
+Customer -1176070291530945325 has 1 transactions. 
+1 purchase for customer -1176070291530945325, Label = N 
+Customer -1176223094207945988 has 1 transactions. 
+1 purchase for customer -1176223094207945988, Label = N 
+Customer -1176247907255746164 has 1 transactions. 
+1 purchase for customer -1176247907255746164, Label = N 
+Customer -1176318243090089668 has 1 transactions. 
+1 purchase for customer -1176318243090089668, Label = N 
+Customer -1176417391502621844 has 1 transactions. 
+1 purchase for customer -1176417391502621844, Label = N 
+Customer -1176916505339370740 has 1 transactions. 
+1 purchase for customer -1176916505339370740, Label = N 
+Customer -1178545737577426679 has 1 transactions. 
+1 purchase for customer -1178545737577426679, Label = N 
+Customer -1179387371214038794 has 1 transactions. 
+1 purchase for customer -1179387371214038794, Label = N 
+Customer -1180213870693342649 has 1 transactions. 
+1 purchase for customer -1180213870693342649, Label = N 
+Customer -1182293253980414908 has 1 transactions. 
+1 purchase for customer -1182293253980414908, Label = N 
+Customer -1182551483849762668 has 1 transactions. 
+1 purchase for customer -1182551483849762668, Label = N 
+Customer -1182976586051291614 has 1 transactions. 
+1 purchase for customer -1182976586051291614, Label = N 
+Customer -1182994130534229850 has 1 transactions. 
+1 purchase for customer -1182994130534229850, Label = N 
+Customer -1183754190902168306 has 1 transactions. 
+1 purchase for customer -1183754190902168306, Label = N 
+Customer -1183933092927472931 has 1 transactions. 
+1 purchase for customer -1183933092927472931, Label = N 
+Customer -118456428828445866 has 1 transactions. 
+1 purchase for customer -118456428828445866, Label = N 
+Customer -1185842981117159256 has 1 transactions. 
+1 purchase for customer -1185842981117159256, Label = N 
+Customer -1186718891711046176 has 2 transactions. 
+2nd purchase for customer -1186718891711046176, Label = Y 
+Last row for customer -1186718891711046176, Label = N 
+Customer -1186910158136438629 has 1 transactions. 
+1 purchase for customer -1186910158136438629, Label = N 
+Customer -1187936580326251168 has 2 transactions. 
+2nd purchase for customer -1187936580326251168, Label = Y 
+Last row for customer -1187936580326251168, Label = N 
+Customer -1188211853437461573 has 1 transactions. 
+1 purchase for customer -1188211853437461573, Label = N 
+Customer -1188302526600522617 has 1 transactions. 
+1 purchase for customer -1188302526600522617, Label = N 
+Customer -1188524152997987778 has 1 transactions. 
+1 purchase for customer -1188524152997987778, Label = N 
+Customer -1188670127870930089 has 1 transactions. 
+1 purchase for customer -1188670127870930089, Label = N 
+Customer -1189651943780060853 has 1 transactions. 
+1 purchase for customer -1189651943780060853, Label = N 
+Customer -1190621886989724567 has 1 transactions. 
+1 purchase for customer -1190621886989724567, Label = N 
+Customer -119120512968512762 has 2 transactions. 
+2nd purchase for customer -119120512968512762, Label = Y 
+Last row for customer -119120512968512762, Label = N 
+Customer -1191533263361444419 has 1 transactions. 
+1 purchase for customer -1191533263361444419, Label = N 
+Customer -119176357185674844 has 1 transactions. 
+1 purchase for customer -119176357185674844, Label = N 
+Customer -1192106375171505588 has 1 transactions. 
+1 purchase for customer -1192106375171505588, Label = N 
+Customer -1192951096491144546 has 1 transactions. 
+1 purchase for customer -1192951096491144546, Label = N 
+Customer -1193205502724661195 has 1 transactions. 
+1 purchase for customer -1193205502724661195, Label = N 
+Customer -1194577583114845584 has 1 transactions. 
+1 purchase for customer -1194577583114845584, Label = N 
+Customer -1195713045874246493 has 1 transactions. 
+1 purchase for customer -1195713045874246493, Label = N 
+Customer -119598293914662214 has 1 transactions. 
+1 purchase for customer -119598293914662214, Label = N 
+Customer -1196278693545046427 has 1 transactions. 
+1 purchase for customer -1196278693545046427, Label = N 
+Customer -1196521632119730365 has 1 transactions. 
+1 purchase for customer -1196521632119730365, Label = N 
+Customer -1196541740416104824 has 1 transactions. 
+1 purchase for customer -1196541740416104824, Label = N 
+Customer -1196582452389136397 has 1 transactions. 
+1 purchase for customer -1196582452389136397, Label = N 
+Customer -1196669827460460830 has 1 transactions. 
+1 purchase for customer -1196669827460460830, Label = N 
+Customer -119711411039891515 has 1 transactions. 
+1 purchase for customer -119711411039891515, Label = N 
+Customer -1197838765112638555 has 1 transactions. 
+1 purchase for customer -1197838765112638555, Label = N 
+Customer -11978486764042703 has 1 transactions. 
+1 purchase for customer -11978486764042703, Label = N 
+Customer -1199126121212899220 has 1 transactions. 
+1 purchase for customer -1199126121212899220, Label = N 
+Customer -1199764134358385063 has 1 transactions. 
+1 purchase for customer -1199764134358385063, Label = N 
+Customer -1199785747323109651 has 1 transactions. 
+1 purchase for customer -1199785747323109651, Label = N 
+Customer -1199977448751896126 has 1 transactions. 
+1 purchase for customer -1199977448751896126, Label = N 
+Customer -1200259774138894763 has 1 transactions. 
+1 purchase for customer -1200259774138894763, Label = N 
+Customer -1201014794962479195 has 1 transactions. 
+1 purchase for customer -1201014794962479195, Label = N 
+Customer -1201534900104145672 has 2 transactions. 
+2nd purchase for customer -1201534900104145672, Label = Y 
+Last row for customer -1201534900104145672, Label = N 
+Customer -1203075714681331802 has 1 transactions. 
+1 purchase for customer -1203075714681331802, Label = N 
+Customer -1203724431530331234 has 7 transactions. 
+2nd purchase for customer -1203724431530331234, Label = Y 
+3th purchase for customer -1203724431530331234, Label = Y 
+4th purchase for customer -1203724431530331234, Label = Y 
+5th purchase for customer -1203724431530331234, Label = Y 
+6th purchase for customer -1203724431530331234, Label = Y 
+7th purchase for customer -1203724431530331234, Label = Y 
+Last row for customer -1203724431530331234, Label = N 
+Customer -1204188215121966215 has 1 transactions. 
+1 purchase for customer -1204188215121966215, Label = N 
+Customer -1204281235365721362 has 1 transactions. 
+1 purchase for customer -1204281235365721362, Label = N 
+Customer -1205445518219223314 has 1 transactions. 
+1 purchase for customer -1205445518219223314, Label = N 
+Customer -1205722935443969609 has 1 transactions. 
+1 purchase for customer -1205722935443969609, Label = N 
+Customer -1206068127659256382 has 1 transactions. 
+1 purchase for customer -1206068127659256382, Label = N 
+Customer -1206234227750045843 has 1 transactions. 
+1 purchase for customer -1206234227750045843, Label = N 
+Customer -1206449822131077916 has 1 transactions. 
+1 purchase for customer -1206449822131077916, Label = N 
+Customer -1206804562450241557 has 1 transactions. 
+1 purchase for customer -1206804562450241557, Label = N 
+Customer -1207239137318865895 has 1 transactions. 
+1 purchase for customer -1207239137318865895, Label = N 
+Customer -1207634251142354201 has 1 transactions. 
+1 purchase for customer -1207634251142354201, Label = N 
+Customer -1207949840594689497 has 1 transactions. 
+1 purchase for customer -1207949840594689497, Label = N 
+Customer -1208362273588813459 has 1 transactions. 
+1 purchase for customer -1208362273588813459, Label = N 
+Customer -1208367623060693730 has 1 transactions. 
+1 purchase for customer -1208367623060693730, Label = N 
+Customer -1209829124087922322 has 1 transactions. 
+1 purchase for customer -1209829124087922322, Label = N 
+Customer -1209954839911176090 has 1 transactions. 
+1 purchase for customer -1209954839911176090, Label = N 
+Customer -1211991384856563044 has 1 transactions. 
+1 purchase for customer -1211991384856563044, Label = N 
+Customer -1213397289351717655 has 1 transactions. 
+1 purchase for customer -1213397289351717655, Label = N 
+Customer -1213600821023924662 has 1 transactions. 
+1 purchase for customer -1213600821023924662, Label = N 
+Customer -1213876168113212817 has 1 transactions. 
+1 purchase for customer -1213876168113212817, Label = N 
+Customer -1213970253995096975 has 1 transactions. 
+1 purchase for customer -1213970253995096975, Label = N 
+Customer -1214042440042212613 has 1 transactions. 
+1 purchase for customer -1214042440042212613, Label = N 
+Customer -1214606707073362980 has 1 transactions. 
+1 purchase for customer -1214606707073362980, Label = N 
+Customer -1214870990367803356 has 1 transactions. 
+1 purchase for customer -1214870990367803356, Label = N 
+Customer -1215756961727092200 has 1 transactions. 
+1 purchase for customer -1215756961727092200, Label = N 
+Customer -1216044858542705856 has 1 transactions. 
+1 purchase for customer -1216044858542705856, Label = N 
+Customer -1216099102711990741 has 1 transactions. 
+1 purchase for customer -1216099102711990741, Label = N 
+Customer -1216333811943036475 has 1 transactions. 
+1 purchase for customer -1216333811943036475, Label = N 
+Customer -1217842641504374877 has 1 transactions. 
+1 purchase for customer -1217842641504374877, Label = N 
+Customer -1218260607690926808 has 1 transactions. 
+1 purchase for customer -1218260607690926808, Label = N 
+Customer -1218464952491817951 has 1 transactions. 
+1 purchase for customer -1218464952491817951, Label = N 
+Customer -1218484414020853295 has 1 transactions. 
+1 purchase for customer -1218484414020853295, Label = N 
+Customer -1219136703833940068 has 1 transactions. 
+1 purchase for customer -1219136703833940068, Label = N 
+Customer -1219507575696219973 has 1 transactions. 
+1 purchase for customer -1219507575696219973, Label = N 
+Customer -1220345061806092368 has 1 transactions. 
+1 purchase for customer -1220345061806092368, Label = N 
+Customer -1220540498252755565 has 1 transactions. 
+1 purchase for customer -1220540498252755565, Label = N 
+Customer -1220715919261298168 has 1 transactions. 
+1 purchase for customer -1220715919261298168, Label = N 
+Customer -1221701751943377842 has 1 transactions. 
+1 purchase for customer -1221701751943377842, Label = N 
+Customer -1221747496229383292 has 1 transactions. 
+1 purchase for customer -1221747496229383292, Label = N 
+Customer -1221936257880918680 has 1 transactions. 
+1 purchase for customer -1221936257880918680, Label = N 
+Customer -1222757447867028213 has 1 transactions. 
+1 purchase for customer -1222757447867028213, Label = N 
+Customer -1223032399366391552 has 1 transactions. 
+1 purchase for customer -1223032399366391552, Label = N 
+Customer -1223410472581566258 has 1 transactions. 
+1 purchase for customer -1223410472581566258, Label = N 
+Customer -1223936218864407350 has 1 transactions. 
+1 purchase for customer -1223936218864407350, Label = N 
+Customer -1224757882335062026 has 2 transactions. 
+2nd purchase for customer -1224757882335062026, Label = Y 
+Last row for customer -1224757882335062026, Label = N 
+Customer -1225358213380952923 has 1 transactions. 
+1 purchase for customer -1225358213380952923, Label = N 
+Customer -1225556350650975044 has 1 transactions. 
+1 purchase for customer -1225556350650975044, Label = N 
+Customer -1225602047132845533 has 1 transactions. 
+1 purchase for customer -1225602047132845533, Label = N 
+Customer -1227102735862490252 has 1 transactions. 
+1 purchase for customer -1227102735862490252, Label = N 
+Customer -1227631467558198888 has 1 transactions. 
+1 purchase for customer -1227631467558198888, Label = N 
+Customer -1228890774930442528 has 1 transactions. 
+1 purchase for customer -1228890774930442528, Label = N 
+Customer -122943069975511247 has 1 transactions. 
+1 purchase for customer -122943069975511247, Label = N 
+Customer -1229823736521424573 has 1 transactions. 
+1 purchase for customer -1229823736521424573, Label = N 
+Customer -1230603667342238402 has 1 transactions. 
+1 purchase for customer -1230603667342238402, Label = N 
+Customer -1230678641392206437 has 1 transactions. 
+1 purchase for customer -1230678641392206437, Label = N 
+Customer -1230731812980995120 has 1 transactions. 
+1 purchase for customer -1230731812980995120, Label = N 
+Customer -123112335184376067 has 1 transactions. 
+1 purchase for customer -123112335184376067, Label = N 
+Customer -1231417436211201627 has 1 transactions. 
+1 purchase for customer -1231417436211201627, Label = N 
+Customer -1231531691479434306 has 1 transactions. 
+1 purchase for customer -1231531691479434306, Label = N 
+Customer -1231633490759415406 has 1 transactions. 
+1 purchase for customer -1231633490759415406, Label = N 
+Customer -1231646245793696803 has 1 transactions. 
+1 purchase for customer -1231646245793696803, Label = N 
+Customer -1231804092921800345 has 1 transactions. 
+1 purchase for customer -1231804092921800345, Label = N 
+Customer -1233509953501269011 has 1 transactions. 
+1 purchase for customer -1233509953501269011, Label = N 
+Customer -1233517643036103032 has 1 transactions. 
+1 purchase for customer -1233517643036103032, Label = N 
+Customer -1233611336183205824 has 1 transactions. 
+1 purchase for customer -1233611336183205824, Label = N 
+Customer -123619478256338495 has 1 transactions. 
+1 purchase for customer -123619478256338495, Label = N 
+Customer -123627256365390219 has 2 transactions. 
+2nd purchase for customer -123627256365390219, Label = Y 
+Last row for customer -123627256365390219, Label = N 
+Customer -1237023093773486158 has 1 transactions. 
+1 purchase for customer -1237023093773486158, Label = N 
+Customer -123748596558257562 has 1 transactions. 
+1 purchase for customer -123748596558257562, Label = N 
+Customer -1239095200710340296 has 1 transactions. 
+1 purchase for customer -1239095200710340296, Label = N 
+Customer -1239355244553774473 has 1 transactions. 
+1 purchase for customer -1239355244553774473, Label = N 
+Customer -1239777432625250028 has 1 transactions. 
+1 purchase for customer -1239777432625250028, Label = N 
+Customer -124016421551499198 has 1 transactions. 
+1 purchase for customer -124016421551499198, Label = N 
+Customer -1242430725273616915 has 1 transactions. 
+1 purchase for customer -1242430725273616915, Label = N 
+Customer -1242853255486290650 has 1 transactions. 
+1 purchase for customer -1242853255486290650, Label = N 
+Customer -124304964487257023 has 1 transactions. 
+1 purchase for customer -124304964487257023, Label = N 
+Customer -1244007427978399584 has 1 transactions. 
+1 purchase for customer -1244007427978399584, Label = N 
+Customer -1244747554037834505 has 1 transactions. 
+1 purchase for customer -1244747554037834505, Label = N 
+Customer -1245121457253535078 has 1 transactions. 
+1 purchase for customer -1245121457253535078, Label = N 
+Customer -1245544499028120011 has 1 transactions. 
+1 purchase for customer -1245544499028120011, Label = N 
+Customer -1246127713931407786 has 1 transactions. 
+1 purchase for customer -1246127713931407786, Label = N 
+Customer -1246358646432852774 has 1 transactions. 
+1 purchase for customer -1246358646432852774, Label = N 
+Customer -1247033054108591982 has 1 transactions. 
+1 purchase for customer -1247033054108591982, Label = N 
+Customer -1247089782093701179 has 1 transactions. 
+1 purchase for customer -1247089782093701179, Label = N 
+Customer -1247165096268077773 has 1 transactions. 
+1 purchase for customer -1247165096268077773, Label = N 
+Customer -1247213481878988022 has 1 transactions. 
+1 purchase for customer -1247213481878988022, Label = N 
+Customer -124780093001902043 has 1 transactions. 
+1 purchase for customer -124780093001902043, Label = N 
+Customer -1248247027763505149 has 2 transactions. 
+2nd purchase for customer -1248247027763505149, Label = Y 
+Last row for customer -1248247027763505149, Label = N 
+Customer -1248409258931699398 has 1 transactions. 
+1 purchase for customer -1248409258931699398, Label = N 
+Customer -124879202836451769 has 1 transactions. 
+1 purchase for customer -124879202836451769, Label = N 
+Customer -1249129893010159699 has 1 transactions. 
+1 purchase for customer -1249129893010159699, Label = N 
+Customer -1249929426369033621 has 1 transactions. 
+1 purchase for customer -1249929426369033621, Label = N 
+Customer -1249963566040680404 has 2 transactions. 
+2nd purchase for customer -1249963566040680404, Label = Y 
+Last row for customer -1249963566040680404, Label = N 
+Customer -1249963626365634427 has 1 transactions. 
+1 purchase for customer -1249963626365634427, Label = N 
+Customer -1250044162877323276 has 1 transactions. 
+1 purchase for customer -1250044162877323276, Label = N 
+Customer -1250589709876678639 has 1 transactions. 
+1 purchase for customer -1250589709876678639, Label = N 
+Customer -1250644881187905166 has 1 transactions. 
+1 purchase for customer -1250644881187905166, Label = N 
+Customer -1250659944319733510 has 1 transactions. 
+1 purchase for customer -1250659944319733510, Label = N 
+Customer -1252024296785911206 has 1 transactions. 
+1 purchase for customer -1252024296785911206, Label = N 
+Customer -1252202110742330743 has 1 transactions. 
+1 purchase for customer -1252202110742330743, Label = N 
+Customer -1252295522489058374 has 1 transactions. 
+1 purchase for customer -1252295522489058374, Label = N 
+Customer -1252982272682936425 has 1 transactions. 
+1 purchase for customer -1252982272682936425, Label = N 
+Customer -1253000471088305453 has 1 transactions. 
+1 purchase for customer -1253000471088305453, Label = N 
+Customer -1253025531459415160 has 1 transactions. 
+1 purchase for customer -1253025531459415160, Label = N 
+Customer -1253622049835438797 has 1 transactions. 
+1 purchase for customer -1253622049835438797, Label = N 
+Customer -1254260223489679121 has 1 transactions. 
+1 purchase for customer -1254260223489679121, Label = N 
+Customer -12549359463614732 has 1 transactions. 
+1 purchase for customer -12549359463614732, Label = N 
+Customer -1255187468594977118 has 1 transactions. 
+1 purchase for customer -1255187468594977118, Label = N 
+Customer -1255378098883160367 has 1 transactions. 
+1 purchase for customer -1255378098883160367, Label = N 
+Customer -1255637832999968288 has 1 transactions. 
+1 purchase for customer -1255637832999968288, Label = N 
+Customer -1256473714802617479 has 1 transactions. 
+1 purchase for customer -1256473714802617479, Label = N 
+Customer -125651585148634346 has 1 transactions. 
+1 purchase for customer -125651585148634346, Label = N 
+Customer -125652995486736951 has 1 transactions. 
+1 purchase for customer -125652995486736951, Label = N 
+Customer -1257063772243570777 has 1 transactions. 
+1 purchase for customer -1257063772243570777, Label = N 
+Customer -1257233650036176977 has 1 transactions. 
+1 purchase for customer -1257233650036176977, Label = N 
+Customer -1257697059911857692 has 1 transactions. 
+1 purchase for customer -1257697059911857692, Label = N 
+Customer -1258083547540484459 has 1 transactions. 
+1 purchase for customer -1258083547540484459, Label = N 
+Customer -1258387673092421680 has 2 transactions. 
+2nd purchase for customer -1258387673092421680, Label = Y 
+Last row for customer -1258387673092421680, Label = N 
+Customer -1258719350028048064 has 1 transactions. 
+1 purchase for customer -1258719350028048064, Label = N 
+Customer -12594002825559509 has 1 transactions. 
+1 purchase for customer -12594002825559509, Label = N 
+Customer -1259802574167462389 has 1 transactions. 
+1 purchase for customer -1259802574167462389, Label = N 
+Customer -1259806371651747316 has 1 transactions. 
+1 purchase for customer -1259806371651747316, Label = N 
+Customer -1260308231446742537 has 1 transactions. 
+1 purchase for customer -1260308231446742537, Label = N 
+Customer -1260462302736768796 has 1 transactions. 
+1 purchase for customer -1260462302736768796, Label = N 
+Customer -1260732693587004080 has 1 transactions. 
+1 purchase for customer -1260732693587004080, Label = N 
+Customer -1260794458438665024 has 1 transactions. 
+1 purchase for customer -1260794458438665024, Label = N 
+Customer -1261203556140272012 has 1 transactions. 
+1 purchase for customer -1261203556140272012, Label = N 
+Customer -1262612347592846445 has 1 transactions. 
+1 purchase for customer -1262612347592846445, Label = N 
+Customer -1262867875686307744 has 1 transactions. 
+1 purchase for customer -1262867875686307744, Label = N 
+Customer -1263080726028991612 has 1 transactions. 
+1 purchase for customer -1263080726028991612, Label = N 
+Customer -1264628822491720539 has 1 transactions. 
+1 purchase for customer -1264628822491720539, Label = N 
+Customer -1265276424506961290 has 1 transactions. 
+1 purchase for customer -1265276424506961290, Label = N 
+Customer -126604989065302354 has 2 transactions. 
+2nd purchase for customer -126604989065302354, Label = Y 
+Last row for customer -126604989065302354, Label = N 
+Customer -1266465256818513462 has 1 transactions. 
+1 purchase for customer -1266465256818513462, Label = N 
+Customer -1266636601843217704 has 1 transactions. 
+1 purchase for customer -1266636601843217704, Label = N 
+Customer -126667349498949159 has 1 transactions. 
+1 purchase for customer -126667349498949159, Label = N 
+Customer -1267181242764337003 has 1 transactions. 
+1 purchase for customer -1267181242764337003, Label = N 
+Customer -126804374045823197 has 1 transactions. 
+1 purchase for customer -126804374045823197, Label = N 
+Customer -126937970091317730 has 1 transactions. 
+1 purchase for customer -126937970091317730, Label = N 
+Customer -126941270840222405 has 1 transactions. 
+1 purchase for customer -126941270840222405, Label = N 
+Customer -1269999239333718366 has 1 transactions. 
+1 purchase for customer -1269999239333718366, Label = N 
+Customer -1271397627837476915 has 1 transactions. 
+1 purchase for customer -1271397627837476915, Label = N 
+Customer -1271665604716102684 has 1 transactions. 
+1 purchase for customer -1271665604716102684, Label = N 
+Customer -1271808049806373681 has 1 transactions. 
+1 purchase for customer -1271808049806373681, Label = N 
+Customer -127310186126709776 has 1 transactions. 
+1 purchase for customer -127310186126709776, Label = N 
+Customer -1273268627152752422 has 1 transactions. 
+1 purchase for customer -1273268627152752422, Label = N 
+Customer -1273936137020641050 has 1 transactions. 
+1 purchase for customer -1273936137020641050, Label = N 
+Customer -1275965077017742482 has 1 transactions. 
+1 purchase for customer -1275965077017742482, Label = N 
+Customer -1276171120849942198 has 1 transactions. 
+1 purchase for customer -1276171120849942198, Label = N 
+Customer -1276531226858842679 has 1 transactions. 
+1 purchase for customer -1276531226858842679, Label = N 
+Customer -1276730423249787494 has 1 transactions. 
+1 purchase for customer -1276730423249787494, Label = N 
+Customer -1277972213399236667 has 1 transactions. 
+1 purchase for customer -1277972213399236667, Label = N 
+Customer -1278586114417232287 has 2 transactions. 
+2nd purchase for customer -1278586114417232287, Label = Y 
+Last row for customer -1278586114417232287, Label = N 
+Customer -1278694522262393935 has 2 transactions. 
+2nd purchase for customer -1278694522262393935, Label = Y 
+Last row for customer -1278694522262393935, Label = N 
+Customer -1278840118027531164 has 1 transactions. 
+1 purchase for customer -1278840118027531164, Label = N 
+Customer -1279051715817480205 has 1 transactions. 
+1 purchase for customer -1279051715817480205, Label = N 
+Customer -1279638636502454826 has 1 transactions. 
+1 purchase for customer -1279638636502454826, Label = N 
+Customer -1279898411751697519 has 1 transactions. 
+1 purchase for customer -1279898411751697519, Label = N 
+Customer -128044191704202693 has 1 transactions. 
+1 purchase for customer -128044191704202693, Label = N 
+Customer -1281451352071984606 has 1 transactions. 
+1 purchase for customer -1281451352071984606, Label = N 
+Customer -1283064687446962467 has 1 transactions. 
+1 purchase for customer -1283064687446962467, Label = N 
+Customer -1283090886762963714 has 1 transactions. 
+1 purchase for customer -1283090886762963714, Label = N 
+Customer -1283976325133213990 has 1 transactions. 
+1 purchase for customer -1283976325133213990, Label = N 
+Customer -1284022490186467094 has 1 transactions. 
+1 purchase for customer -1284022490186467094, Label = N 
+Customer -1284117186485841435 has 1 transactions. 
+1 purchase for customer -1284117186485841435, Label = N 
+Customer -1284270856848661817 has 1 transactions. 
+1 purchase for customer -1284270856848661817, Label = N 
+Customer -1284780864721029444 has 1 transactions. 
+1 purchase for customer -1284780864721029444, Label = N 
+Customer -128481468699696180 has 1 transactions. 
+1 purchase for customer -128481468699696180, Label = N 
+Customer -1285150474781198314 has 1 transactions. 
+1 purchase for customer -1285150474781198314, Label = N 
+Customer -1285316389853782670 has 1 transactions. 
+1 purchase for customer -1285316389853782670, Label = N 
+Customer -1286179218760362560 has 5 transactions. 
+2nd purchase for customer -1286179218760362560, Label = Y 
+3th purchase for customer -1286179218760362560, Label = Y 
+4th purchase for customer -1286179218760362560, Label = Y 
+5th purchase for customer -1286179218760362560, Label = Y 
+Last row for customer -1286179218760362560, Label = N 
+Customer -1287835729784834250 has 1 transactions. 
+1 purchase for customer -1287835729784834250, Label = N 
+Customer -1288065908753654408 has 1 transactions. 
+1 purchase for customer -1288065908753654408, Label = N 
+Customer -1288160843945891695 has 1 transactions. 
+1 purchase for customer -1288160843945891695, Label = N 
+Customer -128820903367421829 has 1 transactions. 
+1 purchase for customer -128820903367421829, Label = N 
+Customer -1288563374090231458 has 1 transactions. 
+1 purchase for customer -1288563374090231458, Label = N 
+Customer -1289220047272339108 has 1 transactions. 
+1 purchase for customer -1289220047272339108, Label = N 
+Customer -1290459441204307243 has 1 transactions. 
+1 purchase for customer -1290459441204307243, Label = N 
+Customer -1290693841901664312 has 3 transactions. 
+2nd purchase for customer -1290693841901664312, Label = Y 
+3th purchase for customer -1290693841901664312, Label = Y 
+Last row for customer -1290693841901664312, Label = N 
+Customer -1291429535131295628 has 1 transactions. 
+1 purchase for customer -1291429535131295628, Label = N 
+Customer -1293761908058791881 has 1 transactions. 
+1 purchase for customer -1293761908058791881, Label = N 
+Customer -12943421396063226 has 1 transactions. 
+1 purchase for customer -12943421396063226, Label = N 
+Customer -129572512110706492 has 1 transactions. 
+1 purchase for customer -129572512110706492, Label = N 
+Customer -129690439056340113 has 1 transactions. 
+1 purchase for customer -129690439056340113, Label = N 
+Customer -1297254506214631338 has 1 transactions. 
+1 purchase for customer -1297254506214631338, Label = N 
+Customer -1297502366048034948 has 1 transactions. 
+1 purchase for customer -1297502366048034948, Label = N 
+Customer -1298185237798531721 has 1 transactions. 
+1 purchase for customer -1298185237798531721, Label = N 
+Customer -1298202676614799154 has 1 transactions. 
+1 purchase for customer -1298202676614799154, Label = N 
+Customer -1298283946681733680 has 1 transactions. 
+1 purchase for customer -1298283946681733680, Label = N 
+Customer -1298836476921914626 has 1 transactions. 
+1 purchase for customer -1298836476921914626, Label = N 
+Customer -1299598986988520325 has 1 transactions. 
+1 purchase for customer -1299598986988520325, Label = N 
+Customer -1299695479231186182 has 1 transactions. 
+1 purchase for customer -1299695479231186182, Label = N 
+Customer -1300181266196525617 has 1 transactions. 
+1 purchase for customer -1300181266196525617, Label = N 
+Customer -1300684449019714614 has 1 transactions. 
+1 purchase for customer -1300684449019714614, Label = N 
+Customer -1301194959893041770 has 1 transactions. 
+1 purchase for customer -1301194959893041770, Label = N 
+Customer -1301420437275601179 has 1 transactions. 
+1 purchase for customer -1301420437275601179, Label = N 
+Customer -1301430811954595464 has 1 transactions. 
+1 purchase for customer -1301430811954595464, Label = N 
+Customer -1301956123806341880 has 1 transactions. 
+1 purchase for customer -1301956123806341880, Label = N 
+Customer -1302742888495415888 has 1 transactions. 
+1 purchase for customer -1302742888495415888, Label = N 
+Customer -1303771666467914077 has 1 transactions. 
+1 purchase for customer -1303771666467914077, Label = N 
+Customer -1304097193546095525 has 1 transactions. 
+1 purchase for customer -1304097193546095525, Label = N 
+Customer -1304279139625490557 has 1 transactions. 
+1 purchase for customer -1304279139625490557, Label = N 
+Customer -1304284885466320812 has 1 transactions. 
+1 purchase for customer -1304284885466320812, Label = N 
+Customer -1304659305457750820 has 1 transactions. 
+1 purchase for customer -1304659305457750820, Label = N 
+Customer -1306205890006130941 has 1 transactions. 
+1 purchase for customer -1306205890006130941, Label = N 
+Customer -1306404023944716907 has 1 transactions. 
+1 purchase for customer -1306404023944716907, Label = N 
+Customer -1306711143947506366 has 1 transactions. 
+1 purchase for customer -1306711143947506366, Label = N 
+Customer -1307029662921248411 has 1 transactions. 
+1 purchase for customer -1307029662921248411, Label = N 
+Customer -1308082143483148041 has 1 transactions. 
+1 purchase for customer -1308082143483148041, Label = N 
+Customer -1308104770852465773 has 1 transactions. 
+1 purchase for customer -1308104770852465773, Label = N 
+Customer -1308471329242425407 has 1 transactions. 
+1 purchase for customer -1308471329242425407, Label = N 
+Customer -1308849194488140287 has 1 transactions. 
+1 purchase for customer -1308849194488140287, Label = N 
+Customer -1309254135818551013 has 1 transactions. 
+1 purchase for customer -1309254135818551013, Label = N 
+Customer -1309332000145801008 has 1 transactions. 
+1 purchase for customer -1309332000145801008, Label = N 
+Customer -1309458186840674641 has 1 transactions. 
+1 purchase for customer -1309458186840674641, Label = N 
+Customer -1309956701508270973 has 1 transactions. 
+1 purchase for customer -1309956701508270973, Label = N 
+Customer -1310775302993055605 has 1 transactions. 
+1 purchase for customer -1310775302993055605, Label = N 
+Customer -131114032787487887 has 1 transactions. 
+1 purchase for customer -131114032787487887, Label = N 
+Customer -1311222816900057943 has 2 transactions. 
+2nd purchase for customer -1311222816900057943, Label = Y 
+Last row for customer -1311222816900057943, Label = N 
+Customer -1311246081309966221 has 1 transactions. 
+1 purchase for customer -1311246081309966221, Label = N 
+Customer -1312433310018654079 has 1 transactions. 
+1 purchase for customer -1312433310018654079, Label = N 
+Customer -1313729024111457373 has 1 transactions. 
+1 purchase for customer -1313729024111457373, Label = N 
+Customer -1314059862662043582 has 1 transactions. 
+1 purchase for customer -1314059862662043582, Label = N 
+Customer -131513909518159202 has 1 transactions. 
+1 purchase for customer -131513909518159202, Label = N 
+Customer -1316757559852046570 has 1 transactions. 
+1 purchase for customer -1316757559852046570, Label = N 
+Customer -1317002007298208283 has 1 transactions. 
+1 purchase for customer -1317002007298208283, Label = N 
+Customer -1317414534208403496 has 1 transactions. 
+1 purchase for customer -1317414534208403496, Label = N 
+Customer -1319569345024624717 has 1 transactions. 
+1 purchase for customer -1319569345024624717, Label = N 
+Customer -1320003337551591794 has 1 transactions. 
+1 purchase for customer -1320003337551591794, Label = N 
+Customer -1320246887179557154 has 3 transactions. 
+2nd purchase for customer -1320246887179557154, Label = Y 
+3th purchase for customer -1320246887179557154, Label = Y 
+Last row for customer -1320246887179557154, Label = N 
+Customer -1320421241559858834 has 1 transactions. 
+1 purchase for customer -1320421241559858834, Label = N 
+Customer -1320725214811427160 has 1 transactions. 
+1 purchase for customer -1320725214811427160, Label = N 
+Customer -1321845854883859888 has 1 transactions. 
+1 purchase for customer -1321845854883859888, Label = N 
+Customer -1322054686084620268 has 1 transactions. 
+1 purchase for customer -1322054686084620268, Label = N 
+Customer -1322836693103389900 has 2 transactions. 
+2nd purchase for customer -1322836693103389900, Label = Y 
+Last row for customer -1322836693103389900, Label = N 
+Customer -132372933998115887 has 1 transactions. 
+1 purchase for customer -132372933998115887, Label = N 
+Customer -1323781539124101313 has 1 transactions. 
+1 purchase for customer -1323781539124101313, Label = N 
+Customer -1323784092748038378 has 1 transactions. 
+1 purchase for customer -1323784092748038378, Label = N 
+Customer -1323844817456107761 has 1 transactions. 
+1 purchase for customer -1323844817456107761, Label = N 
+Customer -1323910398797271259 has 1 transactions. 
+1 purchase for customer -1323910398797271259, Label = N 
+Customer -1324243115053674166 has 1 transactions. 
+1 purchase for customer -1324243115053674166, Label = N 
+Customer -1324877132430727730 has 1 transactions. 
+1 purchase for customer -1324877132430727730, Label = N 
+Customer -1325257345363726378 has 1 transactions. 
+1 purchase for customer -1325257345363726378, Label = N 
+Customer -1325916903613712126 has 2 transactions. 
+2nd purchase for customer -1325916903613712126, Label = Y 
+Last row for customer -1325916903613712126, Label = N 
+Customer -132607711741894448 has 1 transactions. 
+1 purchase for customer -132607711741894448, Label = N 
+Customer -1326377412612905422 has 1 transactions. 
+1 purchase for customer -1326377412612905422, Label = N 
+Customer -1327072364294570740 has 1 transactions. 
+1 purchase for customer -1327072364294570740, Label = N 
+Customer -1327803071986656807 has 1 transactions. 
+1 purchase for customer -1327803071986656807, Label = N 
+Customer -1328382597805745474 has 1 transactions. 
+1 purchase for customer -1328382597805745474, Label = N 
+Customer -1329765035144259821 has 1 transactions. 
+1 purchase for customer -1329765035144259821, Label = N 
+Customer -1330018256034635386 has 1 transactions. 
+1 purchase for customer -1330018256034635386, Label = N 
+Customer -133173953238805952 has 1 transactions. 
+1 purchase for customer -133173953238805952, Label = N 
+Customer -1332129843957639382 has 1 transactions. 
+1 purchase for customer -1332129843957639382, Label = N 
+Customer -1332312990640181543 has 1 transactions. 
+1 purchase for customer -1332312990640181543, Label = N 
+Customer -1332447880152998666 has 1 transactions. 
+1 purchase for customer -1332447880152998666, Label = N 
+Customer -133334947604410054 has 1 transactions. 
+1 purchase for customer -133334947604410054, Label = N 
+Customer -1334600146168218897 has 3 transactions. 
+2nd purchase for customer -1334600146168218897, Label = Y 
+3th purchase for customer -1334600146168218897, Label = Y 
+Last row for customer -1334600146168218897, Label = N 
+Customer -1334703760784868061 has 1 transactions. 
+1 purchase for customer -1334703760784868061, Label = N 
+Customer -1335562856866786516 has 1 transactions. 
+1 purchase for customer -1335562856866786516, Label = N 
+Customer -1336202570251698772 has 1 transactions. 
+1 purchase for customer -1336202570251698772, Label = N 
+Customer -1336406091020753161 has 1 transactions. 
+1 purchase for customer -1336406091020753161, Label = N 
+Customer -1336536323754089872 has 1 transactions. 
+1 purchase for customer -1336536323754089872, Label = N 
+Customer -1337101946545226118 has 1 transactions. 
+1 purchase for customer -1337101946545226118, Label = N 
+Customer -1339154061032660510 has 1 transactions. 
+1 purchase for customer -1339154061032660510, Label = N 
+Customer -1339234767186155926 has 2 transactions. 
+2nd purchase for customer -1339234767186155926, Label = Y 
+Last row for customer -1339234767186155926, Label = N 
+Customer -1339550816685671569 has 1 transactions. 
+1 purchase for customer -1339550816685671569, Label = N 
+Customer -1340594048138290705 has 1 transactions. 
+1 purchase for customer -1340594048138290705, Label = N 
+Customer -1341104774806015372 has 1 transactions. 
+1 purchase for customer -1341104774806015372, Label = N 
+Customer -1342332311737850398 has 1 transactions. 
+1 purchase for customer -1342332311737850398, Label = N 
+Customer -1342538046767171356 has 1 transactions. 
+1 purchase for customer -1342538046767171356, Label = N 
+Customer -1343674880045085505 has 1 transactions. 
+1 purchase for customer -1343674880045085505, Label = N 
+Customer -1343993530948242202 has 1 transactions. 
+1 purchase for customer -1343993530948242202, Label = N 
+Customer -1344717737642516894 has 3 transactions. 
+2nd purchase for customer -1344717737642516894, Label = Y 
+3th purchase for customer -1344717737642516894, Label = Y 
+Last row for customer -1344717737642516894, Label = N 
+Customer -1345460132199662387 has 1 transactions. 
+1 purchase for customer -1345460132199662387, Label = N 
+Customer -1345659334055896367 has 1 transactions. 
+1 purchase for customer -1345659334055896367, Label = N 
+Customer -1345888062986294519 has 1 transactions. 
+1 purchase for customer -1345888062986294519, Label = N 
+Customer -1346805851160507684 has 1 transactions. 
+1 purchase for customer -1346805851160507684, Label = N 
+Customer -134820468703151907 has 1 transactions. 
+1 purchase for customer -134820468703151907, Label = N 
+Customer -1348774379568429394 has 1 transactions. 
+1 purchase for customer -1348774379568429394, Label = N 
+Customer -1348928675075621421 has 1 transactions. 
+1 purchase for customer -1348928675075621421, Label = N 
+Customer -1349022620850467463 has 1 transactions. 
+1 purchase for customer -1349022620850467463, Label = N 
+Customer -1349178177955835115 has 1 transactions. 
+1 purchase for customer -1349178177955835115, Label = N 
+Customer -1349862757279874200 has 1 transactions. 
+1 purchase for customer -1349862757279874200, Label = N 
+Customer -1350796731991687797 has 1 transactions. 
+1 purchase for customer -1350796731991687797, Label = N 
+Customer -1351836998060267685 has 1 transactions. 
+1 purchase for customer -1351836998060267685, Label = N 
+Customer -1351941659609464666 has 1 transactions. 
+1 purchase for customer -1351941659609464666, Label = N 
+Customer -1354001580576826195 has 1 transactions. 
+1 purchase for customer -1354001580576826195, Label = N 
+Customer -1354097841430466536 has 1 transactions. 
+1 purchase for customer -1354097841430466536, Label = N 
+Customer -1354859122406444103 has 1 transactions. 
+1 purchase for customer -1354859122406444103, Label = N 
+Customer -1357786934240002759 has 1 transactions. 
+1 purchase for customer -1357786934240002759, Label = N 
+Customer -1359546283049720557 has 1 transactions. 
+1 purchase for customer -1359546283049720557, Label = N 
+Customer -1359943314453552228 has 1 transactions. 
+1 purchase for customer -1359943314453552228, Label = N 
+Customer -136006925797183204 has 1 transactions. 
+1 purchase for customer -136006925797183204, Label = N 
+Customer -1360249787664274113 has 1 transactions. 
+1 purchase for customer -1360249787664274113, Label = N 
+Customer -13608050636886366 has 1 transactions. 
+1 purchase for customer -13608050636886366, Label = N 
+Customer -1360811426832964106 has 1 transactions. 
+1 purchase for customer -1360811426832964106, Label = N 
+Customer -1362488704796201805 has 1 transactions. 
+1 purchase for customer -1362488704796201805, Label = N 
+Customer -136264637565530033 has 1 transactions. 
+1 purchase for customer -136264637565530033, Label = N 
+Customer -1363418392415842437 has 1 transactions. 
+1 purchase for customer -1363418392415842437, Label = N 
+Customer -1363932761345781951 has 1 transactions. 
+1 purchase for customer -1363932761345781951, Label = N 
+Customer -1364234252623084868 has 1 transactions. 
+1 purchase for customer -1364234252623084868, Label = N 
+Customer -1364335725348057102 has 1 transactions. 
+1 purchase for customer -1364335725348057102, Label = N 
+Customer -1365023811984568545 has 1 transactions. 
+1 purchase for customer -1365023811984568545, Label = N 
+Customer -1365312400847431273 has 1 transactions. 
+1 purchase for customer -1365312400847431273, Label = N 
+Customer -1365545685920341902 has 1 transactions. 
+1 purchase for customer -1365545685920341902, Label = N 
+Customer -1366819141164944546 has 1 transactions. 
+1 purchase for customer -1366819141164944546, Label = N 
+Customer -1367023468024868683 has 1 transactions. 
+1 purchase for customer -1367023468024868683, Label = N 
+Customer -1367080383015902718 has 1 transactions. 
+1 purchase for customer -1367080383015902718, Label = N 
+Customer -1367218498458409953 has 1 transactions. 
+1 purchase for customer -1367218498458409953, Label = N 
+Customer -1367244625537767763 has 1 transactions. 
+1 purchase for customer -1367244625537767763, Label = N 
+Customer -1367976478385702460 has 1 transactions. 
+1 purchase for customer -1367976478385702460, Label = N 
+Customer -1368635357753026383 has 1 transactions. 
+1 purchase for customer -1368635357753026383, Label = N 
+Customer -1368847080700312299 has 1 transactions. 
+1 purchase for customer -1368847080700312299, Label = N 
+Customer -1369242585094678845 has 1 transactions. 
+1 purchase for customer -1369242585094678845, Label = N 
+Customer -1369608099709744929 has 1 transactions. 
+1 purchase for customer -1369608099709744929, Label = N 
+Customer -1370614645126933905 has 1 transactions. 
+1 purchase for customer -1370614645126933905, Label = N 
+Customer -1371005387084757879 has 2 transactions. 
+2nd purchase for customer -1371005387084757879, Label = Y 
+Last row for customer -1371005387084757879, Label = N 
+Customer -1372284147372022202 has 1 transactions. 
+1 purchase for customer -1372284147372022202, Label = N 
+Customer -1373206234556889028 has 1 transactions. 
+1 purchase for customer -1373206234556889028, Label = N 
+Customer -1374799863471400570 has 1 transactions. 
+1 purchase for customer -1374799863471400570, Label = N 
+Customer -1375797292232742643 has 2 transactions. 
+2nd purchase for customer -1375797292232742643, Label = Y 
+Last row for customer -1375797292232742643, Label = N 
+Customer -1375871145936064178 has 1 transactions. 
+1 purchase for customer -1375871145936064178, Label = N 
+Customer -1375948336489965974 has 1 transactions. 
+1 purchase for customer -1375948336489965974, Label = N 
+Customer -1376347402106852713 has 4 transactions. 
+2nd purchase for customer -1376347402106852713, Label = Y 
+3th purchase for customer -1376347402106852713, Label = Y 
+4th purchase for customer -1376347402106852713, Label = Y 
+Last row for customer -1376347402106852713, Label = N 
+Customer -1376579638496717894 has 1 transactions. 
+1 purchase for customer -1376579638496717894, Label = N 
+Customer -1377233862448683211 has 1 transactions. 
+1 purchase for customer -1377233862448683211, Label = N 
+Customer -1378183801721077085 has 1 transactions. 
+1 purchase for customer -1378183801721077085, Label = N 
+Customer -1378674115652640785 has 1 transactions. 
+1 purchase for customer -1378674115652640785, Label = N 
+Customer -1379228741847583691 has 1 transactions. 
+1 purchase for customer -1379228741847583691, Label = N 
+Customer -1379424939642019021 has 1 transactions. 
+1 purchase for customer -1379424939642019021, Label = N 
+Customer -137973206779343603 has 1 transactions. 
+1 purchase for customer -137973206779343603, Label = N 
+Customer -1380520395977605085 has 4 transactions. 
+2nd purchase for customer -1380520395977605085, Label = Y 
+3th purchase for customer -1380520395977605085, Label = Y 
+4th purchase for customer -1380520395977605085, Label = Y 
+Last row for customer -1380520395977605085, Label = N 
+Customer -1381281732202777642 has 1 transactions. 
+1 purchase for customer -1381281732202777642, Label = N 
+Customer -1381503652067667451 has 1 transactions. 
+1 purchase for customer -1381503652067667451, Label = N 
+Customer -1381630843201264898 has 1 transactions. 
+1 purchase for customer -1381630843201264898, Label = N 
+Customer -1381925698108613458 has 1 transactions. 
+1 purchase for customer -1381925698108613458, Label = N 
+Customer -1381988927672246834 has 1 transactions. 
+1 purchase for customer -1381988927672246834, Label = N 
+Customer -1383859038741618304 has 1 transactions. 
+1 purchase for customer -1383859038741618304, Label = N 
+Customer -138389793699433917 has 1 transactions. 
+1 purchase for customer -138389793699433917, Label = N 
+Customer -1385105636158326079 has 1 transactions. 
+1 purchase for customer -1385105636158326079, Label = N 
+Customer -1385301542520317495 has 1 transactions. 
+1 purchase for customer -1385301542520317495, Label = N 
+Customer -1386091782953758890 has 1 transactions. 
+1 purchase for customer -1386091782953758890, Label = N 
+Customer -138658299638536427 has 1 transactions. 
+1 purchase for customer -138658299638536427, Label = N 
+Customer -1387051912627447790 has 1 transactions. 
+1 purchase for customer -1387051912627447790, Label = N 
+Customer -1387117218085385287 has 1 transactions. 
+1 purchase for customer -1387117218085385287, Label = N 
+Customer -1387264961217047808 has 1 transactions. 
+1 purchase for customer -1387264961217047808, Label = N 
+Customer -1387932832189219909 has 1 transactions. 
+1 purchase for customer -1387932832189219909, Label = N 
+Customer -1388262538890477717 has 1 transactions. 
+1 purchase for customer -1388262538890477717, Label = N 
+Customer -1388773597005566167 has 1 transactions. 
+1 purchase for customer -1388773597005566167, Label = N 
+Customer -1388780773733856032 has 1 transactions. 
+1 purchase for customer -1388780773733856032, Label = N 
+Customer -1388897444469956950 has 1 transactions. 
+1 purchase for customer -1388897444469956950, Label = N 
+Customer -1388986039800365311 has 1 transactions. 
+1 purchase for customer -1388986039800365311, Label = N 
+Customer -1389449374068008507 has 2 transactions. 
+2nd purchase for customer -1389449374068008507, Label = Y 
+Last row for customer -1389449374068008507, Label = N 
+Customer -1389595941922846152 has 1 transactions. 
+1 purchase for customer -1389595941922846152, Label = N 
+Customer -1389760671199945474 has 1 transactions. 
+1 purchase for customer -1389760671199945474, Label = N 
+Customer -139001328750427306 has 1 transactions. 
+1 purchase for customer -139001328750427306, Label = N 
+Customer -1390406188711684141 has 2 transactions. 
+2nd purchase for customer -1390406188711684141, Label = Y 
+Last row for customer -1390406188711684141, Label = N 
+Customer -1390892821161725310 has 1 transactions. 
+1 purchase for customer -1390892821161725310, Label = N 
+Customer -1391678943222271434 has 1 transactions. 
+1 purchase for customer -1391678943222271434, Label = N 
+Customer -1391727795499079779 has 1 transactions. 
+1 purchase for customer -1391727795499079779, Label = N 
+Customer -1391754757743680888 has 1 transactions. 
+1 purchase for customer -1391754757743680888, Label = N 
+Customer -1393189725562772749 has 2 transactions. 
+2nd purchase for customer -1393189725562772749, Label = Y 
+Last row for customer -1393189725562772749, Label = N 
+Customer -1393563453717192081 has 1 transactions. 
+1 purchase for customer -1393563453717192081, Label = N 
+Customer -1394484296968031447 has 1 transactions. 
+1 purchase for customer -1394484296968031447, Label = N 
+Customer -1394714793485513772 has 1 transactions. 
+1 purchase for customer -1394714793485513772, Label = N 
+Customer -1395158644949962091 has 1 transactions. 
+1 purchase for customer -1395158644949962091, Label = N 
+Customer -1395704553354214946 has 3 transactions. 
+2nd purchase for customer -1395704553354214946, Label = Y 
+3th purchase for customer -1395704553354214946, Label = Y 
+Last row for customer -1395704553354214946, Label = N 
+Customer -1395836372250021951 has 1 transactions. 
+1 purchase for customer -1395836372250021951, Label = N 
+Customer -1397928994169542192 has 1 transactions. 
+1 purchase for customer -1397928994169542192, Label = N 
+Customer -1399042290075362390 has 1 transactions. 
+1 purchase for customer -1399042290075362390, Label = N 
+Customer -1399712283935073518 has 1 transactions. 
+1 purchase for customer -1399712283935073518, Label = N 
+Customer -1399975181469886769 has 1 transactions. 
+1 purchase for customer -1399975181469886769, Label = N 
+Customer -1401507524452814287 has 1 transactions. 
+1 purchase for customer -1401507524452814287, Label = N 
+Customer -1401674633726561813 has 1 transactions. 
+1 purchase for customer -1401674633726561813, Label = N 
+Customer -1402066901272215512 has 1 transactions. 
+1 purchase for customer -1402066901272215512, Label = N 
+Customer -1403498479318540154 has 1 transactions. 
+1 purchase for customer -1403498479318540154, Label = N 
+Customer -1403703638199044629 has 1 transactions. 
+1 purchase for customer -1403703638199044629, Label = N 
+Customer -1404065323660015727 has 1 transactions. 
+1 purchase for customer -1404065323660015727, Label = N 
+Customer -1404497709314224918 has 1 transactions. 
+1 purchase for customer -1404497709314224918, Label = N 
+Customer -1405811432975429116 has 1 transactions. 
+1 purchase for customer -1405811432975429116, Label = N 
+Customer -140618270741141352 has 1 transactions. 
+1 purchase for customer -140618270741141352, Label = N 
+Customer -1406819716902315156 has 1 transactions. 
+1 purchase for customer -1406819716902315156, Label = N 
+Customer -1406868486099608034 has 1 transactions. 
+1 purchase for customer -1406868486099608034, Label = N 
+Customer -1406903440171137186 has 1 transactions. 
+1 purchase for customer -1406903440171137186, Label = N 
+Customer -1408392208430566729 has 1 transactions. 
+1 purchase for customer -1408392208430566729, Label = N 
+Customer -1408764611627548930 has 2 transactions. 
+2nd purchase for customer -1408764611627548930, Label = Y 
+Last row for customer -1408764611627548930, Label = N 
+Customer -1409502342320800398 has 1 transactions. 
+1 purchase for customer -1409502342320800398, Label = N 
+Customer -1410077677375168275 has 1 transactions. 
+1 purchase for customer -1410077677375168275, Label = N 
+Customer -1410545929275569053 has 1 transactions. 
+1 purchase for customer -1410545929275569053, Label = N 
+Customer -1411050529919824811 has 2 transactions. 
+2nd purchase for customer -1411050529919824811, Label = Y 
+Last row for customer -1411050529919824811, Label = N 
+Customer -1411429229701988571 has 1 transactions. 
+1 purchase for customer -1411429229701988571, Label = N 
+Customer -1411507340705869443 has 1 transactions. 
+1 purchase for customer -1411507340705869443, Label = N 
+Customer -1411520970195679410 has 1 transactions. 
+1 purchase for customer -1411520970195679410, Label = N 
+Customer -1412753379577752501 has 1 transactions. 
+1 purchase for customer -1412753379577752501, Label = N 
+Customer -1413054891707297743 has 1 transactions. 
+1 purchase for customer -1413054891707297743, Label = N 
+Customer -1413169104583043051 has 1 transactions. 
+1 purchase for customer -1413169104583043051, Label = N 
+Customer -1413762842262295593 has 3 transactions. 
+2nd purchase for customer -1413762842262295593, Label = Y 
+3th purchase for customer -1413762842262295593, Label = Y 
+Last row for customer -1413762842262295593, Label = N 
+Customer -1414015439905775337 has 1 transactions. 
+1 purchase for customer -1414015439905775337, Label = N 
+Customer -1414184243373770426 has 1 transactions. 
+1 purchase for customer -1414184243373770426, Label = N 
+Customer -1414416497146902135 has 1 transactions. 
+1 purchase for customer -1414416497146902135, Label = N 
+Customer -1415634389124428736 has 1 transactions. 
+1 purchase for customer -1415634389124428736, Label = N 
+Customer -1415704588289186130 has 1 transactions. 
+1 purchase for customer -1415704588289186130, Label = N 
+Customer -1415967893264943237 has 1 transactions. 
+1 purchase for customer -1415967893264943237, Label = N 
+Customer -1416465098341973145 has 1 transactions. 
+1 purchase for customer -1416465098341973145, Label = N 
+Customer -1416763184923889592 has 1 transactions. 
+1 purchase for customer -1416763184923889592, Label = N 
+Customer -1417263819135003403 has 1 transactions. 
+1 purchase for customer -1417263819135003403, Label = N 
+Customer -1417477107250773754 has 1 transactions. 
+1 purchase for customer -1417477107250773754, Label = N 
+Customer -1417645194831323459 has 1 transactions. 
+1 purchase for customer -1417645194831323459, Label = N 
+Customer -1418000763827231651 has 1 transactions. 
+1 purchase for customer -1418000763827231651, Label = N 
+Customer -1418183841812786664 has 1 transactions. 
+1 purchase for customer -1418183841812786664, Label = N 
+Customer -1418217189564124750 has 1 transactions. 
+1 purchase for customer -1418217189564124750, Label = N 
+Customer -1418271297676313488 has 3 transactions. 
+2nd purchase for customer -1418271297676313488, Label = Y 
+3th purchase for customer -1418271297676313488, Label = Y 
+Last row for customer -1418271297676313488, Label = N 
+Customer -1418301154803278041 has 1 transactions. 
+1 purchase for customer -1418301154803278041, Label = N 
+Customer -1418884009158320831 has 1 transactions. 
+1 purchase for customer -1418884009158320831, Label = N 
+Customer -1418935545873492103 has 1 transactions. 
+1 purchase for customer -1418935545873492103, Label = N 
+Customer -1419268584593029704 has 1 transactions. 
+1 purchase for customer -1419268584593029704, Label = N 
+Customer -1419331010968775862 has 2 transactions. 
+2nd purchase for customer -1419331010968775862, Label = Y 
+Last row for customer -1419331010968775862, Label = N 
+Customer -1419700918023724065 has 2 transactions. 
+2nd purchase for customer -1419700918023724065, Label = Y 
+Last row for customer -1419700918023724065, Label = N 
+Customer -1420635724740398203 has 1 transactions. 
+1 purchase for customer -1420635724740398203, Label = N 
+Customer -1421407949505212445 has 1 transactions. 
+1 purchase for customer -1421407949505212445, Label = N 
+Customer -1421539576680995279 has 1 transactions. 
+1 purchase for customer -1421539576680995279, Label = N 
+Customer -1421719727159837936 has 3 transactions. 
+2nd purchase for customer -1421719727159837936, Label = Y 
+3th purchase for customer -1421719727159837936, Label = Y 
+Last row for customer -1421719727159837936, Label = N 
+Customer -1422101768570176426 has 1 transactions. 
+1 purchase for customer -1422101768570176426, Label = N 
+Customer -1422155496984365196 has 1 transactions. 
+1 purchase for customer -1422155496984365196, Label = N 
+Customer -1422324957700749389 has 2 transactions. 
+2nd purchase for customer -1422324957700749389, Label = Y 
+Last row for customer -1422324957700749389, Label = N 
+Customer -1422344604230022968 has 1 transactions. 
+1 purchase for customer -1422344604230022968, Label = N 
+Customer -1422607042068517525 has 1 transactions. 
+1 purchase for customer -1422607042068517525, Label = N 
+Customer -1423498108892485097 has 1 transactions. 
+1 purchase for customer -1423498108892485097, Label = N 
+Customer -1424078333352949146 has 1 transactions. 
+1 purchase for customer -1424078333352949146, Label = N 
+Customer -1424559115060261710 has 1 transactions. 
+1 purchase for customer -1424559115060261710, Label = N 
+Customer -142459955916113782 has 1 transactions. 
+1 purchase for customer -142459955916113782, Label = N 
+Customer -1424648683162330117 has 1 transactions. 
+1 purchase for customer -1424648683162330117, Label = N 
+Customer -1424677168700097113 has 1 transactions. 
+1 purchase for customer -1424677168700097113, Label = N 
+Customer -1425331300686805012 has 1 transactions. 
+1 purchase for customer -1425331300686805012, Label = N 
+Customer -1425616968627456233 has 1 transactions. 
+1 purchase for customer -1425616968627456233, Label = N 
+Customer -1425933574375449054 has 4 transactions. 
+2nd purchase for customer -1425933574375449054, Label = Y 
+3th purchase for customer -1425933574375449054, Label = Y 
+4th purchase for customer -1425933574375449054, Label = Y 
+Last row for customer -1425933574375449054, Label = N 
+Customer -1426757201471679998 has 1 transactions. 
+1 purchase for customer -1426757201471679998, Label = N 
+Customer -1426942102098129349 has 2 transactions. 
+2nd purchase for customer -1426942102098129349, Label = Y 
+Last row for customer -1426942102098129349, Label = N 
+Customer -1427186642699627399 has 1 transactions. 
+1 purchase for customer -1427186642699627399, Label = N 
+Customer -1427509589687368220 has 1 transactions. 
+1 purchase for customer -1427509589687368220, Label = N 
+Customer -1427752978773061267 has 1 transactions. 
+1 purchase for customer -1427752978773061267, Label = N 
+Customer -1428534923788335163 has 1 transactions. 
+1 purchase for customer -1428534923788335163, Label = N 
+Customer -1428568845569007977 has 1 transactions. 
+1 purchase for customer -1428568845569007977, Label = N 
+Customer -1429439991115582987 has 1 transactions. 
+1 purchase for customer -1429439991115582987, Label = N 
+Customer -1429443448045099745 has 1 transactions. 
+1 purchase for customer -1429443448045099745, Label = N 
+Customer -1430723954625314411 has 1 transactions. 
+1 purchase for customer -1430723954625314411, Label = N 
+Customer -1431115810457020900 has 1 transactions. 
+1 purchase for customer -1431115810457020900, Label = N 
+Customer -1431759606776067324 has 1 transactions. 
+1 purchase for customer -1431759606776067324, Label = N 
+Customer -1432057294061885724 has 1 transactions. 
+1 purchase for customer -1432057294061885724, Label = N 
+Customer -1432158934370384690 has 1 transactions. 
+1 purchase for customer -1432158934370384690, Label = N 
+Customer -1432304132622234478 has 1 transactions. 
+1 purchase for customer -1432304132622234478, Label = N 
+Customer -1432613349320103828 has 1 transactions. 
+1 purchase for customer -1432613349320103828, Label = N 
+Customer -1432958668455360474 has 1 transactions. 
+1 purchase for customer -1432958668455360474, Label = N 
+Customer -1433045393005293094 has 1 transactions. 
+1 purchase for customer -1433045393005293094, Label = N 
+Customer -1433634763331483319 has 1 transactions. 
+1 purchase for customer -1433634763331483319, Label = N 
+Customer -1434597751930527948 has 1 transactions. 
+1 purchase for customer -1434597751930527948, Label = N 
+Customer -1435117592945604795 has 1 transactions. 
+1 purchase for customer -1435117592945604795, Label = N 
+Customer -1436118647329801220 has 1 transactions. 
+1 purchase for customer -1436118647329801220, Label = N 
+Customer -143646917116874696 has 1 transactions. 
+1 purchase for customer -143646917116874696, Label = N 
+Customer -1436823896521875599 has 1 transactions. 
+1 purchase for customer -1436823896521875599, Label = N 
+Customer -1437275377191121683 has 1 transactions. 
+1 purchase for customer -1437275377191121683, Label = N 
+Customer -1438072365392809577 has 1 transactions. 
+1 purchase for customer -1438072365392809577, Label = N 
+Customer -1438453514045589135 has 1 transactions. 
+1 purchase for customer -1438453514045589135, Label = N 
+Customer -1438786941892248188 has 1 transactions. 
+1 purchase for customer -1438786941892248188, Label = N 
+Customer -1438953115322481293 has 1 transactions. 
+1 purchase for customer -1438953115322481293, Label = N 
+Customer -1439102612645981168 has 1 transactions. 
+1 purchase for customer -1439102612645981168, Label = N 
+Customer -143952745698379073 has 1 transactions. 
+1 purchase for customer -143952745698379073, Label = N 
+Customer -1439632052392447441 has 2 transactions. 
+2nd purchase for customer -1439632052392447441, Label = Y 
+Last row for customer -1439632052392447441, Label = N 
+Customer -1439733353004670686 has 1 transactions. 
+1 purchase for customer -1439733353004670686, Label = N 
+Customer -1439922280513602339 has 1 transactions. 
+1 purchase for customer -1439922280513602339, Label = N 
+Customer -1440932648500164791 has 1 transactions. 
+1 purchase for customer -1440932648500164791, Label = N 
+Customer -1441278334553145732 has 1 transactions. 
+1 purchase for customer -1441278334553145732, Label = N 
+Customer -1441538367145898299 has 1 transactions. 
+1 purchase for customer -1441538367145898299, Label = N 
+Customer -1443972298008116997 has 1 transactions. 
+1 purchase for customer -1443972298008116997, Label = N 
+Customer -1444199781755619036 has 1 transactions. 
+1 purchase for customer -1444199781755619036, Label = N 
+Customer -144422390603892562 has 1 transactions. 
+1 purchase for customer -144422390603892562, Label = N 
+Customer -1445594152888856424 has 1 transactions. 
+1 purchase for customer -1445594152888856424, Label = N 
+Customer -1445646849412905179 has 1 transactions. 
+1 purchase for customer -1445646849412905179, Label = N 
+Customer -1445840145143720388 has 1 transactions. 
+1 purchase for customer -1445840145143720388, Label = N 
+Customer -1446008021970589754 has 4 transactions. 
+2nd purchase for customer -1446008021970589754, Label = Y 
+3th purchase for customer -1446008021970589754, Label = Y 
+4th purchase for customer -1446008021970589754, Label = Y 
+Last row for customer -1446008021970589754, Label = N 
+Customer -1446488903566797664 has 1 transactions. 
+1 purchase for customer -1446488903566797664, Label = N 
+Customer -1446500432094676720 has 1 transactions. 
+1 purchase for customer -1446500432094676720, Label = N 
+Customer -1446776306436139461 has 1 transactions. 
+1 purchase for customer -1446776306436139461, Label = N 
+Customer -144761753789368529 has 1 transactions. 
+1 purchase for customer -144761753789368529, Label = N 
+Customer -144881894930088337 has 1 transactions. 
+1 purchase for customer -144881894930088337, Label = N 
+Customer -1449574898257267720 has 1 transactions. 
+1 purchase for customer -1449574898257267720, Label = N 
+Customer -1449834035490948922 has 1 transactions. 
+1 purchase for customer -1449834035490948922, Label = N 
+Customer -1450369799434040560 has 1 transactions. 
+1 purchase for customer -1450369799434040560, Label = N 
+Customer -1450712720597312203 has 1 transactions. 
+1 purchase for customer -1450712720597312203, Label = N 
+Customer -1450754675707102148 has 1 transactions. 
+1 purchase for customer -1450754675707102148, Label = N 
+Customer -1451301112641804001 has 1 transactions. 
+1 purchase for customer -1451301112641804001, Label = N 
+Customer -1452702658638774665 has 1 transactions. 
+1 purchase for customer -1452702658638774665, Label = N 
+Customer -1453265422708530254 has 1 transactions. 
+1 purchase for customer -1453265422708530254, Label = N 
+Customer -1453583163368920531 has 1 transactions. 
+1 purchase for customer -1453583163368920531, Label = N 
+Customer -145434354044619888 has 2 transactions. 
+2nd purchase for customer -145434354044619888, Label = Y 
+Last row for customer -145434354044619888, Label = N 
+Customer -1455117679300230787 has 1 transactions. 
+1 purchase for customer -1455117679300230787, Label = N 
+Customer -1455159184961697713 has 1 transactions. 
+1 purchase for customer -1455159184961697713, Label = N 
+Customer -1455681158585238091 has 1 transactions. 
+1 purchase for customer -1455681158585238091, Label = N 
+Customer -1455745249916250391 has 2 transactions. 
+2nd purchase for customer -1455745249916250391, Label = Y 
+Last row for customer -1455745249916250391, Label = N 
+Customer -1456523475127652359 has 1 transactions. 
+1 purchase for customer -1456523475127652359, Label = N 
+Customer -1456556575242832952 has 1 transactions. 
+1 purchase for customer -1456556575242832952, Label = N 
+Customer -1457618712279470152 has 1 transactions. 
+1 purchase for customer -1457618712279470152, Label = N 
+Customer -1457835047100227057 has 1 transactions. 
+1 purchase for customer -1457835047100227057, Label = N 
+Customer -1457897365401365833 has 1 transactions. 
+1 purchase for customer -1457897365401365833, Label = N 
+Customer -1457970115494387049 has 1 transactions. 
+1 purchase for customer -1457970115494387049, Label = N 
+Customer -1458083748897129250 has 1 transactions. 
+1 purchase for customer -1458083748897129250, Label = N 
+Customer -1458258450447762160 has 3 transactions. 
+2nd purchase for customer -1458258450447762160, Label = Y 
+3th purchase for customer -1458258450447762160, Label = Y 
+Last row for customer -1458258450447762160, Label = N 
+Customer -1458296854775083913 has 1 transactions. 
+1 purchase for customer -1458296854775083913, Label = N 
+Customer -1458887388713312927 has 1 transactions. 
+1 purchase for customer -1458887388713312927, Label = N 
+Customer -145985790180115457 has 1 transactions. 
+1 purchase for customer -145985790180115457, Label = N 
+Customer -1461410915588581103 has 1 transactions. 
+1 purchase for customer -1461410915588581103, Label = N 
+Customer -1461519085397332777 has 1 transactions. 
+1 purchase for customer -1461519085397332777, Label = N 
+Customer -1461550546721863959 has 1 transactions. 
+1 purchase for customer -1461550546721863959, Label = N 
+Customer -1461879743912182233 has 1 transactions. 
+1 purchase for customer -1461879743912182233, Label = N 
+Customer -1463321684241519047 has 1 transactions. 
+1 purchase for customer -1463321684241519047, Label = N 
+Customer -1463428890288913329 has 1 transactions. 
+1 purchase for customer -1463428890288913329, Label = N 
+Customer -1463470416255110874 has 1 transactions. 
+1 purchase for customer -1463470416255110874, Label = N 
+Customer -1463860173804583182 has 1 transactions. 
+1 purchase for customer -1463860173804583182, Label = N 
+Customer -1464696516457602828 has 1 transactions. 
+1 purchase for customer -1464696516457602828, Label = N 
+Customer -1465276968975671571 has 1 transactions. 
+1 purchase for customer -1465276968975671571, Label = N 
+Customer -1465309141001245398 has 3 transactions. 
+2nd purchase for customer -1465309141001245398, Label = Y 
+3th purchase for customer -1465309141001245398, Label = Y 
+Last row for customer -1465309141001245398, Label = N 
+Customer -1465363340051373348 has 1 transactions. 
+1 purchase for customer -1465363340051373348, Label = N 
+Customer -1466397009076390646 has 1 transactions. 
+1 purchase for customer -1466397009076390646, Label = N 
+Customer -1467242526544869776 has 1 transactions. 
+1 purchase for customer -1467242526544869776, Label = N 
+Customer -1467829381145427953 has 1 transactions. 
+1 purchase for customer -1467829381145427953, Label = N 
+Customer -1468098945253673326 has 1 transactions. 
+1 purchase for customer -1468098945253673326, Label = N 
+Customer -1468126455004652384 has 1 transactions. 
+1 purchase for customer -1468126455004652384, Label = N 
+Customer -1468180663074242136 has 1 transactions. 
+1 purchase for customer -1468180663074242136, Label = N 
+Customer -1468272138756463749 has 1 transactions. 
+1 purchase for customer -1468272138756463749, Label = N 
+Customer -1468758018017814399 has 1 transactions. 
+1 purchase for customer -1468758018017814399, Label = N 
+Customer -1468908681908269296 has 1 transactions. 
+1 purchase for customer -1468908681908269296, Label = N 
+Customer -1469032005607141122 has 1 transactions. 
+1 purchase for customer -1469032005607141122, Label = N 
+Customer -1470390982402336726 has 1 transactions. 
+1 purchase for customer -1470390982402336726, Label = N 
+Customer -1471039649028081556 has 1 transactions. 
+1 purchase for customer -1471039649028081556, Label = N 
+Customer -1471897023736732373 has 1 transactions. 
+1 purchase for customer -1471897023736732373, Label = N 
+Customer -1472395261282261561 has 1 transactions. 
+1 purchase for customer -1472395261282261561, Label = N 
+Customer -147244717889454889 has 2 transactions. 
+2nd purchase for customer -147244717889454889, Label = Y 
+Last row for customer -147244717889454889, Label = N 
+Customer -1472448521317903153 has 1 transactions. 
+1 purchase for customer -1472448521317903153, Label = N 
+Customer -1473313827967887699 has 1 transactions. 
+1 purchase for customer -1473313827967887699, Label = N 
+Customer -1473824159410479629 has 1 transactions. 
+1 purchase for customer -1473824159410479629, Label = N 
+Customer -1474032394528349687 has 1 transactions. 
+1 purchase for customer -1474032394528349687, Label = N 
+Customer -14742508447392164 has 1 transactions. 
+1 purchase for customer -14742508447392164, Label = N 
+Customer -1474919130416855213 has 1 transactions. 
+1 purchase for customer -1474919130416855213, Label = N 
+Customer -147498281989907020 has 1 transactions. 
+1 purchase for customer -147498281989907020, Label = N 
+Customer -1476151501982906651 has 1 transactions. 
+1 purchase for customer -1476151501982906651, Label = N 
+Customer -1476341407037973580 has 1 transactions. 
+1 purchase for customer -1476341407037973580, Label = N 
+Customer -1476364923509584765 has 1 transactions. 
+1 purchase for customer -1476364923509584765, Label = N 
+Customer -1476395491386745622 has 1 transactions. 
+1 purchase for customer -1476395491386745622, Label = N 
+Customer -1476557319040020540 has 1 transactions. 
+1 purchase for customer -1476557319040020540, Label = N 
+Customer -1477492079499716986 has 1 transactions. 
+1 purchase for customer -1477492079499716986, Label = N 
+Customer -1479682809588859070 has 3 transactions. 
+2nd purchase for customer -1479682809588859070, Label = Y 
+3th purchase for customer -1479682809588859070, Label = Y 
+Last row for customer -1479682809588859070, Label = N 
+Customer -1479982492090538682 has 2 transactions. 
+2nd purchase for customer -1479982492090538682, Label = Y 
+Last row for customer -1479982492090538682, Label = N 
+Customer -1480050696615822452 has 2 transactions. 
+2nd purchase for customer -1480050696615822452, Label = Y 
+Last row for customer -1480050696615822452, Label = N 
+Customer -1481139637057054943 has 1 transactions. 
+1 purchase for customer -1481139637057054943, Label = N 
+Customer -1481280276819743200 has 1 transactions. 
+1 purchase for customer -1481280276819743200, Label = N 
+Customer -1481861466385779031 has 1 transactions. 
+1 purchase for customer -1481861466385779031, Label = N 
+Customer -1482468699819327242 has 2 transactions. 
+2nd purchase for customer -1482468699819327242, Label = Y 
+Last row for customer -1482468699819327242, Label = N 
+Customer -1482529868726771890 has 1 transactions. 
+1 purchase for customer -1482529868726771890, Label = N 
+Customer -1484382774646957941 has 1 transactions. 
+1 purchase for customer -1484382774646957941, Label = N 
+Customer -1484701969110532984 has 1 transactions. 
+1 purchase for customer -1484701969110532984, Label = N 
+Customer -1485402767566163771 has 1 transactions. 
+1 purchase for customer -1485402767566163771, Label = N 
+Customer -1486307151870600624 has 1 transactions. 
+1 purchase for customer -1486307151870600624, Label = N 
+Customer -148646790443460993 has 2 transactions. 
+2nd purchase for customer -148646790443460993, Label = Y 
+Last row for customer -148646790443460993, Label = N 
+Customer -1487396492654798970 has 1 transactions. 
+1 purchase for customer -1487396492654798970, Label = N 
+Customer -1487710959799220150 has 1 transactions. 
+1 purchase for customer -1487710959799220150, Label = N 
+Customer -1488277163309770166 has 3 transactions. 
+2nd purchase for customer -1488277163309770166, Label = Y 
+3th purchase for customer -1488277163309770166, Label = Y 
+Last row for customer -1488277163309770166, Label = N 
+Customer -148832123705645869 has 1 transactions. 
+1 purchase for customer -148832123705645869, Label = N 
+Customer -1488478463419946435 has 1 transactions. 
+1 purchase for customer -1488478463419946435, Label = N 
+Customer -1488480960361697967 has 1 transactions. 
+1 purchase for customer -1488480960361697967, Label = N 
+Customer -1488645853177471871 has 1 transactions. 
+1 purchase for customer -1488645853177471871, Label = N 
+Customer -1489559757457696683 has 1 transactions. 
+1 purchase for customer -1489559757457696683, Label = N 
+Customer -1490368302724853746 has 1 transactions. 
+1 purchase for customer -1490368302724853746, Label = N 
+Customer -1490806951235788278 has 1 transactions. 
+1 purchase for customer -1490806951235788278, Label = N 
+Customer -1491272708781396505 has 1 transactions. 
+1 purchase for customer -1491272708781396505, Label = N 
+Customer -1491354699914328733 has 1 transactions. 
+1 purchase for customer -1491354699914328733, Label = N 
+Customer -1491459568840921328 has 1 transactions. 
+1 purchase for customer -1491459568840921328, Label = N 
+Customer -1492243125974033031 has 1 transactions. 
+1 purchase for customer -1492243125974033031, Label = N 
+Customer -1492660536741608263 has 1 transactions. 
+1 purchase for customer -1492660536741608263, Label = N 
+Customer -1493364237605238940 has 1 transactions. 
+1 purchase for customer -1493364237605238940, Label = N 
+Customer -1493844253526297858 has 1 transactions. 
+1 purchase for customer -1493844253526297858, Label = N 
+Customer -1494012139228964832 has 1 transactions. 
+1 purchase for customer -1494012139228964832, Label = N 
+Customer -1494560901195902272 has 1 transactions. 
+1 purchase for customer -1494560901195902272, Label = N 
+Customer -149462880341997450 has 1 transactions. 
+1 purchase for customer -149462880341997450, Label = N 
+Customer -149469273873445022 has 1 transactions. 
+1 purchase for customer -149469273873445022, Label = N 
+Customer -1495247790265570492 has 1 transactions. 
+1 purchase for customer -1495247790265570492, Label = N 
+Customer -1496312085437644266 has 1 transactions. 
+1 purchase for customer -1496312085437644266, Label = N 
+Customer -1496674580119183581 has 1 transactions. 
+1 purchase for customer -1496674580119183581, Label = N 
+Customer -1496900207639635383 has 1 transactions. 
+1 purchase for customer -1496900207639635383, Label = N 
+Customer -1497030309228494503 has 1 transactions. 
+1 purchase for customer -1497030309228494503, Label = N 
+Customer -1497067373468339376 has 1 transactions. 
+1 purchase for customer -1497067373468339376, Label = N 
+Customer -1498167016081266074 has 1 transactions. 
+1 purchase for customer -1498167016081266074, Label = N 
+Customer -1499919266081948570 has 1 transactions. 
+1 purchase for customer -1499919266081948570, Label = N 
+Customer -1500740382310971210 has 1 transactions. 
+1 purchase for customer -1500740382310971210, Label = N 
+Customer -1501079678517421291 has 1 transactions. 
+1 purchase for customer -1501079678517421291, Label = N 
+Customer -1501487966455853623 has 1 transactions. 
+1 purchase for customer -1501487966455853623, Label = N 
+Customer -1501491487615542116 has 1 transactions. 
+1 purchase for customer -1501491487615542116, Label = N 
+Customer -1501798557270559719 has 1 transactions. 
+1 purchase for customer -1501798557270559719, Label = N 
+Customer -1503163422158514471 has 1 transactions. 
+1 purchase for customer -1503163422158514471, Label = N 
+Customer -1503223596250690644 has 1 transactions. 
+1 purchase for customer -1503223596250690644, Label = N 
+Customer -1504175685996539853 has 1 transactions. 
+1 purchase for customer -1504175685996539853, Label = N 
+Customer -1504598631019582144 has 2 transactions. 
+2nd purchase for customer -1504598631019582144, Label = Y 
+Last row for customer -1504598631019582144, Label = N 
+Customer -1504800499650832406 has 1 transactions. 
+1 purchase for customer -1504800499650832406, Label = N 
+Customer -1504925212233700432 has 1 transactions. 
+1 purchase for customer -1504925212233700432, Label = N 
+Customer -1505018020201374106 has 1 transactions. 
+1 purchase for customer -1505018020201374106, Label = N 
+Customer -1508806371641132617 has 3 transactions. 
+2nd purchase for customer -1508806371641132617, Label = Y 
+3th purchase for customer -1508806371641132617, Label = Y 
+Last row for customer -1508806371641132617, Label = N 
+Customer -150899957644756847 has 1 transactions. 
+1 purchase for customer -150899957644756847, Label = N 
+Customer -1509026264619745183 has 1 transactions. 
+1 purchase for customer -1509026264619745183, Label = N 
+Customer -1509172478782918350 has 1 transactions. 
+1 purchase for customer -1509172478782918350, Label = N 
+Customer -1510002456953663819 has 1 transactions. 
+1 purchase for customer -1510002456953663819, Label = N 
+Customer -1510679040894632092 has 1 transactions. 
+1 purchase for customer -1510679040894632092, Label = N 
+Customer -1510950375021016011 has 2 transactions. 
+2nd purchase for customer -1510950375021016011, Label = Y 
+Last row for customer -1510950375021016011, Label = N 
+Customer -1511157326876817486 has 1 transactions. 
+1 purchase for customer -1511157326876817486, Label = N 
+Customer -1511685203805211065 has 1 transactions. 
+1 purchase for customer -1511685203805211065, Label = N 
+Customer -1511833471806559409 has 1 transactions. 
+1 purchase for customer -1511833471806559409, Label = N 
+Customer -1512342519121809326 has 1 transactions. 
+1 purchase for customer -1512342519121809326, Label = N 
+Customer -1514373047662788165 has 1 transactions. 
+1 purchase for customer -1514373047662788165, Label = N 
+Customer -1514399363816785426 has 1 transactions. 
+1 purchase for customer -1514399363816785426, Label = N 
+Customer -1514786798479380369 has 1 transactions. 
+1 purchase for customer -1514786798479380369, Label = N 
+Customer -1514834966317616036 has 1 transactions. 
+1 purchase for customer -1514834966317616036, Label = N 
+Customer -1516337189137421933 has 1 transactions. 
+1 purchase for customer -1516337189137421933, Label = N 
+Customer -1516373890239506192 has 2 transactions. 
+2nd purchase for customer -1516373890239506192, Label = Y 
+Last row for customer -1516373890239506192, Label = N 
+Customer -1516646759108920468 has 2 transactions. 
+2nd purchase for customer -1516646759108920468, Label = Y 
+Last row for customer -1516646759108920468, Label = N 
+Customer -1516826350603476975 has 1 transactions. 
+1 purchase for customer -1516826350603476975, Label = N 
+Customer -151687458558075941 has 2 transactions. 
+2nd purchase for customer -151687458558075941, Label = Y 
+Last row for customer -151687458558075941, Label = N 
+Customer -1518678501360353761 has 1 transactions. 
+1 purchase for customer -1518678501360353761, Label = N 
+Customer -1519416019177349628 has 1 transactions. 
+1 purchase for customer -1519416019177349628, Label = N 
+Customer -1519683265319684398 has 1 transactions. 
+1 purchase for customer -1519683265319684398, Label = N 
+Customer -1519969818959055903 has 1 transactions. 
+1 purchase for customer -1519969818959055903, Label = N 
+Customer -1520163602163936650 has 1 transactions. 
+1 purchase for customer -1520163602163936650, Label = N 
+Customer -1520285252645253196 has 1 transactions. 
+1 purchase for customer -1520285252645253196, Label = N 
+Customer -1520661991098087423 has 1 transactions. 
+1 purchase for customer -1520661991098087423, Label = N 
+Customer -1520834600591133148 has 1 transactions. 
+1 purchase for customer -1520834600591133148, Label = N 
+Customer -1521800960388125214 has 1 transactions. 
+1 purchase for customer -1521800960388125214, Label = N 
+Customer -1522744435803918735 has 1 transactions. 
+1 purchase for customer -1522744435803918735, Label = N 
+Customer -1523385348764811468 has 1 transactions. 
+1 purchase for customer -1523385348764811468, Label = N 
+Customer -1524475970208716119 has 1 transactions. 
+1 purchase for customer -1524475970208716119, Label = N 
+Customer -1526539805696048033 has 1 transactions. 
+1 purchase for customer -1526539805696048033, Label = N 
+Customer -1526797716073054003 has 1 transactions. 
+1 purchase for customer -1526797716073054003, Label = N 
+Customer -1527482237678254628 has 1 transactions. 
+1 purchase for customer -1527482237678254628, Label = N 
+Customer -1528629708231684784 has 1 transactions. 
+1 purchase for customer -1528629708231684784, Label = N 
+Customer -1530357410628062122 has 1 transactions. 
+1 purchase for customer -1530357410628062122, Label = N 
+Customer -1530918296866187267 has 1 transactions. 
+1 purchase for customer -1530918296866187267, Label = N 
+Customer -1531345519184435553 has 1 transactions. 
+1 purchase for customer -1531345519184435553, Label = N 
+Customer -1531766125191624166 has 1 transactions. 
+1 purchase for customer -1531766125191624166, Label = N 
+Customer -1532354633486186875 has 3 transactions. 
+2nd purchase for customer -1532354633486186875, Label = Y 
+3th purchase for customer -1532354633486186875, Label = Y 
+Last row for customer -1532354633486186875, Label = N 
+Customer -1532709601346458027 has 1 transactions. 
+1 purchase for customer -1532709601346458027, Label = N 
+Customer -1532746133644719977 has 1 transactions. 
+1 purchase for customer -1532746133644719977, Label = N 
+Customer -1533208253160836824 has 1 transactions. 
+1 purchase for customer -1533208253160836824, Label = N 
+Customer -1533502659255648303 has 1 transactions. 
+1 purchase for customer -1533502659255648303, Label = N 
+Customer -1533984035168293649 has 1 transactions. 
+1 purchase for customer -1533984035168293649, Label = N 
+Customer -1534065201280778783 has 1 transactions. 
+1 purchase for customer -1534065201280778783, Label = N 
+Customer -1534110193713218681 has 1 transactions. 
+1 purchase for customer -1534110193713218681, Label = N 
+Customer -153762995366426082 has 1 transactions. 
+1 purchase for customer -153762995366426082, Label = N 
+Customer -1538044980382008821 has 1 transactions. 
+1 purchase for customer -1538044980382008821, Label = N 
+Customer -1538063551337342495 has 3 transactions. 
+2nd purchase for customer -1538063551337342495, Label = Y 
+3th purchase for customer -1538063551337342495, Label = Y 
+Last row for customer -1538063551337342495, Label = N 
+Customer -1539459874012042661 has 1 transactions. 
+1 purchase for customer -1539459874012042661, Label = N 
+Customer -1540047347264124907 has 1 transactions. 
+1 purchase for customer -1540047347264124907, Label = N 
+Customer -1541553718664698422 has 1 transactions. 
+1 purchase for customer -1541553718664698422, Label = N 
+Customer -1542574575488362146 has 1 transactions. 
+1 purchase for customer -1542574575488362146, Label = N 
+Customer -1542851834315201915 has 1 transactions. 
+1 purchase for customer -1542851834315201915, Label = N 
+Customer -1543084198258261999 has 1 transactions. 
+1 purchase for customer -1543084198258261999, Label = N 
+Customer -1543839340538406647 has 1 transactions. 
+1 purchase for customer -1543839340538406647, Label = N 
+Customer -1543957206679863000 has 1 transactions. 
+1 purchase for customer -1543957206679863000, Label = N 
+Customer -1544005159485673655 has 1 transactions. 
+1 purchase for customer -1544005159485673655, Label = N 
+Customer -1544044202524802866 has 1 transactions. 
+1 purchase for customer -1544044202524802866, Label = N 
+Customer -1544326487824590716 has 1 transactions. 
+1 purchase for customer -1544326487824590716, Label = N 
+Customer -1544755812033566177 has 1 transactions. 
+1 purchase for customer -1544755812033566177, Label = N 
+Customer -1545582104930720872 has 1 transactions. 
+1 purchase for customer -1545582104930720872, Label = N 
+Customer -1545707304819590380 has 4 transactions. 
+2nd purchase for customer -1545707304819590380, Label = Y 
+3th purchase for customer -1545707304819590380, Label = Y 
+4th purchase for customer -1545707304819590380, Label = Y 
+Last row for customer -1545707304819590380, Label = N 
+Customer -1547728028202222111 has 1 transactions. 
+1 purchase for customer -1547728028202222111, Label = N 
+Customer -1547768344372087680 has 1 transactions. 
+1 purchase for customer -1547768344372087680, Label = N 
+Customer -1548864551968612547 has 1 transactions. 
+1 purchase for customer -1548864551968612547, Label = N 
+Customer -1550178465301403040 has 1 transactions. 
+1 purchase for customer -1550178465301403040, Label = N 
+Customer -1550599556748841038 has 2 transactions. 
+2nd purchase for customer -1550599556748841038, Label = Y 
+Last row for customer -1550599556748841038, Label = N 
+Customer -1551403021647525085 has 1 transactions. 
+1 purchase for customer -1551403021647525085, Label = N 
+Customer -1551443595004934007 has 1 transactions. 
+1 purchase for customer -1551443595004934007, Label = N 
+Customer -1551776391776340093 has 1 transactions. 
+1 purchase for customer -1551776391776340093, Label = N 
+Customer -1552144390860825060 has 1 transactions. 
+1 purchase for customer -1552144390860825060, Label = N 
+Customer -1552378743778837942 has 1 transactions. 
+1 purchase for customer -1552378743778837942, Label = N 
+Customer -1553226721272827320 has 1 transactions. 
+1 purchase for customer -1553226721272827320, Label = N 
+Customer -1553898003635962157 has 2 transactions. 
+2nd purchase for customer -1553898003635962157, Label = Y 
+Last row for customer -1553898003635962157, Label = N 
+Customer -1553986950232787733 has 1 transactions. 
+1 purchase for customer -1553986950232787733, Label = N 
+Customer -1554906691263491572 has 1 transactions. 
+1 purchase for customer -1554906691263491572, Label = N 
+Customer -1555597476100599466 has 1 transactions. 
+1 purchase for customer -1555597476100599466, Label = N 
+Customer -1556031792927642080 has 1 transactions. 
+1 purchase for customer -1556031792927642080, Label = N 
+Customer -155678294971264534 has 1 transactions. 
+1 purchase for customer -155678294971264534, Label = N 
+Customer -1556821676379089233 has 2 transactions. 
+2nd purchase for customer -1556821676379089233, Label = Y 
+Last row for customer -1556821676379089233, Label = N 
+Customer -1557605397672725386 has 1 transactions. 
+1 purchase for customer -1557605397672725386, Label = N 
+Customer -1559908374122470877 has 2 transactions. 
+2nd purchase for customer -1559908374122470877, Label = Y 
+Last row for customer -1559908374122470877, Label = N 
+Customer -1561330911891742543 has 1 transactions. 
+1 purchase for customer -1561330911891742543, Label = N 
+Customer -1561358381785589690 has 1 transactions. 
+1 purchase for customer -1561358381785589690, Label = N 
+Customer -1561449684694049243 has 1 transactions. 
+1 purchase for customer -1561449684694049243, Label = N 
+Customer -1561985634700569662 has 1 transactions. 
+1 purchase for customer -1561985634700569662, Label = N 
+Customer -1562146353756164739 has 1 transactions. 
+1 purchase for customer -1562146353756164739, Label = N 
+Customer -1562598473460140185 has 1 transactions. 
+1 purchase for customer -1562598473460140185, Label = N 
+Customer -1562599780029215587 has 1 transactions. 
+1 purchase for customer -1562599780029215587, Label = N 
+Customer -1563434428862378117 has 1 transactions. 
+1 purchase for customer -1563434428862378117, Label = N 
+Customer -1563700757919612674 has 1 transactions. 
+1 purchase for customer -1563700757919612674, Label = N 
+Customer -1563840765431324991 has 1 transactions. 
+1 purchase for customer -1563840765431324991, Label = N 
+Customer -1565879943031638579 has 1 transactions. 
+1 purchase for customer -1565879943031638579, Label = N 
+Customer -1566007184882170052 has 1 transactions. 
+1 purchase for customer -1566007184882170052, Label = N 
+Customer -1566114589783118188 has 1 transactions. 
+1 purchase for customer -1566114589783118188, Label = N 
+Customer -1566383502312769464 has 1 transactions. 
+1 purchase for customer -1566383502312769464, Label = N 
+Customer -1566731322522978264 has 1 transactions. 
+1 purchase for customer -1566731322522978264, Label = N 
+Customer -1567461033790284500 has 1 transactions. 
+1 purchase for customer -1567461033790284500, Label = N 
+Customer -1568317841244960250 has 1 transactions. 
+1 purchase for customer -1568317841244960250, Label = N 
+Customer -1568976464517678699 has 1 transactions. 
+1 purchase for customer -1568976464517678699, Label = N 
+Customer -1572158796017638057 has 1 transactions. 
+1 purchase for customer -1572158796017638057, Label = N 
+Customer -1572590955003289519 has 1 transactions. 
+1 purchase for customer -1572590955003289519, Label = N 
+Customer -1572627795991225008 has 1 transactions. 
+1 purchase for customer -1572627795991225008, Label = N 
+Customer -1573091805751472840 has 1 transactions. 
+1 purchase for customer -1573091805751472840, Label = N 
+Customer -1573364436481827802 has 1 transactions. 
+1 purchase for customer -1573364436481827802, Label = N 
+Customer -1573785934801451504 has 1 transactions. 
+1 purchase for customer -1573785934801451504, Label = N 
+Customer -1574218199018507923 has 1 transactions. 
+1 purchase for customer -1574218199018507923, Label = N 
+Customer -1574796062155958181 has 2 transactions. 
+2nd purchase for customer -1574796062155958181, Label = Y 
+Last row for customer -1574796062155958181, Label = N 
+Customer -1575747531050788437 has 1 transactions. 
+1 purchase for customer -1575747531050788437, Label = N 
+Customer -1576147269281015767 has 1 transactions. 
+1 purchase for customer -1576147269281015767, Label = N 
+Customer -1576845614556276037 has 1 transactions. 
+1 purchase for customer -1576845614556276037, Label = N 
+Customer -1577952976782626716 has 1 transactions. 
+1 purchase for customer -1577952976782626716, Label = N 
+Customer -1579178366202082428 has 1 transactions. 
+1 purchase for customer -1579178366202082428, Label = N 
+Customer -1579364845584576559 has 1 transactions. 
+1 purchase for customer -1579364845584576559, Label = N 
+Customer -1579829864886136962 has 1 transactions. 
+1 purchase for customer -1579829864886136962, Label = N 
+Customer -158022579023457114 has 1 transactions. 
+1 purchase for customer -158022579023457114, Label = N 
+Customer -1580309200920636718 has 1 transactions. 
+1 purchase for customer -1580309200920636718, Label = N 
+Customer -1580658500032467378 has 1 transactions. 
+1 purchase for customer -1580658500032467378, Label = N 
+Customer -1581249459301400304 has 1 transactions. 
+1 purchase for customer -1581249459301400304, Label = N 
+Customer -1581325951898670505 has 2 transactions. 
+2nd purchase for customer -1581325951898670505, Label = Y 
+Last row for customer -1581325951898670505, Label = N 
+Customer -1582454827274353950 has 1 transactions. 
+1 purchase for customer -1582454827274353950, Label = N 
+Customer -1582677578027690002 has 1 transactions. 
+1 purchase for customer -1582677578027690002, Label = N 
+Customer -1584231329591644139 has 1 transactions. 
+1 purchase for customer -1584231329591644139, Label = N 
+Customer -1584279417375818291 has 1 transactions. 
+1 purchase for customer -1584279417375818291, Label = N 
+Customer -1584493543794859210 has 1 transactions. 
+1 purchase for customer -1584493543794859210, Label = N 
+Customer -1584760608323852295 has 1 transactions. 
+1 purchase for customer -1584760608323852295, Label = N 
+Customer -158485300204133993 has 1 transactions. 
+1 purchase for customer -158485300204133993, Label = N 
+Customer -158513263321727304 has 1 transactions. 
+1 purchase for customer -158513263321727304, Label = N 
+Customer -1585596384543407508 has 1 transactions. 
+1 purchase for customer -1585596384543407508, Label = N 
+Customer -1585834233552617335 has 1 transactions. 
+1 purchase for customer -1585834233552617335, Label = N 
+Customer -1586225987741971379 has 2 transactions. 
+2nd purchase for customer -1586225987741971379, Label = Y 
+Last row for customer -1586225987741971379, Label = N 
+Customer -158677722863489344 has 4 transactions. 
+2nd purchase for customer -158677722863489344, Label = Y 
+3th purchase for customer -158677722863489344, Label = Y 
+4th purchase for customer -158677722863489344, Label = Y 
+Last row for customer -158677722863489344, Label = N 
+Customer -158704422549508840 has 1 transactions. 
+1 purchase for customer -158704422549508840, Label = N 
+Customer -1587252492950954984 has 1 transactions. 
+1 purchase for customer -1587252492950954984, Label = N 
+Customer -1587663710948856873 has 1 transactions. 
+1 purchase for customer -1587663710948856873, Label = N 
+Customer -158798012221596879 has 1 transactions. 
+1 purchase for customer -158798012221596879, Label = N 
+Customer -1589604523016079299 has 1 transactions. 
+1 purchase for customer -1589604523016079299, Label = N 
+Customer -1590767222118852309 has 1 transactions. 
+1 purchase for customer -1590767222118852309, Label = N 
+Customer -1590812879984701531 has 1 transactions. 
+1 purchase for customer -1590812879984701531, Label = N 
+Customer -1591964323909911067 has 1 transactions. 
+1 purchase for customer -1591964323909911067, Label = N 
+Customer -1592211848737236866 has 1 transactions. 
+1 purchase for customer -1592211848737236866, Label = N 
+Customer -159290363962998748 has 1 transactions. 
+1 purchase for customer -159290363962998748, Label = N 
+Customer -1594948863157486460 has 1 transactions. 
+1 purchase for customer -1594948863157486460, Label = N 
+Customer -159496361195860645 has 1 transactions. 
+1 purchase for customer -159496361195860645, Label = N 
+Customer -1595025954078847557 has 1 transactions. 
+1 purchase for customer -1595025954078847557, Label = N 
+Customer -1595618071829333226 has 1 transactions. 
+1 purchase for customer -1595618071829333226, Label = N 
+Customer -1596170630371506041 has 1 transactions. 
+1 purchase for customer -1596170630371506041, Label = N 
+Customer -1596472633150051957 has 1 transactions. 
+1 purchase for customer -1596472633150051957, Label = N 
+Customer -1596810616566543059 has 2 transactions. 
+2nd purchase for customer -1596810616566543059, Label = Y 
+Last row for customer -1596810616566543059, Label = N 
+Customer -1597383358255496540 has 1 transactions. 
+1 purchase for customer -1597383358255496540, Label = N 
+Customer -1598526194799644326 has 4 transactions. 
+2nd purchase for customer -1598526194799644326, Label = Y 
+3th purchase for customer -1598526194799644326, Label = Y 
+4th purchase for customer -1598526194799644326, Label = Y 
+Last row for customer -1598526194799644326, Label = N 
+Customer -1598568534536012436 has 1 transactions. 
+1 purchase for customer -1598568534536012436, Label = N 
+Customer -1600012948446986019 has 2 transactions. 
+2nd purchase for customer -1600012948446986019, Label = Y 
+Last row for customer -1600012948446986019, Label = N 
+Customer -1602098105680106166 has 1 transactions. 
+1 purchase for customer -1602098105680106166, Label = N 
+Customer -1604578284611333837 has 1 transactions. 
+1 purchase for customer -1604578284611333837, Label = N 
+Customer -1604636459145262567 has 1 transactions. 
+1 purchase for customer -1604636459145262567, Label = N 
+Customer -1604755638074116480 has 1 transactions. 
+1 purchase for customer -1604755638074116480, Label = N 
+Customer -1605018043825688809 has 2 transactions. 
+2nd purchase for customer -1605018043825688809, Label = Y 
+Last row for customer -1605018043825688809, Label = N 
+Customer -1605778850298174981 has 1 transactions. 
+1 purchase for customer -1605778850298174981, Label = N 
+Customer -1606536965319319990 has 1 transactions. 
+1 purchase for customer -1606536965319319990, Label = N 
+Customer -1607806922373457401 has 1 transactions. 
+1 purchase for customer -1607806922373457401, Label = N 
+Customer -1608352324473776623 has 2 transactions. 
+2nd purchase for customer -1608352324473776623, Label = Y 
+Last row for customer -1608352324473776623, Label = N 
+Customer -160876326450044757 has 1 transactions. 
+1 purchase for customer -160876326450044757, Label = N 
+Customer -1609053499295105932 has 1 transactions. 
+1 purchase for customer -1609053499295105932, Label = N 
+Customer -1609108163419541664 has 1 transactions. 
+1 purchase for customer -1609108163419541664, Label = N 
+Customer -1609210933777669846 has 1 transactions. 
+1 purchase for customer -1609210933777669846, Label = N 
+Customer -1609211170412735471 has 1 transactions. 
+1 purchase for customer -1609211170412735471, Label = N 
+Customer -1609369410685892908 has 1 transactions. 
+1 purchase for customer -1609369410685892908, Label = N 
+Customer -1609501551921367691 has 1 transactions. 
+1 purchase for customer -1609501551921367691, Label = N 
+Customer -1610486848949111571 has 1 transactions. 
+1 purchase for customer -1610486848949111571, Label = N 
+Customer -1611292610511490437 has 1 transactions. 
+1 purchase for customer -1611292610511490437, Label = N 
+Customer -1611810563367740719 has 1 transactions. 
+1 purchase for customer -1611810563367740719, Label = N 
+Customer -1611968813196462611 has 1 transactions. 
+1 purchase for customer -1611968813196462611, Label = N 
+Customer -1613019467701940342 has 1 transactions. 
+1 purchase for customer -1613019467701940342, Label = N 
+Customer -161367874384707078 has 2 transactions. 
+2nd purchase for customer -161367874384707078, Label = Y 
+Last row for customer -161367874384707078, Label = N 
+Customer -1613744954146170761 has 1 transactions. 
+1 purchase for customer -1613744954146170761, Label = N 
+Customer -1614757251993185043 has 1 transactions. 
+1 purchase for customer -1614757251993185043, Label = N 
+Customer -1615697231897913230 has 1 transactions. 
+1 purchase for customer -1615697231897913230, Label = N 
+Customer -1616858383708062108 has 1 transactions. 
+1 purchase for customer -1616858383708062108, Label = N 
+Customer -1617090622026638628 has 1 transactions. 
+1 purchase for customer -1617090622026638628, Label = N 
+Customer -1620022689106641184 has 1 transactions. 
+1 purchase for customer -1620022689106641184, Label = N 
+Customer -1620324044406459067 has 1 transactions. 
+1 purchase for customer -1620324044406459067, Label = N 
+Customer -1620369734738784891 has 1 transactions. 
+1 purchase for customer -1620369734738784891, Label = N 
+Customer -1620446932896797945 has 1 transactions. 
+1 purchase for customer -1620446932896797945, Label = N 
+Customer -1620811726176337633 has 1 transactions. 
+1 purchase for customer -1620811726176337633, Label = N 
+Customer -1620861427766929172 has 1 transactions. 
+1 purchase for customer -1620861427766929172, Label = N 
+Customer -1621278691672154896 has 1 transactions. 
+1 purchase for customer -1621278691672154896, Label = N 
+Customer -1621650846424661946 has 1 transactions. 
+1 purchase for customer -1621650846424661946, Label = N 
+Customer -162223508777089304 has 1 transactions. 
+1 purchase for customer -162223508777089304, Label = N 
+Customer -162254878098465235 has 1 transactions. 
+1 purchase for customer -162254878098465235, Label = N 
+Customer -1623230807027633226 has 1 transactions. 
+1 purchase for customer -1623230807027633226, Label = N 
+Customer -1623298433420103124 has 1 transactions. 
+1 purchase for customer -1623298433420103124, Label = N 
+Customer -1624213279243609892 has 1 transactions. 
+1 purchase for customer -1624213279243609892, Label = N 
+Customer -1624549241291162987 has 1 transactions. 
+1 purchase for customer -1624549241291162987, Label = N 
+Customer -1625096925120037903 has 1 transactions. 
+1 purchase for customer -1625096925120037903, Label = N 
+Customer -1625840181738815487 has 1 transactions. 
+1 purchase for customer -1625840181738815487, Label = N 
+Customer -1626286592535665747 has 1 transactions. 
+1 purchase for customer -1626286592535665747, Label = N 
+Customer -1626810504941965232 has 1 transactions. 
+1 purchase for customer -1626810504941965232, Label = N 
+Customer -1627166108674003540 has 1 transactions. 
+1 purchase for customer -1627166108674003540, Label = N 
+Customer -162726965354555309 has 1 transactions. 
+1 purchase for customer -162726965354555309, Label = N 
+Customer -1627587209256162103 has 1 transactions. 
+1 purchase for customer -1627587209256162103, Label = N 
+Customer -1627622866885974130 has 1 transactions. 
+1 purchase for customer -1627622866885974130, Label = N 
+Customer -1627906738169611266 has 1 transactions. 
+1 purchase for customer -1627906738169611266, Label = N 
+Customer -1628276661155641769 has 1 transactions. 
+1 purchase for customer -1628276661155641769, Label = N 
+Customer -1629352287611418533 has 1 transactions. 
+1 purchase for customer -1629352287611418533, Label = N 
+Customer -1629966904877918153 has 3 transactions. 
+2nd purchase for customer -1629966904877918153, Label = Y 
+3th purchase for customer -1629966904877918153, Label = Y 
+Last row for customer -1629966904877918153, Label = N 
+Customer -1630446993526507433 has 1 transactions. 
+1 purchase for customer -1630446993526507433, Label = N 
+Customer -163064336021441265 has 2 transactions. 
+2nd purchase for customer -163064336021441265, Label = Y 
+Last row for customer -163064336021441265, Label = N 
+Customer -1630691377779806414 has 3 transactions. 
+2nd purchase for customer -1630691377779806414, Label = Y 
+3th purchase for customer -1630691377779806414, Label = Y 
+Last row for customer -1630691377779806414, Label = N 
+Customer -1630764315934453349 has 1 transactions. 
+1 purchase for customer -1630764315934453349, Label = N 
+Customer -1631371804533801606 has 1 transactions. 
+1 purchase for customer -1631371804533801606, Label = N 
+Customer -1632850907575134384 has 1 transactions. 
+1 purchase for customer -1632850907575134384, Label = N 
+Customer -1633066776412180658 has 1 transactions. 
+1 purchase for customer -1633066776412180658, Label = N 
+Customer -1633188735721304698 has 1 transactions. 
+1 purchase for customer -1633188735721304698, Label = N 
+Customer -1633503862519949987 has 1 transactions. 
+1 purchase for customer -1633503862519949987, Label = N 
+Customer -1634035454423423833 has 1 transactions. 
+1 purchase for customer -1634035454423423833, Label = N 
+Customer -1634483334319366422 has 1 transactions. 
+1 purchase for customer -1634483334319366422, Label = N 
+Customer -1635300513520049389 has 1 transactions. 
+1 purchase for customer -1635300513520049389, Label = N 
+Customer -1637910221280915575 has 1 transactions. 
+1 purchase for customer -1637910221280915575, Label = N 
+Customer -16385090625228984 has 1 transactions. 
+1 purchase for customer -16385090625228984, Label = N 
+Customer -1638948836941576993 has 1 transactions. 
+1 purchase for customer -1638948836941576993, Label = N 
+Customer -1639171615010998855 has 2 transactions. 
+2nd purchase for customer -1639171615010998855, Label = Y 
+Last row for customer -1639171615010998855, Label = N 
+Customer -1639379079354703610 has 1 transactions. 
+1 purchase for customer -1639379079354703610, Label = N 
+Customer -1640342930971239316 has 1 transactions. 
+1 purchase for customer -1640342930971239316, Label = N 
+Customer -164130675460756564 has 1 transactions. 
+1 purchase for customer -164130675460756564, Label = N 
+Customer -1641857703873398071 has 1 transactions. 
+1 purchase for customer -1641857703873398071, Label = N 
+Customer -1641933333237458856 has 1 transactions. 
+1 purchase for customer -1641933333237458856, Label = N 
+Customer -164290363192433678 has 1 transactions. 
+1 purchase for customer -164290363192433678, Label = N 
+Customer -1645574276087674855 has 1 transactions. 
+1 purchase for customer -1645574276087674855, Label = N 
+Customer -16473976757144038 has 1 transactions. 
+1 purchase for customer -16473976757144038, Label = N 
+Customer -1647477460804767576 has 1 transactions. 
+1 purchase for customer -1647477460804767576, Label = N 
+Customer -1647510032242289023 has 1 transactions. 
+1 purchase for customer -1647510032242289023, Label = N 
+Customer -1647579006247714693 has 2 transactions. 
+2nd purchase for customer -1647579006247714693, Label = Y 
+Last row for customer -1647579006247714693, Label = N 
+Customer -1647829613008530982 has 2 transactions. 
+2nd purchase for customer -1647829613008530982, Label = Y 
+Last row for customer -1647829613008530982, Label = N 
+Customer -164807045586522891 has 1 transactions. 
+1 purchase for customer -164807045586522891, Label = N 
+Customer -1648359937884861163 has 1 transactions. 
+1 purchase for customer -1648359937884861163, Label = N 
+Customer -1648662799987498556 has 1 transactions. 
+1 purchase for customer -1648662799987498556, Label = N 
+Customer -164886888912085577 has 1 transactions. 
+1 purchase for customer -164886888912085577, Label = N 
+Customer -1649177976123329021 has 1 transactions. 
+1 purchase for customer -1649177976123329021, Label = N 
+Customer -1649442922984985219 has 1 transactions. 
+1 purchase for customer -1649442922984985219, Label = N 
+Customer -1649593046540123336 has 1 transactions. 
+1 purchase for customer -1649593046540123336, Label = N 
+Customer -1649695352632357373 has 1 transactions. 
+1 purchase for customer -1649695352632357373, Label = N 
+Customer -1650363662001841964 has 1 transactions. 
+1 purchase for customer -1650363662001841964, Label = N 
+Customer -165038722996954995 has 1 transactions. 
+1 purchase for customer -165038722996954995, Label = N 
+Customer -1650949154294172038 has 1 transactions. 
+1 purchase for customer -1650949154294172038, Label = N 
+Customer -1652032015295604034 has 1 transactions. 
+1 purchase for customer -1652032015295604034, Label = N 
+Customer -1652743287149073264 has 1 transactions. 
+1 purchase for customer -1652743287149073264, Label = N 
+Customer -1654091511741147174 has 1 transactions. 
+1 purchase for customer -1654091511741147174, Label = N 
+Customer -1654677411074820884 has 1 transactions. 
+1 purchase for customer -1654677411074820884, Label = N 
+Customer -1655837396442513889 has 1 transactions. 
+1 purchase for customer -1655837396442513889, Label = N 
+Customer -1656827603180662181 has 1 transactions. 
+1 purchase for customer -1656827603180662181, Label = N 
+Customer -1657073892004011238 has 1 transactions. 
+1 purchase for customer -1657073892004011238, Label = N 
+Customer -1659003657513735443 has 1 transactions. 
+1 purchase for customer -1659003657513735443, Label = N 
+Customer -1659063467653047508 has 1 transactions. 
+1 purchase for customer -1659063467653047508, Label = N 
+Customer -165919542534566813 has 1 transactions. 
+1 purchase for customer -165919542534566813, Label = N 
+Customer -1659450373130188654 has 1 transactions. 
+1 purchase for customer -1659450373130188654, Label = N 
+Customer -1659519649241973853 has 1 transactions. 
+1 purchase for customer -1659519649241973853, Label = N 
+Customer -1659693436350970493 has 1 transactions. 
+1 purchase for customer -1659693436350970493, Label = N 
+Customer -1662340241104804241 has 1 transactions. 
+1 purchase for customer -1662340241104804241, Label = N 
+Customer -166277978408727217 has 1 transactions. 
+1 purchase for customer -166277978408727217, Label = N 
+Customer -166320034808738298 has 1 transactions. 
+1 purchase for customer -166320034808738298, Label = N 
+Customer -1663984236205756626 has 1 transactions. 
+1 purchase for customer -1663984236205756626, Label = N 
+Customer -1664095638903436392 has 1 transactions. 
+1 purchase for customer -1664095638903436392, Label = N 
+Customer -1665225046997276652 has 1 transactions. 
+1 purchase for customer -1665225046997276652, Label = N 
+Customer -1665826391198379190 has 1 transactions. 
+1 purchase for customer -1665826391198379190, Label = N 
+Customer -1666819204012762613 has 1 transactions. 
+1 purchase for customer -1666819204012762613, Label = N 
+Customer -1667147432638301479 has 1 transactions. 
+1 purchase for customer -1667147432638301479, Label = N 
+Customer -1667285839504327018 has 2 transactions. 
+2nd purchase for customer -1667285839504327018, Label = Y 
+Last row for customer -1667285839504327018, Label = N 
+Customer -1669410537625661824 has 1 transactions. 
+1 purchase for customer -1669410537625661824, Label = N 
+Customer -1670692701301975786 has 1 transactions. 
+1 purchase for customer -1670692701301975786, Label = N 
+Customer -1670827248789991777 has 1 transactions. 
+1 purchase for customer -1670827248789991777, Label = N 
+Customer -1671256526048326478 has 1 transactions. 
+1 purchase for customer -1671256526048326478, Label = N 
+Customer -1671555124633734588 has 1 transactions. 
+1 purchase for customer -1671555124633734588, Label = N 
+Customer -167261811772408037 has 1 transactions. 
+1 purchase for customer -167261811772408037, Label = N 
+Customer -1672627938356675620 has 1 transactions. 
+1 purchase for customer -1672627938356675620, Label = N 
+Customer -1673271578629398820 has 1 transactions. 
+1 purchase for customer -1673271578629398820, Label = N 
+Customer -1674587254751619021 has 1 transactions. 
+1 purchase for customer -1674587254751619021, Label = N 
+Customer -1675689259816599498 has 1 transactions. 
+1 purchase for customer -1675689259816599498, Label = N 
+Customer -167597095701741580 has 4 transactions. 
+2nd purchase for customer -167597095701741580, Label = Y 
+3th purchase for customer -167597095701741580, Label = Y 
+4th purchase for customer -167597095701741580, Label = Y 
+Last row for customer -167597095701741580, Label = N 
+Customer -1676063803296578948 has 1 transactions. 
+1 purchase for customer -1676063803296578948, Label = N 
+Customer -1676438525294962548 has 1 transactions. 
+1 purchase for customer -1676438525294962548, Label = N 
+Customer -1677581362802854659 has 1 transactions. 
+1 purchase for customer -1677581362802854659, Label = N 
+Customer -1677590013026799443 has 1 transactions. 
+1 purchase for customer -1677590013026799443, Label = N 
+Customer -1678770881494427649 has 1 transactions. 
+1 purchase for customer -1678770881494427649, Label = N 
+Customer -1678859570421493723 has 3 transactions. 
+2nd purchase for customer -1678859570421493723, Label = Y 
+3th purchase for customer -1678859570421493723, Label = Y 
+Last row for customer -1678859570421493723, Label = N 
+Customer -1678910746415371724 has 1 transactions. 
+1 purchase for customer -1678910746415371724, Label = N 
+Customer -1680656930038950609 has 1 transactions. 
+1 purchase for customer -1680656930038950609, Label = N 
+Customer -1681306444036952476 has 2 transactions. 
+2nd purchase for customer -1681306444036952476, Label = Y 
+Last row for customer -1681306444036952476, Label = N 
+Customer -1682138204941565552 has 1 transactions. 
+1 purchase for customer -1682138204941565552, Label = N 
+Customer -1682713859252002070 has 1 transactions. 
+1 purchase for customer -1682713859252002070, Label = N 
+Customer -1683761270173606789 has 1 transactions. 
+1 purchase for customer -1683761270173606789, Label = N 
+Customer -1683962505032636835 has 1 transactions. 
+1 purchase for customer -1683962505032636835, Label = N 
+Customer -1685846884575315945 has 1 transactions. 
+1 purchase for customer -1685846884575315945, Label = N 
+Customer -1685927860083772978 has 1 transactions. 
+1 purchase for customer -1685927860083772978, Label = N 
+Customer -1687196062918797636 has 1 transactions. 
+1 purchase for customer -1687196062918797636, Label = N 
+Customer -1687569698583383428 has 1 transactions. 
+1 purchase for customer -1687569698583383428, Label = N 
+Customer -1688090850683183467 has 1 transactions. 
+1 purchase for customer -1688090850683183467, Label = N 
+Customer -1688343043452612537 has 1 transactions. 
+1 purchase for customer -1688343043452612537, Label = N 
+Customer -1688459254513344890 has 1 transactions. 
+1 purchase for customer -1688459254513344890, Label = N 
+Customer -1688572399228135367 has 1 transactions. 
+1 purchase for customer -1688572399228135367, Label = N 
+Customer -1690002290216379532 has 2 transactions. 
+2nd purchase for customer -1690002290216379532, Label = Y 
+Last row for customer -1690002290216379532, Label = N 
+Customer -1690243907303050579 has 1 transactions. 
+1 purchase for customer -1690243907303050579, Label = N 
+Customer -1690391366319874781 has 1 transactions. 
+1 purchase for customer -1690391366319874781, Label = N 
+Customer -1691523770643511906 has 1 transactions. 
+1 purchase for customer -1691523770643511906, Label = N 
+Customer -1692164253129248712 has 1 transactions. 
+1 purchase for customer -1692164253129248712, Label = N 
+Customer -1695039931778519114 has 1 transactions. 
+1 purchase for customer -1695039931778519114, Label = N 
+Customer -1696048880852414940 has 1 transactions. 
+1 purchase for customer -1696048880852414940, Label = N 
+Customer -1696055355393755690 has 1 transactions. 
+1 purchase for customer -1696055355393755690, Label = N 
+Customer -1697249289348124478 has 1 transactions. 
+1 purchase for customer -1697249289348124478, Label = N 
+Customer -1697469712530036752 has 1 transactions. 
+1 purchase for customer -1697469712530036752, Label = N 
+Customer -1697669095186745888 has 1 transactions. 
+1 purchase for customer -1697669095186745888, Label = N 
+Customer -1698253730327637797 has 1 transactions. 
+1 purchase for customer -1698253730327637797, Label = N 
+Customer -1698434166313703501 has 1 transactions. 
+1 purchase for customer -1698434166313703501, Label = N 
+Customer -1698929005548508876 has 1 transactions. 
+1 purchase for customer -1698929005548508876, Label = N 
+Customer -169951565673220106 has 1 transactions. 
+1 purchase for customer -169951565673220106, Label = N 
+Customer -1700266690218218861 has 1 transactions. 
+1 purchase for customer -1700266690218218861, Label = N 
+Customer -1701009571359236056 has 1 transactions. 
+1 purchase for customer -1701009571359236056, Label = N 
+Customer -1702153298553251592 has 1 transactions. 
+1 purchase for customer -1702153298553251592, Label = N 
+Customer -1702154889132474738 has 1 transactions. 
+1 purchase for customer -1702154889132474738, Label = N 
+Customer -1702820226820567260 has 1 transactions. 
+1 purchase for customer -1702820226820567260, Label = N 
+Customer -1703597677531710794 has 1 transactions. 
+1 purchase for customer -1703597677531710794, Label = N 
+Customer -1704252527053988215 has 1 transactions. 
+1 purchase for customer -1704252527053988215, Label = N 
+Customer -1704978716805622571 has 1 transactions. 
+1 purchase for customer -1704978716805622571, Label = N 
+Customer -1705060521108121445 has 1 transactions. 
+1 purchase for customer -1705060521108121445, Label = N 
+Customer -1705127123169391503 has 1 transactions. 
+1 purchase for customer -1705127123169391503, Label = N 
+Customer -1705948420775973538 has 1 transactions. 
+1 purchase for customer -1705948420775973538, Label = N 
+Customer -1707026057106526697 has 1 transactions. 
+1 purchase for customer -1707026057106526697, Label = N 
+Customer -1708083983259874763 has 1 transactions. 
+1 purchase for customer -1708083983259874763, Label = N 
+Customer -1708452949808050667 has 1 transactions. 
+1 purchase for customer -1708452949808050667, Label = N 
+Customer -1708526149931184943 has 1 transactions. 
+1 purchase for customer -1708526149931184943, Label = N 
+Customer -1709181874909595736 has 2 transactions. 
+2nd purchase for customer -1709181874909595736, Label = Y 
+Last row for customer -1709181874909595736, Label = N 
+Customer -1709262847505989704 has 1 transactions. 
+1 purchase for customer -1709262847505989704, Label = N 
+Customer -1709525607324927839 has 1 transactions. 
+1 purchase for customer -1709525607324927839, Label = N 
+Customer -1710850175567656833 has 1 transactions. 
+1 purchase for customer -1710850175567656833, Label = N 
+Customer -1710977950118090316 has 1 transactions. 
+1 purchase for customer -1710977950118090316, Label = N 
+Customer -1711022672504297250 has 1 transactions. 
+1 purchase for customer -1711022672504297250, Label = N 
+Customer -1711074938397015893 has 1 transactions. 
+1 purchase for customer -1711074938397015893, Label = N 
+Customer -1711506657711199739 has 1 transactions. 
+1 purchase for customer -1711506657711199739, Label = N 
+Customer -1711548573674935375 has 2 transactions. 
