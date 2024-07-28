@@ -3,6 +3,8 @@ import argparse
 import yaml
 import os
 import traceback
+import sys
+import shutil
 
 from data.data_extraction import data_extraction
 from data.label_generation import generate_label
@@ -18,16 +20,40 @@ from property_type.train import property_type_train
 # from test_pt import property_type_test
 
 
+def clear_directory(directory):
+    """
+    Clears all files in the specified directory.
+    
+    Args:
+    directory (str): The directory to clear.
+    """
+    if os.path.exists(directory):
+        for filename in os.listdir(directory):
+            file_path = os.path.join(directory, filename)
+            try:
+                if os.path.isfile(file_path) or os.path.islink(file_path):
+                    os.unlink(file_path)
+                elif os.path.isdir(file_path):
+                    shutil.rmtree(file_path)
+            except Exception as e:
+                print(f'Failed to delete {file_path}. Reason: {e}')
+
+                
+
 def data_preparation(config):
 
   def read_checkpoint(file_name):
         return pd.read_csv(os.path.join(config['save_dir'], file_name), low_memory=False, dtype={'contact_nric_masked': str})
 
-  # Create save directory if it doesn't exist
+  # Create directory if it doesn't exist
   if not os.path.exists(config['data_report_dir']):
       print("Creating data report directory.....")
       os.makedirs(config['data_report_dir'])
       print(f"Created directory: {config['data_report_dir']}")
+  else:
+      print(f"Directory {config['data_report_dir']} already exists. Clearing contents...")
+      clear_directory(config['data_report_dir'])
+      print(f"Cleared contents of directory: {config['data_report_dir']}")
 
   if config['load_df_from_checkpoint']:
         print("Loading df from checkpoint ...")
@@ -58,6 +84,7 @@ def data_preparation(config):
             elif  'label_df.csv' in files:
                 df = read_checkpoint('label_df.csv')
                 df = data_cleaning(df, config)
+                sys.exit()
                 df = add_features(df, config)
                 df = group_data(df, config)
                 df = data_bining(df, config)
@@ -140,7 +167,8 @@ def main(config):
 
       # if config['test_property_type_model']:
       #     property_type_test(df=df, config=config)
-
+      print()
+      print("------------------------------------------------------------------------------------------------------")
       print("Customer profiling model prediction pipeline done!")
 
 

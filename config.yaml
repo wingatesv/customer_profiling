@@ -4,7 +4,7 @@ derived_data_dir: /content/customer_profiling/derived_data/
 feature_mapping_dir: /content/customer_profiling/feature_mapping/
 data_report_dir: /content/customer_profiling/data_report/
 save_dir: /content/drive/MyDrive/deployment/output
-save_output: True
+save_output: False
 data_extraction_columns_file: /content/customer_profiling/columns/columns_to_extract.csv
 load_df_from_checkpoint: True
 split_df_for_eval: True

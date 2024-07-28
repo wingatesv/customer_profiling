@@ -2,7 +2,24 @@ import pandas as pd
 import numpy as np
 import os
 
-def clean_id_type(df, derived_data_dir):
+def write_report(report_content, report_file_path):
+    """
+    Writes the given report content to the specified file path.
+    
+    Args:
+    report_content (str): The content to write to the report.
+    report_file_path (str): The path to the report file.
+    """
+    
+    # Create the file if it does not exist, then append the content
+    if not os.path.exists(report_file_path):
+        with open(report_file_path, 'w') as report_file:
+            report_file.write(report_content)
+    else:
+        with open(report_file_path, 'a') as report_file:
+            report_file.write(report_content)
+
+def clean_id_type(df, derived_data_dir, report_file_path):
   
     file_path = os.path.join(derived_data_dir, 'derived_id_type.csv')
     # Check if the file path exists
@@ -50,14 +67,18 @@ def clean_id_type(df, derived_data_dir):
     # Additional step to replace 'REG NO' with 'REG NO.'
     df['derived_contact_identification_type'] = df['derived_contact_identification_type'].replace('REG NO', 'REG NO.')
 
-    # Remove rows where derived_contact_identification_type is null
-    df = df[df['derived_contact_identification_type'].notnull()]
+    if df['derived_contact_identification_type'].isnull().any():
+      null_row_number = df['derived_contact_identification_type'].isnull().sum()
+      report_content = f'derived_contact_identification_type - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+      write_report(report_content, report_file_path)
+      # Remove rows where derived_contact_identification_type is null
+      df = df[df['derived_contact_identification_type'].notnull()]
 
     print('Cleaned contact_identifcation_type')
 
     return df
 
-def clean_built_up_area_sqft(df, derived_data_dir):
+def clean_built_up_area_sqft(df, derived_data_dir, report_file_path):
 
   file_path = os.path.join(derived_data_dir, 'built_up_area_range.csv')
   # Check if the file path exists
@@ -148,7 +169,7 @@ def clean_built_up_area_sqft(df, derived_data_dir):
                       derived_value = row['land_area_sqm'] * 0.092903
               else:
                   derived_value = np.nan
-                  print(f"Sales ID: {row['sales_id']}, Build_type: {row['clean_build_type']}, land area sqft: {row['land_area_sqft']}, land area sqm: {row['land_area_sqm']}")
+                  # print(f"Sales ID: {row['sales_id']}, Build_type: {row['clean_build_type']}, land area sqft: {row['land_area_sqft']}, land area sqm: {row['land_area_sqm']}")
 
       df.at[row.name, 'derived_built_up_area_sqft'] = derived_value
 
@@ -158,8 +179,8 @@ def clean_built_up_area_sqft(df, derived_data_dir):
           build_type = row['clean_build_type']
           if build_type in mean_derived_built_up_area_sqft and not pd.isnull(mean_derived_built_up_area_sqft[build_type]):
               df.at[index, 'derived_built_up_area_sqft'] = mean_derived_built_up_area_sqft[build_type]
-          else:
-              print(f"Sales ID: {row['sales_id']}, Build_type: {row['clean_build_type']}, land area sqft: {row['land_area_sqft']}, land area sqm: {row['land_area_sqm']}")
+          
+              # print(f"Sales ID: {row['sales_id']}, Build_type: {row['clean_build_type']}, land area sqft: {row['land_area_sqft']}, land area sqm: {row['land_area_sqm']}")
 
   # Update rows in extracted_df where derived_built_up_area_sqft is greater than 0 but less than 200
   below_200_condition = (df['derived_built_up_area_sqft'] > 0) & (df['derived_built_up_area_sqft'] < 200)
@@ -174,35 +195,58 @@ def clean_built_up_area_sqft(df, derived_data_dir):
           df.at[index, 'derived_built_up_area_sqft'] = row['derived_built_up_area_sqft'] * 10.7639
 
   if df['derived_built_up_area_sqft'].isnull().any():
-      print("All rows with null 'derived_built_up_area_sqft' will be removed")
-      # Remove rows where derived_built_up_area_sqft is null
+      null_row_number = df['derived_built_up_area_sqft'].isnull().sum()
+      report_content = f'derived_built_up_area_sqft - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+      write_report(report_content, report_file_path)
       df = df[df['derived_built_up_area_sqft'].notnull()]
+
+  
 
   print("Cleaned built_up_area_sqft")
   return df
 
-def clean_bumi_status(df):
+def clean_bumi_status(df, report_file_path):
 
   df['derived_bumi_status'] = df['customer_bumi_status'].str.upper()
   print('Cleaned customer_bumi_status')
 
+  if df['derived_bumi_status'].isnull().any():
+    null_row_number = df['derived_bumi_status'].isnull().sum()
+    report_content = f'derived_bumi_status - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+    write_report(report_content, report_file_path)
+    df = df[df['derived_bumi_status'].notnull()]
+
   return df
 
-def clean_build_type(df):
+def clean_build_type(df, report_file_path):
 
   df['derived_build_type'] = df['build_type'].str.upper()
-  print('Cleaned build_type')
+  
 
+  if df['derived_build_type'].isnull().any():
+    null_row_number = df['derived_build_type'].isnull().sum()
+    report_content = f'derived_build_type - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+    write_report(report_content, report_file_path)
+    df = df[df['derived_build_type'].notnull()]
+
+  print('Cleaned build_type')
   return df
 
-def clean_phase_property_type(df):
+def clean_phase_property_type(df, report_file_path):
 
   df['derived_phase_property_type'] = df['phase_property_type'].str.upper()
+
+  if df['derived_phase_property_type'].isnull().any():
+    null_row_number = df['derived_phase_property_type'].isnull().sum()
+    report_content = f'derived_phase_property_type - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+    write_report(report_content, report_file_path)
+    df = df[df['derived_phase_property_type'].notnull()]
+
   print('Cleaned phase_property_type')
 
   return df
 
-def clean_gender(df):
+def clean_gender(df, report_file_path):
     def impute_gender(row):
        
         id_type = row['derived_contact_identification_type']
@@ -222,11 +266,17 @@ def clean_gender(df):
     # Apply the gender imputation logic
     df['derived_gender'] = df.apply(impute_gender, axis=1)
 
+    if df['derived_gender'].isnull().any():
+      null_row_number = df['derived_gender'].isnull().sum()
+      report_content = f'derived_gender - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+      write_report(report_content, report_file_path)
+      df = df[df['derived_gender'].notnull()]
+
     print('Cleaned gender')
     return df
 
 
-def clean_marital_status(df):
+def clean_marital_status(df, report_file_path):
     def impute_marital(row):
       if row['derived_contact_identification_type'] == 'REG NO.':
           return 'NOT APPLICABLE'
@@ -242,10 +292,17 @@ def clean_marital_status(df):
 
     df['derived_marital_status'] = df.apply(impute_marital, axis=1)
 
+    if df['derived_marital_status'].isnull().any():
+      null_row_number = df['derived_marital_status'].isnull().sum()
+      report_content = f'derived_marital_status - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+      write_report(report_content, report_file_path)
+      df = df[df['derived_marital_status'].notnull()]
+
+
     print('Cleaned marital_status')
     return df
 
-def clean_salutation(df):
+def clean_salutation(df, report_file_path):
     def determine_salutation(row):
 
         if row['derived_contact_identification_type'] == 'REG NO.':
@@ -261,10 +318,16 @@ def clean_salutation(df):
     # Apply the function to create derived_contact_salutation
     df['derived_contact_salutation'] = df.apply(determine_salutation, axis=1)
 
+    if df['derived_contact_salutation'].isnull().any():
+      null_row_number = df['derived_contact_salutation'].isnull().sum()
+      report_content = f'derived_contact_salutation - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+      write_report(report_content, report_file_path)
+      df = df[df['derived_contact_salutation'].notnull()]
+
     print('Cleaned salutation')
     return df
 
-def clean_purchaser_type(df):
+def clean_purchaser_type(df, report_file_path):
     def impute_purchaser_type(row):
     # if row['contact_purchaser_type'] == 'Undefined':
         if row['derived_contact_identification_type'] in ['NRIC NO.', 'PASSPORT']:
@@ -275,10 +338,16 @@ def clean_purchaser_type(df):
     # Apply the function to create derived_contact_salutation
     df['derived_contact_purchaser_type'] = df.apply(impute_purchaser_type, axis=1)
 
+    if df['derived_contact_purchaser_type'].isnull().any():
+      null_row_number = df['derived_contact_purchaser_type'].isnull().sum()
+      report_content = f'derived_contact_purchaser_type - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+      write_report(report_content, report_file_path)
+      df = df[df['derived_contact_purchaser_type'].notnull()]
+
     print('Cleaned purchaser_type')
     return df
 
-def clean_nationality(df, derived_data_dir):
+def clean_nationality(df, derived_data_dir, report_file_path):
     # Initialize 'derived_nationality' with 'customer_nationality'
     df['derived_nationality'] = df['customer_nationality']
 
@@ -316,10 +385,16 @@ def clean_nationality(df, derived_data_dir):
     # Fill any remaining null values in 'derived_nationality' with 'OTHERS'
     df['derived_nationality'].fillna('OTHERS', inplace=True)
 
+    if df['derived_nationality'].isnull().any():
+      null_row_number = df['derived_nationality'].isnull().sum()
+      report_content = f'derived_nationality - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+      write_report(report_content, report_file_path)
+      df = df[df['derived_nationality'].notnull()]
+
     print('Cleaned nationality')
     return df
 
-def clean_age(df):
+def clean_age(df, report_file_path):
 
   df['spa_date'] = pd.to_datetime(df['spa_date'])
   df['buyer_dob'] = pd.to_datetime(df['buyer_dob'])
@@ -349,17 +424,30 @@ def clean_age(df):
   mask_below_zero = (df['derived_age'] <= 0) & (df['derived_contact_identification_type'] != 'REG NO.')
   df.loc[mask_below_zero, 'derived_age'] = mean_age
 
+  if df['derived_age'].isnull().any():
+    null_row_number = df['derived_age'].isnull().sum()
+    report_content = f'derived_age - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+    write_report(report_content, report_file_path)
+    df = df[df['derived_age'].notnull()]
+
   print('Cleaned age')
   return df
 
 
-def clean_occupation(df):
+def clean_occupation(df, report_file_path):
 
   df['derived_contact_occupation'] = df['contact_occupation'].str.strip().str.upper()
+
+  if df['derived_contact_occupation'].isnull().any():
+    null_row_number = df['derived_contact_occupation'].isnull().sum()
+    report_content = f'derived_contact_occupation - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+    write_report(report_content, report_file_path)
+    df = df[df['derived_contact_occupation'].notnull()]
+
   print("Cleaned occupation")
   return df
 
-def clean_is_cash_buyer(df):
+def clean_is_cash_buyer(df, report_file_path):
 
   # Add a new column 'derived_is_cash_buyer' and set it to the values of 'is_cash_buyer'
   df['derived_is_cash_buyer'] = df['is_cash_buyer'].str.upper()
@@ -370,11 +458,18 @@ def clean_is_cash_buyer(df):
       (df['is_cash_buyer'].str.strip().str.upper() == 'LOAN'),
       'derived_is_cash_buyer'] = 'CASH'
 
+  if df['derived_is_cash_buyer'].isnull().any():
+    null_row_number = df['derived_is_cash_buyer'].isnull().sum()
+    report_content = f'derived_is_cash_buyer - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+    write_report(report_content, report_file_path)
+    df = df[df['derived_is_cash_buyer'].notnull()]
+
+
   print("Cleaned is_cash_buyer")
   return df
 
 
-def clean_financier(df):
+def clean_financier(df, report_file_path):
 
   # Create a new column derived_financier_name and populate with financier1_name
   df['derived_financier_name'] = df['financier1_name'].str.upper()
@@ -384,11 +479,17 @@ def clean_financier(df):
       axis=1
   )
 
+  if df['derived_financier_name'].isnull().any():
+    null_row_number = df['derived_financier_name'].isnull().sum()
+    report_content = f'derived_financier_name - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+    write_report(report_content, report_file_path)
+    df = df[df['derived_financier_name'].notnull()]
+
   print("Cleaned financier1_name")
   return df
 
 
-def clean_race(df):
+def clean_race(df, report_file_path):
 
   # Step 1: Add a new column 'derived_race' and set it to the values of 'customer_race'
   df['derived_race'] = df['customer_race'].str.upper()
@@ -421,11 +522,16 @@ def clean_race(df):
   # Set the derived_race to 'Not Applicable' if derived_contact_identification_type is 'Reg No.'
   df.loc[df['derived_contact_identification_type'] == 'REG NO.', 'derived_race'] = 'NOT APPLICABLE'
 
+  if df['derived_race'].isnull().any():
+    null_row_number = df['derived_race'].isnull().sum()
+    report_content = f'derived_race - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+    write_report(report_content, report_file_path)
+    df = df[df['derived_race'].notnull()]
 
   print("Cleaned race")
   return df
 
-def clean_contact_city(df, derived_data_dir):
+def clean_contact_city(df, derived_data_dir, report_file_path):
 
   # Path to the derived nationality CSV file
   file_path = os.path.join(derived_data_dir, 'derived_contact_city.csv')
@@ -452,35 +558,60 @@ def clean_contact_city(df, derived_data_dir):
 
   df['derived_contact_city'] = df['derived_contact_city'].str.strip().str.upper()
 
+  if df['derived_contact_city'].isnull().any():
+    null_row_number = df['derived_contact_city'].isnull().sum()
+    report_content = f'derived_contact_city - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+    write_report(report_content, report_file_path)
+    df = df[df['derived_contact_city'].notnull()]
+
   print("Cleaned contact_city")
   return df
 
-def clean_contact_staff(df):
+def clean_contact_staff(df, report_file_path):
   # Replace 'Undefined' with 'Not Staff' in the 'contact_staff' column
   df['derived_contact_staff'] = df['contact_staff'].replace('Undefined', 'Not Staff').str.upper()
   # Set the derived_contact_staff to 'Not Applicable' if derived_contact_identification_type is 'Reg No.'
   df.loc[df['derived_contact_identification_type'] == 'REG NO.', 'derived_contact_staff'] = 'NOT APPLICABLE'
 
+  if df['derived_contact_staff'].isnull().any():
+    null_row_number = df['derived_contact_staff'].isnull().sum()
+    report_content = f'derived_contact_staff - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+    write_report(report_content, report_file_path)
+    df = df[df['derived_contact_staff'].notnull()]
+
   print("Cleaned contact_staff")
   return df
 
-def clean_lifestyle(df):
+def clean_lifestyle(df, report_file_path):
 
   # Replace 'Undefined' with 'Non-Registered' in the 'contact_lifestyle_registration_status' column
   df['derived_contact_lifestyle_registration_status'] = df['contact_lifestyle_registration_status'].replace('Undefined', 'Non-Registered').fillna('Non-Registered').str.upper()
   # Set the derived_contact_lifestyle_registration_status to 'Not Applicable' if derived_contact_identification_type is 'Reg No.'
   df.loc[df['derived_contact_identification_type'] == 'REG NO.', 'derived_contact_lifestyle_registration_status'] = 'NOT APPLICABLE'
 
+  if df['derived_contact_lifestyle_registration_status'].isnull().any():
+    null_row_number = df['derived_contact_lifestyle_registration_status'].isnull().sum()
+    report_content = f'derived_contact_lifestyle_registration_status - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+    write_report(report_content, report_file_path)
+    df = df[df['derived_contact_lifestyle_registration_status'].notnull()]
+
   print("Cleaned contact_lifestyle_registration_status")
   return df
 
-def clean_annual_income(df):
+def clean_annual_income(df, report_file_path):
 
   # Calculate the mode of the contact_annual_income column
   mode_income = df['contact_annual_income'].mode()[0]
 
   # Impute null values with the mode
   df['derived_contact_annual_income'] = df['contact_annual_income'].replace(['Not Applicable', 'Undefined','-'], mode_income).fillna(mode_income).str.upper()
+
+  if df['derived_contact_annual_income'].isnull().any():
+    null_row_number = df['derived_contact_annual_income'].isnull().sum()
+    report_content = f'derived_contact_annual_income - Still contain {null_row_number} null rows after cleaning, all null rows removed'
+    write_report(report_content, report_file_path)
+    df = df[df['derived_contact_annual_income'].notnull()]
+
 
   print("Cleaned contact_annual_income")
   return df
@@ -503,34 +634,37 @@ def clean_non_land_posted_features(df):
 def data_cleaning(df, config):
   print("Data cleaning in progress...")
   derived_data_dir=config['derived_data_dir']
+  data_report_dir = config['data_report_dir']
   save_dir = config['save_dir']
   save_csv= config['save_output']
+
+  report_file_path = os.path.join(data_report_dir, 'clean_data_report.txt')
 
   if derived_data_dir == None:
       raise ValueError(f"Derived data directory is missing")
 
   # Clean customer features
-  df = clean_id_type(df, derived_data_dir)
-  df = clean_bumi_status(df)
-  df = clean_gender(df)
-  df = clean_marital_status(df)
-  df = clean_salutation(df)
-  df = clean_purchaser_type(df)
-  df = clean_nationality(df, derived_data_dir)
-  df = clean_age(df)
-  df = clean_occupation(df)
-  df = clean_is_cash_buyer(df)
-  df = clean_race(df)
-  df = clean_contact_city(df, derived_data_dir)
-  df = clean_contact_staff(df)
-  df = clean_lifestyle(df)
-  df = clean_annual_income(df)
+  df = clean_id_type(df, derived_data_dir, report_file_path)
+  df = clean_bumi_status(df, report_file_path)
+  df = clean_gender(df, report_file_path)
+  df = clean_marital_status(df, report_file_path)
+  df = clean_salutation(df, report_file_path)
+  df = clean_purchaser_type(df, report_file_path)
+  df = clean_nationality(df, derived_data_dir, report_file_path)
+  df = clean_age(df, report_file_path)
+  df = clean_occupation(df, report_file_path)
+  df = clean_is_cash_buyer(df, report_file_path)
+  df = clean_race(df, report_file_path)
+  df = clean_contact_city(df, derived_data_dir, report_file_path)
+  df = clean_contact_staff(df, report_file_path)
+  df = clean_lifestyle(df, report_file_path)
+  df = clean_annual_income(df, report_file_path)
 
    # Clean property features
-  df = clean_built_up_area_sqft(df, derived_data_dir)
-  df = clean_build_type(df)
-  df = clean_phase_property_type(df)
-  df = clean_financier(df)
+  df = clean_built_up_area_sqft(df, derived_data_dir, report_file_path)
+  df = clean_build_type(df, report_file_path)
+  df = clean_phase_property_type(df, report_file_path)
+  df = clean_financier(df, report_file_path)
   df = clean_non_land_posted_features(df)
 
   print(f"Data cleaning completed!")

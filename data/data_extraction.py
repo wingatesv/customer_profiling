@@ -45,15 +45,41 @@ def convert_date_columns(df, date_columns):
         df[column] = pd.to_datetime(df[column], errors='coerce')
 
 def filter_dataframe(df, filter_conditions):
-    """Filters the DataFrame based on provided conditions."""
+    """
+    Filters the DataFrame based on provided conditions.
+    
+    Args:
+    df (pd.DataFrame): The DataFrame to filter.
+    filter_conditions (pd.Series): A boolean Series indicating the filter conditions.
+    
+    Returns:
+    pd.DataFrame: The filtered DataFrame.
+    """
     return df[filter_conditions]
 
 def extract_columns(df, columns_to_extract):
-    """Extracts specified columns from the DataFrame."""
+    """
+    Extracts specified columns from the DataFrame.
+    
+    Args:
+    df (pd.DataFrame): The DataFrame to extract columns from.
+    columns_to_extract (list): A list of column names to extract.
+    
+    Returns:
+    pd.DataFrame: The DataFrame containing only the specified columns.
+    """
     return df.loc[:, columns_to_extract]
 
 def remove_recent_transaction(df):
-    """Removes rows with transactions within one month for each contact_nric_masked."""
+    """
+    Removes rows with transactions within one month for each contact_nric_masked.
+    
+    Args:
+    df (pd.DataFrame): The DataFrame containing the transaction data.
+    
+    Returns:
+    pd.DataFrame: The DataFrame with recent transactions removed.
+    """
     # Sort the DataFrame by 'contact_nric_masked' and 'spa_date'
     df = df.sort_values(by=['contact_nric_masked', 'spa_date'])
 
