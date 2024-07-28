@@ -1,0 +1,1 @@
+derived_built_up_area_sqft - Still contain 2 null rows after cleaning, all null rows removed

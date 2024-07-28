@@ -84,9 +84,9 @@ def data_preparation(config):
             elif  'label_df.csv' in files:
                 df = read_checkpoint('label_df.csv')
                 df = data_cleaning(df, config)
-                sys.exit()
                 df = add_features(df, config)
                 df = group_data(df, config)
+                sys.exit()
                 df = data_bining(df, config)
                 print("Found label_df.csv! continue from here....")
                 return df
