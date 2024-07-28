@@ -5,6 +5,7 @@ import os
 import traceback
 import sys
 import shutil
+import warnings
 
 from data.data_extraction import data_extraction
 from data.label_generation import generate_label
@@ -17,7 +18,7 @@ from data.test_label_generation import generate_test_label
 from repeat_purchase.train import train
 from repeat_purchase.test import test
 from property_type.train import property_type_train
-# from test_pt import property_type_test
+from property_type.test import property_type_test
 
 
 def clear_directory(directory):
@@ -41,6 +42,7 @@ def clear_directory(directory):
                 
 
 def data_preparation(config):
+  inference_mode=config['inference_mode']
 
   def read_checkpoint(file_name):
         return pd.read_csv(os.path.join(config['save_dir'], file_name), low_memory=False, dtype={'contact_nric_masked': str})
@@ -86,13 +88,13 @@ def data_preparation(config):
                 df = data_cleaning(df, config)
                 df = add_features(df, config)
                 df = group_data(df, config)
-                sys.exit()
                 df = data_bining(df, config)
                 print("Found label_df.csv! continue from here....")
                 return df
             elif 'data_extraction_df.csv' in files:
                 df = read_checkpoint('data_extraction_df.csv')
-                df = generate_label(df, config)
+                if not inference_mode:
+                  df = generate_label(df, config)
                 df = data_cleaning(df, config)
                 df = add_features(df, config)
                 df = group_data(df, config)
@@ -107,7 +109,8 @@ def data_preparation(config):
   df = pd.read_csv(config['input_file'], low_memory=False, dtype={'contact_nric_masked': str})
 
   df = data_extraction(df, config)
-  df = generate_label(df, config)
+  if not inference_mode:
+    df = generate_label(df, config)
   df = data_cleaning(df, config)
   df = add_features(df, config)
   df = group_data(df, config)
@@ -132,13 +135,7 @@ def main(config):
       print("Starting data preparation...")
       df = data_preparation(config)
 
-      if config['train_model']:
-          print()
-          print("------------------------------------------------------------------------------------------------------")
-          print("Starting repeat_purchase model training....")
-          train(df, config)
-
-      if config['generate_test_label_only']:
+      if config['generate_test_label_mode']:
           print("Generating test labels only...")
           test_df = generate_test_label(df, config)
           # Save the resulting DataFrame to CSV
@@ -146,30 +143,104 @@ def main(config):
           test_df.to_csv(output_csv_path, index=False)
           print(f"Test label generation completed! Saved to {output_csv_path}")
 
-      elif config['evaluation_mode']: 
-        test_df = generate_test_label(df, config)
-        print()
-        print("------------------------------------------------------------------------------------------------------")
-        print("Starting repeat_purchase model evaluation....")
-        test(test_df, config)
 
-      else:
-        print()
-        print("------------------------------------------------------------------------------------------------------")
-        print("Starting repeat_purchase model inference....")
-        test(df, config)
+      # Training
+      elif config['training_mode']:
+        if config['repeat_purchase_mode']:
+          print()
+          print("------------------------------------------------------------------------------------------------------")
+          print("Starting repeat_purchase model training....")
+          train(df, config)
 
-      if config['train_property_type_model']:
+          test_df = generate_test_label(df, config)
+
+          print()
+          print("------------------------------------------------------------------------------------------------------")
+          print("Starting repeat_purchase model evaluation....")
+          test(test_df, config)
+
+        if config['property_type_mode']:
           print()
           print("------------------------------------------------------------------------------------------------------")
           print("Starting property_type model training....")
           property_type_train(df, config)
 
+          print()
+          print("------------------------------------------------------------------------------------------------------")
+          print("Starting property_type model evaluation....")
+          property_type_test(df, config)
+
+
+      elif config['evaluation_mode']:
+        if config['repeat_purchase_mode']:
+
+          test_df = generate_test_label(df, config)
+          print()
+          print("------------------------------------------------------------------------------------------------------")
+          print("Starting repeat_purchase model evaluation....")
+          test(test_df, config)
+
+        if config['property_type_mode']:
+          print()
+          print("------------------------------------------------------------------------------------------------------")
+          print("Starting property_type model evaluation....")
+          property_type_test(df, config)
+          
+      elif config['inference_mode']:
+        if config['repeat_purchase_mode']:
+          print()
+          print("------------------------------------------------------------------------------------------------------")
+          print("Starting repeat_purchase model inference....")
+          test(df, config)
+        if config['property_type_mode']:
+          print()
+          print("------------------------------------------------------------------------------------------------------")
+          print("Starting property_type model inference....")
+          property_type_test(df, config)
+       
+      
+      else:
+          warnings.warn(f"Cannot perform multiple mode at the same time")
+          sys.exit()
+
+      # if config['train_model']:
+      #     print()
+      #     print("------------------------------------------------------------------------------------------------------")
+      #     print("Starting repeat_purchase model training....")
+      #     train(df, config)
+
+      # if config['generate_test_label_only']:
+      #     print("Generating test labels only...")
+      #     test_df = generate_test_label(df, config)
+      #     # Save the resulting DataFrame to CSV
+      #     output_csv_path = os.path.join(config['save_dir'], 'test_df.csv')
+      #     test_df.to_csv(output_csv_path, index=False)
+      #     print(f"Test label generation completed! Saved to {output_csv_path}")
+
+      # elif config['evaluation_mode']: 
+      #   test_df = generate_test_label(df, config)
+      #   print()
+      #   print("------------------------------------------------------------------------------------------------------")
+      #   print("Starting repeat_purchase model evaluation....")
+      #   test(test_df, config)
+
+      # else:
+      #   print()
+      #   print("------------------------------------------------------------------------------------------------------")
+      #   print("Starting repeat_purchase model inference....")
+      #   test(df, config)
+
+      # if config['train_property_type_model']:
+      #     print()
+      #     print("------------------------------------------------------------------------------------------------------")
+      #     print("Starting property_type model training....")
+      #     property_type_train(df, config)
+
       # if config['test_property_type_model']:
       #     property_type_test(df=df, config=config)
-      print()
-      print("------------------------------------------------------------------------------------------------------")
-      print("Customer profiling model prediction pipeline done!")
+      # print()
+      # print("------------------------------------------------------------------------------------------------------")
+      # print("Customer profiling model prediction pipeline done!")
 
 
 
