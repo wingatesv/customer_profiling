@@ -2,7 +2,8 @@
 input_file: /content/drive/MyDrive/raw_data/raw_data.csv
 derived_data_dir: /content/customer_profiling/derived_data/
 feature_mapping_dir: /content/customer_profiling/feature_mapping/
-save_dir: /content/customer_profiling/output/
+data_report_dir: /content/customer_profiling/data_report/
+save_dir: /content/drive/MyDrive/deployment/output
 save_output: True
 data_extraction_columns_file: /content/customer_profiling/columns/columns_to_extract.csv
 load_df_from_checkpoint: True
@@ -13,7 +14,7 @@ rp_model : catboost  #logistic_regression, knn, svm, decision_tree, random_fores
 rp_model_dir: /content/customer_profiling/rp_model/
 
 # Repeat purchase model training
-train_model: True
+train_model: False
 rp_model_training_columns_file: /content/customer_profiling/columns/rp_model_training_columns_to_extract.csv
 bagging_split: 3
 down_sampling: True
@@ -24,7 +25,7 @@ validation_split: 0.2
 generate_test_label_only: False
 test_file: /content/drive/MyDrive/temp_data/after_2022_df.csv
 # test_file: /content/drive/MyDrive/raw_data/raw_data.csv
-evaluation_start_date: 2023-01-01 #yyyy-mm-dd
+evaluation_start_date: 2023-01-03 #yyyy-mm-dd
 evaluation_end_date: 2023-12-30 #yyyy-mm-dd
 
 # Model testing
@@ -32,12 +33,11 @@ evaluation_mode: True
 inference_threshold: 0.6
 result_dir: /content/customer_profiling/result/
 
-
 #Property type prediction
 pt_model : catboost  #logistic_regression, knn, svm, decision_tree, random_forest, gradient_boosting, lightgbm, catboost, mlp
 pt_model_dir: /content/customer_profiling/pt_model/
 
-train_property_type_model: False
+train_property_type_model: True
 test_property_type_model: False
 
 pt_model_training_columns_file: /content/customer_profiling/columns/pt_model_training_columns_to_extract.csv

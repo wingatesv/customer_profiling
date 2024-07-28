@@ -1,5 +1,4 @@
 import os
-from IPython.core.application import default
 import pandas as pd
 
 def group_salutation(df, feature_mapping_dir):
@@ -224,8 +223,12 @@ def group_annual_income(df, feature_mapping_dir):
   return df
 
 
-def group_data(df, feature_mapping_dir=None, save_dir=None, save_csv=False):
+def group_data(df, config):
   print("Data grouping in progress...")
+  feature_mapping_dir=config['feature_mapping_dir']
+  save_dir=config['save_dir']
+  save_csv=config['save_output']
+
   if feature_mapping_dir == None:
       raise ValueError(f"Derived data directory is missing")
 

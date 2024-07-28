@@ -75,9 +75,11 @@ def add_derived_completion_status(df):
   return df
 
 
-def add_features(df, save_dir=None, save_csv=False):
+def add_features(df, config):
   print("Adding features in progress...")
-  
+  save_dir=config['save_dir']
+  save_csv=config['save_output']
+
   df = add_derived_rebate_percentage(df)
   df = add_derived_township_maturity(df)
   df = add_derived_completion_status(df)

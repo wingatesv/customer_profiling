@@ -500,8 +500,12 @@ def clean_non_land_posted_features(df):
   return df
 
 
-def data_cleaning(df, derived_data_dir=None, save_dir=None, save_csv=False):
+def data_cleaning(df, config):
   print("Data cleaning in progress...")
+  derived_data_dir=config['derived_data_dir']
+  save_dir = config['save_dir']
+  save_csv= config['save_output']
+
   if derived_data_dir == None:
       raise ValueError(f"Derived data directory is missing")
 

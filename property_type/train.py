@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import numpy as np
 import joblib
+import shutil
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
@@ -17,7 +18,7 @@ from sklearn.utils.class_weight import compute_class_weight
 from sklearn.neural_network import MLPClassifier
 
 from data.data_extraction import read_columns_to_extract, check_columns_presence, extract_columns
-from repeat_purchase.train import encode_features, train_model
+from repeat_purchase.train import encode_features, train_model, get_feature_importances
 
 
 def generate_one_hot_label(df):
@@ -61,9 +62,6 @@ def generate_one_hot_label(df):
 
 
 def property_type_train(df, config):
-
-  print("Starting property type model training...")
-
   if os.path.exists(config['pt_model_dir']):
     # Remove all files in the directory
     print("Found existing directory...delete all files for model training")
@@ -93,11 +91,12 @@ def property_type_train(df, config):
   df = df[~df['repeat_phase_property_type'].isin(['RSKU', 'Industrial'])]
   # See the distribution of the label column
   label_distribution = df['repeat_phase_property_type'].value_counts()
-  print("Distribution of the training label:")
+  print("Distribution of the property_type label:")
   print(label_distribution)
 
   df_list = generate_one_hot_label(df)
 
+  property_type_model_label = 'none'
 
   for i, property_df in enumerate(df_list):
       if i == 0:
@@ -131,7 +130,10 @@ def property_type_train(df, config):
       # Train and evaluate the model
       model, report = train_model(config['pt_model'], train_encoded, train_target, val_encoded, val_target, class_weight=class_weight_dict)
 
-      print(f"Model: {config['pt_model']}")
+      # Get feature importances if possible        
+      feature_importances, feature_names = get_feature_importances(model, train_encoded, preprocessor, categorical_features, numerical_features)
+
+      print(f"Model: {config['pt_model']}_{property_type_model_label}")
       print("Validation Classification Report:")
       print(report)
 
@@ -142,6 +144,17 @@ def property_type_train(df, config):
       output_model_path = os.path.join(config['pt_model_dir'], f"{config['pt_model']}_{property_type_model_label}.pkl")
       joblib.dump(model, output_model_path)
       print(f"Save model in {output_model_path}...")
+
+
+      # Create a DataFrame for better visualization
+      feature_importances_df = pd.DataFrame({
+          'Feature': feature_names,
+          'Importance': feature_importances
+      })
+      feature_importances_df = feature_importances_df.sort_values(by='Importance', ascending=False)
+      output_csv_path = os.path.join(config['pt_model_dir'], f'feature_importance_{property_type_model_label}.csv')
+      feature_importances_df.to_csv(output_csv_path, index=False)
+      print(f"Model prediction saved to {output_csv_path}")
 
 
 

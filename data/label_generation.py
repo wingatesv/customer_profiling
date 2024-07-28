@@ -4,7 +4,10 @@ from datetime import datetime
 import os
 from tqdm import tqdm
 
-def generate_label(df, save_dir=None, save_csv=False):
+def generate_label(df, config):
+    print("Starting repeat purchase training label generation...")
+    save_dir=config['save_dir']
+    save_csv=config['save_output']
     # Convert contact_nric_masked to string using .loc
     df.loc[:, 'contact_nric_masked'] = df['contact_nric_masked'].astype(str)
     

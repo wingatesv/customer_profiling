@@ -7,7 +7,7 @@ import lightgbm as lgb
 import os
 import warnings
 import shutil
-
+import catboost as cb
 from sklearn.utils import resample
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
@@ -26,18 +26,6 @@ from sklearn.inspection import permutation_importance
 
 from data.data_extraction import read_columns_to_extract, check_columns_presence, extract_columns
 
-def install_catboost():
-    try:
-        import catboost as cb
-        print("catboost is already installed.")
-    except ImportError:
-        print("catboost not found. Installing catboost...")
-        subprocess.check_call([sys.executable, "-m", "pip", "install", "catboost"])
-        print("catboost installed successfully.")
-
-# Call the function to check and install catboost if necessary
-install_catboost()
-import catboost as cb
 
 def encode_features(df):
     # Drop the 'label' column
@@ -241,9 +229,6 @@ def train_model(model_name, train_encoded, train_target, test_encoded, test_targ
 
 
 def train(df, config):
-
-  print("Starting repeat purchase model training...")
-
   if os.path.exists(config['rp_model_dir']):
     # Remove all files in the directory
     print("Found existing directory...delete all files for model training")

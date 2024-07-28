@@ -82,8 +82,10 @@ def bin_non_land_posted_features(df):
   return df
 
 
-def data_bining(df, save_dir=None, save_csv=False):
+def data_bining(df, config):
   print("Data bining in progress...")
+  save_dir=config['save_dir']
+  save_csv=config['save_output']
   #Drop sales_id that is near 2023, 0 for the non_land_posted features
   sales_ids_to_drop =  [318456,216039]
   # Drop rows where sales_id is in the list
