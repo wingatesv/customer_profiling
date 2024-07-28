@@ -4,16 +4,17 @@ import yaml
 import os
 import traceback
 
-from data_extraction import data_extraction
-from label_generation import generate_label
-from data_cleaning import data_cleaning
-from feature_generation import add_features
-from data_grouping import group_data
-from data_bining import data_bining
-from train import train
-from test_label_generation import generate_test_label
-from test import test
-from train_pt import property_type_train
+from data.data_extraction import data_extraction
+from data.label_generation import generate_label
+from data.data_cleaning import data_cleaning
+from data.feature_generation import add_features
+from data.data_grouping import group_data
+from data.data_bining import data_bining
+from data.test_label_generation import generate_test_label
+
+from repeat_purchase.train import train
+from repeat_purchase.test import test
+from property_type.train_pt import property_type_train
 # from test_pt import property_type_test
 
 

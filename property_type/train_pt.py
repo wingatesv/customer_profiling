@@ -16,8 +16,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.utils.class_weight import compute_class_weight
 from sklearn.neural_network import MLPClassifier
 
-from data_extraction import read_columns_to_extract, check_columns_presence, extract_columns
-from train import encode_features, train_model
+from data.data_extraction import read_columns_to_extract, check_columns_presence, extract_columns
+from repeat_purchase.train import encode_features, train_model
 
 
 def generate_one_hot_label(df):

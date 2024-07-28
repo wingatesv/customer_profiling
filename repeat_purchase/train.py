@@ -25,7 +25,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.inspection import permutation_importance
 
 
-from data_extraction import read_columns_to_extract, check_columns_presence, extract_columns
+from data.data_extraction import read_columns_to_extract, check_columns_presence, extract_columns
 
 def install_catboost():
     try:

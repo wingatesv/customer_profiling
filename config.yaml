@@ -1,19 +1,19 @@
 # Data preparation
 input_file: /content/drive/MyDrive/raw_data/raw_data.csv
-derived_data_dir: /content/drive/MyDrive/deployment/
-save_dir: /content/drive/MyDrive/deployment/output/
+derived_data_dir: /content/customer_profiling/derived_data/
+save_dir: /content/customer_profiling/output/
 save_output: True
-data_extraction_columns_file: /content/drive/MyDrive/deployment/columns_to_extract.csv
+data_extraction_columns_file: /content/customer_profiling/columns/columns_to_extract.csv
 load_df_from_checkpoint: True
 split_df_for_eval: True
 
 #Repeat purchase model configuration
 rp_model : catboost  #logistic_regression, knn, svm, decision_tree, random_forest, gradient_boosting, lightgbm, catboost, mlp
-rp_model_dir: /content/drive/MyDrive/deployment/rp_model/
+rp_model_dir: /content/customer_profiling/rp_model/
 
 # Repeat purchase model training
 train_model: True
-rp_model_training_columns_file: /content/drive/MyDrive/deployment/rp_model_training_columns_to_extract.csv
+rp_model_training_columns_file: /content/customer_profiling/columns/rp_model_training_columns_to_extract.csv
 bagging_split: 3
 down_sampling: True
 down_sampling_ratio: 1 
@@ -29,14 +29,14 @@ evaluation_end_date: 2023-12-30 #yyyy-mm-dd
 # Model testing
 evaluation_mode: True
 inference_threshold: 0.6
-result_dir: /content/drive/MyDrive/deployment/result/
+result_dir: /content/customer_profiling/result/
 
 
 #Property type prediction
 pt_model : catboost  #logistic_regression, knn, svm, decision_tree, random_forest, gradient_boosting, lightgbm, catboost, mlp
-pt_model_dir: /content/drive/MyDrive/deployment/pt_model/
+pt_model_dir: /content/customer_profiling/pt_model/
 
 train_property_type_model: False
 test_property_type_model: False
 
-pt_model_training_columns_file: /content/drive/MyDrive/deployment/pt_model_training_columns_to_extract.csv
+pt_model_training_columns_file: /content/customer_profiling/columns/pt_model_training_columns_to_extract.csv

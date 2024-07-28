@@ -1,6 +1,6 @@
 import pandas as pd
 import os
-from data_extraction import read_columns_to_extract, check_columns_presence, extract_columns, convert_date_columns, filter_dataframe, remove_recent_transaction
+from data.data_extraction import read_columns_to_extract, check_columns_presence, extract_columns, convert_date_columns, filter_dataframe, remove_recent_transaction
 import warnings
 
 # def generate_test_label(df, config):
