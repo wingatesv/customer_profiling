@@ -84,34 +84,34 @@ def save_results(test_df, probabilities, test_predictions, config, mode, save_fo
             'contact_nric_masked': test_df['contact_nric_masked'],
             f"probability (threshold = {config['inference_threshold']})": probabilities,  # Probability of class 1
             'predicted label': test_predictions,
-            'truth label': test_df['label']
+            # 'truth label': test_df['label']
         })
 
         output_csv_path = os.path.join(save_folder, f'{mode}_evaluation_result.csv')
         prediction_df.to_csv(output_csv_path, index=False)
         print(f"Model prediction for {mode} saved to {output_csv_path}")
 
-        # Calculate metrics
-        tn, fp, fn, tp = confusion_matrix(test_df['label'], test_predictions).ravel()
-        accuracy = accuracy_score(test_df['label'], test_predictions)
-        precision = precision_score(test_df['label'], test_predictions)
-        recall = recall_score(test_df['label'], test_predictions)
-        f1 = f1_score(test_df['label'], test_predictions)
+        # # Calculate metrics
+        # tn, fp, fn, tp = confusion_matrix(test_df['label'], test_predictions).ravel()
+        # accuracy = accuracy_score(test_df['label'], test_predictions)
+        # precision = precision_score(test_df['label'], test_predictions)
+        # recall = recall_score(test_df['label'], test_predictions)
+        # f1 = f1_score(test_df['label'], test_predictions)
 
-        result_df = pd.DataFrame({
-            'True Positive': [tp],
-            'True Negative': [tn],
-            'False Positive': [fp],
-            'False Negative': [fn],
-            'Accuracy': [round(accuracy, 4)],
-            'Precision': [round(precision, 4)],
-            'Recall': [round(recall, 4)],
-            'F1-score': [round(f1, 4)]
-        })
+        # result_df = pd.DataFrame({
+        #     'True Positive': [tp],
+        #     'True Negative': [tn],
+        #     'False Positive': [fp],
+        #     'False Negative': [fn],
+        #     'Accuracy': [round(accuracy, 4)],
+        #     'Precision': [round(precision, 4)],
+        #     'Recall': [round(recall, 4)],
+        #     'F1-score': [round(f1, 4)]
+        # })
 
-        result_csv_path = os.path.join(save_folder, f'{mode}_metrics_result.csv')
-        result_df.to_csv(result_csv_path, index=False)
-        print(f"Metrics result for {mode} saved to {result_csv_path}")
+        # result_csv_path = os.path.join(save_folder, f'{mode}_metrics_result.csv')
+        # result_df.to_csv(result_csv_path, index=False)
+        # print(f"Metrics result for {mode} saved to {result_csv_path}")
 
     else:
         # Prepare the output DataFrame
@@ -154,7 +154,7 @@ def property_type_test(test_df, config):
 
 
   
-  if config['high_rise']:
+  if config['high_rise_mode']:
     model, preprocessor = model_list[1], preprocessor_list[1]
     test_encoded = preprocessor.transform(test_df_clean)
     probabilities, test_predictions = model_prediction(model, test_encoded)
@@ -162,7 +162,7 @@ def property_type_test(test_df, config):
 
 
 
-  if config['commercial']:
+  if config['commercial_mode']:
     model, preprocessor = model_list[2], preprocessor_list[2]
     test_encoded = preprocessor.transform(test_df_clean)
     probabilities, test_predictions = model_prediction(model, test_encoded)

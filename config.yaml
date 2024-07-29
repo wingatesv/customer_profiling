@@ -1,36 +1,43 @@
 # Main mode
 generate_test_label_mode: False
-training_mode: True
+training_mode: Train
 evaluation_mode: False
-inference_mode: True
+inference_mode: False
 
 # Model prediction mode
 repeat_purchase_mode: True
 property_type_mode: True
 
+# ----------------------------------------------------------------------------
+### THIS SECTION IS ABOUT .....
 
 # Data preparation
 save_output: True
 load_df_from_checkpoint: True
 split_df_for_eval: True
 
+# To be maintained
 input_file: /content/drive/MyDrive/raw_data/raw_data.csv
 data_extraction_columns_file: /content/customer_profiling/columns/columns_to_extract.csv
+feature_mapping_dir: /content/customer_profiling/feature_mapping/
+
 
 derived_data_dir: /content/customer_profiling/derived_data/
-feature_mapping_dir: /content/customer_profiling/feature_mapping/
 data_report_dir: /content/customer_profiling/data_report/
 save_dir: /content/drive/MyDrive/deployment/output
 
 
-
+# ----------------------------------------------------------------------------
 # Test label generation
-test_file: /content/drive/MyDrive/temp_data/after_2022_df.csv # program will use "for_eval_label_generation.csv" if "split_df_for_eval" is True
+
+# Input for test_file only when "split_df_for_eval" is False; program will use "for_eval_label_generation.csv" if "split_df_for_eval" is True
+
+test_file: /content/drive/MyDrive/temp_data/after_2022_df.csv
 evaluation_start_date: 2023-01-03 #yyyy-mm-dd
 evaluation_end_date: 2023-12-30 #yyyy-mm-dd
 
 
-
+# ----------------------------------------------------------------------------
 # Repeat purchase mode
 rp_model : catboost  #logistic_regression, knn, svm, decision_tree, random_forest, gradient_boosting, lightgbm, catboost, mlp
 rp_model_dir: /content/customer_profiling/rp_model/
@@ -48,7 +55,7 @@ rp_result_dir: /content/customer_profiling/rp_result/
 
 
 
-
+# ----------------------------------------------------------------------------------
 # Property type mode
 pt_model : catboost  #logistic_regression, knn, svm, decision_tree, random_forest, gradient_boosting, lightgbm, catboost, mlp
 pt_model_dir: /content/customer_profiling/pt_model/
@@ -59,7 +66,7 @@ pt_model_columns_file: /content/customer_profiling/columns/pt_model_columns_to_e
 pt_validation_split: 0.2
 
 # Property type model testing
-landed_mode: False
-high_rise_mode: False
-commercial_mode: False
+landed_mode: True
+high_rise_mode: True
+commercial_mode: True
 pt_result_dir: /content/customer_profiling/pt_result/
