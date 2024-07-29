@@ -36,14 +36,13 @@ rp_model : catboost  #logistic_regression, knn, svm, decision_tree, random_fores
 rp_model_dir: /content/customer_profiling/rp_model/
 
 # Repeat purchase model training
-rp_model_training_columns_file: /content/customer_profiling/columns/rp_model_training_columns_to_extract.csv
+rp_model_columns_file: /content/customer_profiling/columns/rp_model_columns_to_extract.csv
 bagging_split: 3
 down_sampling: True
 down_sampling_ratio: 1 
 rp_validation_split: 0.2
 
 # Repeat purchase model testing
-rp_model_testing_columns_file: /content/customer_profiling/columns/rp_model_testing_columns_to_extract.csv
 inference_threshold: 0.6
 rp_result_dir: /content/customer_profiling/rp_result/
 
@@ -56,11 +55,10 @@ pt_model_dir: /content/customer_profiling/pt_model/
 
 
 # Property type model training
-pt_model_training_columns_file: /content/customer_profiling/columns/pt_model_training_columns_to_extract.csv
+pt_model_columns_file: /content/customer_profiling/columns/pt_model_columns_to_extract.csv
 pt_validation_split: 0.2
 
 # Property type model testing
-pt_model_testingcolumns_file: /content/customer_profiling/columns/pt_model_testing_columns_to_extract.csv
 landed_mode: False
 high_rise_mode: False
 commercial_mode: False

@@ -5,6 +5,32 @@ from datetime import datetime
 import os
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
 
+from data.data_extraction import read_columns_to_extract, check_columns_presence, extract_columns
+
+def preprocess_pt_df(df, config):
+  # Read the columns to extract from the CSV file
+  columns_to_extract = read_columns_to_extract(config["pt_model_columns_file"])
+
+  if config['inference_mode']:
+        columns_to_remove = ['label', 'repeat_phase_property_type']
+        columns_to_extract = [col for col in columns_to_extract if col not in columns_to_remove]
+
+  # Check for the presence of columns to extract in df
+  check_columns_presence(df, columns_to_extract, "for pt modeling")
+  # Extract the specified columns for df_temp_1
+  df = extract_columns(df, columns_to_extract)
+
+
+  if 'label' in df.columns:
+    df = df[df['label'] != 0]
+    df = df.drop(columns=['label'],  errors='ignore')
+
+  if 'repeat_phase_property_type' in df.columns:
+    df = df[~df['repeat_phase_property_type'].isin(['RSKU', 'Industrial'])]
+
+  return df
+
+
 def load_model(config):
     model_dir = config['pt_model_dir']
     model_name = config['pt_model']
@@ -115,6 +141,8 @@ def property_type_test(test_df, config):
   print(f"Created directory for results: {save_folder}")
 
   model_list, preprocessor_list = load_model(config)
+
+  test_df = preprocess_pt_df(test_df, config)
 
   test_df_clean = test_df.drop(columns=['label', 'contact_nric_masked', 'spa_date', 'repeat_phase_property_type'], errors='ignore')
 

@@ -244,14 +244,13 @@ def train(df, config):
 
 
   # Read the columns to extract from the CSV file
-  columns_to_extract = read_columns_to_extract(config["rp_model_training_columns_file"])
+  columns_to_extract = read_columns_to_extract(config["rp_model_columns_file"])
   # Check for the presence of columns to extract in df
-  check_columns_presence(df, columns_to_extract, "for extraction in bin_df")
+  check_columns_presence(df, columns_to_extract, "for rp_model extraction")
   # Extract the specified columns for df_temp_1
   df = extract_columns(df, columns_to_extract)
-  # Convert repeat_purchase from True/False to 0/1
-  df['label'] = df['label'].map({'N': 0, 'Y': 1})
-  df = df.drop(columns=['contact_nric_masked'],  errors='ignore')
+
+
 
   # See the distribution of the label column
   label_distribution = df['label'].value_counts()
@@ -260,7 +259,7 @@ def train(df, config):
 
 
   # Encode features before bootstraping
-  df_temp = df.drop(columns=['label', 'spa_date'], errors='ignore')
+  df_temp = df.drop(columns=['label', 'spa_date', 'contact_nric_masked'], errors='ignore')
   _, preprocessor, categorical_features, numerical_features = encode_features(df_temp)
   output_preprocessor_path = os.path.join(config['rp_model_dir'], 'preprocessor.pkl')
   joblib.dump(preprocessor, output_preprocessor_path)

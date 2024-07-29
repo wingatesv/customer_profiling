@@ -37,7 +37,7 @@ def generate_label(df, config):
         if transaction_count == 1:
             row = group.iloc[0]
             row_copy = row.copy()
-            row_copy['label'] = 'N'
+            row_copy['label'] = 0
             row_copy['repeat_sales_id'] = 'NOT APPLICABLE'
             row_copy['repeat_phase_property_type'] = 'NOT APPLICABLE'
             row_copy['repeat_non_land_posted_selling_price'] = np.nan
@@ -45,12 +45,12 @@ def generate_label(df, config):
             row_copy['repeat_spa_date'] = pd.Timestamp('2022-12-31').date()
             repeated_purchase_df = pd.concat([repeated_purchase_df, row_copy.to_frame().T])
 
-            report_content = f"1 purchase for customer {name}, Label = N \n"
+            report_content = f"1 purchase for customer {name}, Label = 0 \n"
             write_report(report_content, report_file_path)
         else:
             # Handle first transaction
             first_row = group.iloc[0].copy()
-            first_row['label'] = 'Y'
+            first_row['label'] = 1
             first_row['repeat_sales_id'] = group.iloc[1]['sales_id']
             first_row['repeat_phase_property_type'] = group.iloc[1]['phase_property_type']
             first_row['repeat_non_land_posted_selling_price'] = group.iloc[1]['non_land_posted_selling_price']
@@ -58,13 +58,13 @@ def generate_label(df, config):
             first_row['repeat_spa_date'] = group.iloc[1]['spa_date'].date()
             repeated_purchase_df = pd.concat([repeated_purchase_df, first_row.to_frame().T])
 
-            report_content = f"2nd purchase for customer {name}, Label = Y \n"
+            report_content = f"2nd purchase for customer {name}, Label = 1 \n"
             write_report(report_content, report_file_path)
 
             # Handle middle transactions
             for i in range(1, transaction_count - 1):
                 row = group.iloc[i].copy()
-                row['label'] = 'Y'
+                row['label'] = 1
                 row['repeat_sales_id'] = group.iloc[i + 1]['sales_id']
                 row['repeat_phase_property_type'] = group.iloc[i + 1]['phase_property_type']
                 row['repeat_non_land_posted_selling_price'] = group.iloc[i + 1]['non_land_posted_selling_price']
@@ -72,12 +72,12 @@ def generate_label(df, config):
                 row['repeat_spa_date'] = group.iloc[i + 1]['spa_date'].date()
                 repeated_purchase_df = pd.concat([repeated_purchase_df, row.to_frame().T])
 
-                report_content = f"{i + 2}th purchase for customer {name}, Label = Y \n"
+                report_content = f"{i + 2}th purchase for customer {name}, Label = 1 \n"
                 write_report(report_content, report_file_path)
 
             # Handle last transaction
             last_row = group.iloc[-1].copy()
-            last_row['label'] = 'N'
+            last_row['label'] = 0
             last_row['repeat_sales_id'] = 'NOT APPLICABLE'
             last_row['repeat_phase_property_type'] = 'NOT APPLICABLE'
             last_row['repeat_non_land_posted_selling_price'] = np.nan
@@ -85,7 +85,7 @@ def generate_label(df, config):
             last_row['repeat_spa_date'] = pd.Timestamp('2022-12-31').date()
             repeated_purchase_df = pd.concat([repeated_purchase_df, last_row.to_frame().T])
 
-            report_content = f"Last row for customer {name}, Label = N \n"
+            report_content = f"Last row for customer {name}, Label = 0 \n"
             write_report(report_content, report_file_path)
             
 

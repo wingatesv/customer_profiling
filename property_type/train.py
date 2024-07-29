@@ -62,7 +62,7 @@ def generate_one_hot_label(df):
 
 def preprocess_pt_df(df, config):
   # Read the columns to extract from the CSV file
-  columns_to_extract = read_columns_to_extract(config["pt_model_training_columns_file"])
+  columns_to_extract = read_columns_to_extract(config["pt_model_columns_file"])
   # Check for the presence of columns to extract in df
   check_columns_presence(df, columns_to_extract, "for pt modeling")
   # Extract the specified columns for df_temp_1
@@ -70,7 +70,6 @@ def preprocess_pt_df(df, config):
 
 
   if 'label' in df.columns:
-    df['label'] = df['label'].map({'N': 0, 'Y': 1})
     df = df[df['label'] != 0]
     df = df.drop(columns=['label'],  errors='ignore')
 
