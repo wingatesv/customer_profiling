@@ -4,7 +4,7 @@ import numpy as np
 from datetime import datetime
 import os
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
-
+from sklearn.preprocessing import OneHotEncoder
 from data.data_extraction import read_columns_to_extract, check_columns_presence, extract_columns
 
 def preprocess_pt_df(df, config):
@@ -27,6 +27,25 @@ def preprocess_pt_df(df, config):
 
   if 'repeat_phase_property_type' in df.columns:
     df = df[~df['repeat_phase_property_type'].isin(['RSKU', 'Industrial'])]
+
+    # Initialize the OneHotEncoder
+    one_hot_encoder = OneHotEncoder(sparse_output=False)
+
+    # Fit and transform the `repeat_phase_property_type` column
+    one_hot_labels = one_hot_encoder.fit_transform(df[['repeat_phase_property_type']])
+
+    # Get the names of the new one-hot encoded columns
+    one_hot_label_names = one_hot_encoder.get_feature_names_out(['repeat_phase_property_type'])
+
+    # Create a DataFrame from the one-hot encoded labels
+    one_hot_labels_df = pd.DataFrame(one_hot_labels, columns=one_hot_label_names, index=df.index)
+
+    # Drop the original `repeat_phase_property_type` column from the original DataFrame
+    df = df.drop(columns=['repeat_phase_property_type'])
+
+    # Add the one-hot encoded labels DataFrame to the original DataFrame
+    df = pd.concat([df, one_hot_labels_df], axis=1)
+
 
   return df
 
@@ -78,46 +97,54 @@ def model_prediction(model, test_encoded, threshold=0.5):
  
 
 def save_results(test_df, probabilities, test_predictions, config, mode, save_folder):
+    if mode == 'landed':
+      label = 'repeat_phase_property_type_Landed'
+    elif mode == 'high_rise':
+      label = 'repeat_phase_property_type_High Rise'
+    else:
+      label = 'repeat_phase_property_type_Commercial'
+
+
     if config['evaluation_mode']:
         # Prepare the output DataFrame
         prediction_df = pd.DataFrame({
             'contact_nric_masked': test_df['contact_nric_masked'],
-            f"probability (threshold = {config['inference_threshold']})": probabilities,  # Probability of class 1
+            f"probability (threshold = 0.5)": probabilities,  # Probability of class 1
             'predicted label': test_predictions,
-            # 'truth label': test_df['label']
+            'truth label': test_df[label]
         })
 
         output_csv_path = os.path.join(save_folder, f'{mode}_evaluation_result.csv')
         prediction_df.to_csv(output_csv_path, index=False)
         print(f"Model prediction for {mode} saved to {output_csv_path}")
 
-        # # Calculate metrics
-        # tn, fp, fn, tp = confusion_matrix(test_df['label'], test_predictions).ravel()
-        # accuracy = accuracy_score(test_df['label'], test_predictions)
-        # precision = precision_score(test_df['label'], test_predictions)
-        # recall = recall_score(test_df['label'], test_predictions)
-        # f1 = f1_score(test_df['label'], test_predictions)
+        # Calculate metrics
+        tn, fp, fn, tp = confusion_matrix(test_df[label], test_predictions).ravel()
+        accuracy = accuracy_score(test_df[label], test_predictions)
+        precision = precision_score(test_df[label], test_predictions)
+        recall = recall_score(test_df[label], test_predictions)
+        f1 = f1_score(test_df[label], test_predictions)
 
-        # result_df = pd.DataFrame({
-        #     'True Positive': [tp],
-        #     'True Negative': [tn],
-        #     'False Positive': [fp],
-        #     'False Negative': [fn],
-        #     'Accuracy': [round(accuracy, 4)],
-        #     'Precision': [round(precision, 4)],
-        #     'Recall': [round(recall, 4)],
-        #     'F1-score': [round(f1, 4)]
-        # })
+        result_df = pd.DataFrame({
+            'True Positive': [tp],
+            'True Negative': [tn],
+            'False Positive': [fp],
+            'False Negative': [fn],
+            'Accuracy': [round(accuracy, 4)],
+            'Precision': [round(precision, 4)],
+            'Recall': [round(recall, 4)],
+            'F1-score': [round(f1, 4)]
+        })
 
-        # result_csv_path = os.path.join(save_folder, f'{mode}_metrics_result.csv')
-        # result_df.to_csv(result_csv_path, index=False)
-        # print(f"Metrics result for {mode} saved to {result_csv_path}")
+        result_csv_path = os.path.join(save_folder, f'{mode}_metrics_result.csv')
+        result_df.to_csv(result_csv_path, index=False)
+        print(f"Metrics result for {mode} saved to {result_csv_path}")
 
     else:
         # Prepare the output DataFrame
         prediction_df = pd.DataFrame({
             'contact_nric_masked': test_df['contact_nric_masked'],
-            f"probability (threshold = {config['inference_threshold']})": probabilities,  # Probability of class 1
+            f"probability (threshold = 0.5)": probabilities,  # Probability of class 1
             'predicted label': test_predictions,
         })
 
@@ -144,7 +171,7 @@ def property_type_test(test_df, config):
 
   test_df = preprocess_pt_df(test_df, config)
 
-  test_df_clean = test_df.drop(columns=['label', 'contact_nric_masked', 'spa_date', 'repeat_phase_property_type'], errors='ignore')
+  test_df_clean = test_df.drop(columns=['label', 'contact_nric_masked', 'spa_date', 'repeat_phase_property_type', 'repeat_phase_property_type_Landed', 'repeat_phase_property_type_High Rise', 'repeat_phase_property_type_Commercial'], errors='ignore')
 
   if config['landed_mode']:
     model, preprocessor = model_list[0], preprocessor_list[0]
