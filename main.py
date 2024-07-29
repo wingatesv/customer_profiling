@@ -111,6 +111,11 @@ def data_preparation(config):
       raise FileNotFoundError(f"{config['input_file']} not found.")
   df = pd.read_csv(config['input_file'], low_memory=False, dtype={'contact_nric_masked': str})
 
+  if 'buyer_dob' not in df.columns:
+        print('Feature: "buyer_dob" is not in the input_file!')
+        print('Terminating program....')
+        sys.exit()
+
   df = data_extraction(df, config)
   if training_mode or eval_mode:
     df = generate_label(df, config)
