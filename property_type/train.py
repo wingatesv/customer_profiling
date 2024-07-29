@@ -60,6 +60,25 @@ def generate_one_hot_label(df):
   return df_list
 
 
+def preprocess_pt_df(df, config):
+  # Read the columns to extract from the CSV file
+  columns_to_extract = read_columns_to_extract(config["pt_model_training_columns_file"])
+  # Check for the presence of columns to extract in df
+  check_columns_presence(df, columns_to_extract, "for pt modeling")
+  # Extract the specified columns for df_temp_1
+  df = extract_columns(df, columns_to_extract)
+
+
+  if 'label' in df.columns:
+    df['label'] = df['label'].map({'N': 0, 'Y': 1})
+    df = df[df['label'] != 0]
+    df = df.drop(columns=['label'],  errors='ignore')
+
+  if 'repeat_phase_property_type' in df.columns:
+    df = df[~df['repeat_phase_property_type'].isin(['RSKU', 'Industrial'])]
+
+  return df
+
 
 def property_type_train(df, config):
   if os.path.exists(config['pt_model_dir']):
@@ -75,20 +94,8 @@ def property_type_train(df, config):
       os.makedirs(config['pt_model_dir'])
       print(f"Created directory: {config['pt_model_dir']}")
 
-
-  # Read the columns to extract from the CSV file
-  columns_to_extract = read_columns_to_extract(config["pt_model_training_columns_file"])
-  # Check for the presence of columns to extract in df
-  check_columns_presence(df, columns_to_extract, "for extraction in bin_df")
-  # Extract the specified columns for df_temp_1
-  df = extract_columns(df, columns_to_extract)
-  # Convert repeat_purchase from True/False to 0/1
-  df['label'] = df['label'].map({'N': 0, 'Y': 1})
-  df = df[df['label'] != 0]
-
-  df = df.drop(columns=['contact_nric_masked', 'label', 'spa_date'],  errors='ignore')
-
-  df = df[~df['repeat_phase_property_type'].isin(['RSKU', 'Industrial'])]
+  df = preprocess_pt_df(df, config)
+  
   # See the distribution of the label column
   label_distribution = df['repeat_phase_property_type'].value_counts()
   print("Distribution of the property_type label:")
@@ -107,15 +114,15 @@ def property_type_train(df, config):
         property_type_model_label = 'commercial'
 
       # Perform train-validation split with 20% of the train set used as validation set and fixed seed
-      train_df, val_df = train_test_split(property_df, test_size=0.2, random_state=42)
+      train_df, val_df = train_test_split(property_df, test_size=config['pt_validation_split'], random_state=42)
 
       # Separate the target variable
       train_target = train_df['label']
       val_target = val_df['label']
 
       # Drop the target variable from the feature set
-      train_df_2 = train_df.drop(columns=['label'])
-      val_df_2 = val_df.drop(columns=['label'])
+      train_df_2 = train_df.drop(columns=['label', 'contact_nric_masked',  'spa_date'], errors='ignore')
+      val_df_2 = val_df.drop(columns=['label', 'contact_nric_masked',  'spa_date'], errors='ignore')
 
       # Encode the training features
       train_encoded, preprocessor, categorical_features, numerical_features = encode_features(train_df_2)

@@ -40,9 +40,110 @@ def load_model(config):
     else:
         raise FileNotFoundError(f"{model_dir} not found.")
     
-    print("Preprocessor and models loaded")
+    print("Preprocessors and models loaded")
     return model_list, preprocessor_list
 
 
-def property_type_test(df, config):
-  pass
+def model_prediction(model, test_encoded, threshold=0.5):
+
+  probabilities = model.predict_proba(test_encoded)[:, 1]
+  test_predictions = (probabilities >= threshold).astype(int)
+  return probabilities, test_predictions
+ 
+
+def save_results(test_df, probabilities, test_predictions, config, mode, save_folder):
+    if config['evaluation_mode']:
+        # Prepare the output DataFrame
+        prediction_df = pd.DataFrame({
+            'contact_nric_masked': test_df['contact_nric_masked'],
+            f"probability (threshold = {config['inference_threshold']})": probabilities,  # Probability of class 1
+            'predicted label': test_predictions,
+            'truth label': test_df['label']
+        })
+
+        output_csv_path = os.path.join(save_folder, f'{mode}_evaluation_result.csv')
+        prediction_df.to_csv(output_csv_path, index=False)
+        print(f"Model prediction for {mode} saved to {output_csv_path}")
+
+        # Calculate metrics
+        tn, fp, fn, tp = confusion_matrix(test_df['label'], test_predictions).ravel()
+        accuracy = accuracy_score(test_df['label'], test_predictions)
+        precision = precision_score(test_df['label'], test_predictions)
+        recall = recall_score(test_df['label'], test_predictions)
+        f1 = f1_score(test_df['label'], test_predictions)
+
+        result_df = pd.DataFrame({
+            'True Positive': [tp],
+            'True Negative': [tn],
+            'False Positive': [fp],
+            'False Negative': [fn],
+            'Accuracy': [round(accuracy, 4)],
+            'Precision': [round(precision, 4)],
+            'Recall': [round(recall, 4)],
+            'F1-score': [round(f1, 4)]
+        })
+
+        result_csv_path = os.path.join(save_folder, f'{mode}_metrics_result.csv')
+        result_df.to_csv(result_csv_path, index=False)
+        print(f"Metrics result for {mode} saved to {result_csv_path}")
+
+    else:
+        # Prepare the output DataFrame
+        prediction_df = pd.DataFrame({
+            'contact_nric_masked': test_df['contact_nric_masked'],
+            f"probability (threshold = {config['inference_threshold']})": probabilities,  # Probability of class 1
+            'predicted label': test_predictions,
+        })
+
+        output_csv_path = os.path.join(save_folder, f'{mode}_inference_result.csv')
+        prediction_df.to_csv(output_csv_path, index=False)
+        print(f"Model prediction for {mode} saved to {output_csv_path}")
+
+        
+
+def property_type_test(test_df, config):
+  # Create save directory if it doesn't exist
+  if not os.path.exists(config['pt_result_dir']):
+      os.makedirs(config['pt_result_dir'])
+      print(f"Created directory: {config['pt_result_dir']}")
+
+  # Create a new folder with today's date and time
+  mode_str = 'eval' if config['evaluation_mode'] else 'infer'
+  timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+  save_folder = os.path.join(config['pt_result_dir'],f'{mode_str}_{timestamp}')
+  os.makedirs(save_folder)
+  print(f"Created directory for results: {save_folder}")
+
+  model_list, preprocessor_list = load_model(config)
+
+  test_df_clean = test_df.drop(columns=['label', 'contact_nric_masked', 'spa_date', 'repeat_phase_property_type'], errors='ignore')
+
+  if config['landed_mode']:
+    model, preprocessor = model_list[0], preprocessor_list[0]
+    test_encoded = preprocessor.transform(test_df_clean)
+    probabilities, test_predictions = model_prediction(model, test_encoded)
+    save_results(test_df, probabilities, test_predictions, config, 'landed', save_folder)
+
+
+  
+  if config['high_rise']:
+    model, preprocessor = model_list[1], preprocessor_list[1]
+    test_encoded = preprocessor.transform(test_df_clean)
+    probabilities, test_predictions = model_prediction(model, test_encoded)
+    save_results(test_df, probabilities, test_predictions, config, 'high_rise', save_folder)
+
+
+
+  if config['commercial']:
+    model, preprocessor = model_list[2], preprocessor_list[2]
+    test_encoded = preprocessor.transform(test_df_clean)
+    probabilities, test_predictions = model_prediction(model, test_encoded)
+    save_results(test_df, probabilities, test_predictions, config, 'commercial', save_folder)
+
+
+
+
+  
+
+  
+  

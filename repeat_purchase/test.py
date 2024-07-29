@@ -52,28 +52,32 @@ def aggregate_predictions(models, test_encoded, threshold=0.5):
 
 
 def test (test_df, config):
-  print("Starting repeat purchase model testing...")
   # Create save directory if it doesn't exist
-  if not os.path.exists(config['result_dir']):
-      os.makedirs(config['result_dir'])
-      print(f"Created directory: {config['result_dir']}")
+  if not os.path.exists(config['rp_result_dir']):
+      os.makedirs(config['rp_result_dir'])
+      print(f"Created directory: {config['rp_result_dir']}")
 
   # Create a new folder with today's date and time
   mode_str = 'eval' if config['evaluation_mode'] else 'infer'
   timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-  save_folder = os.path.join(config['result_dir'],f'{mode_str}_{timestamp}')
+  save_folder = os.path.join(config['rp_result_dir'],f'{mode_str}_{timestamp}')
   os.makedirs(save_folder)
   print(f"Created directory for results: {save_folder}")
 
   model_list, preprocessor = load_model(config)
 
+
+  #  need to preprocess the df first
+
+  
+  test_df_clean = test_df.drop(columns=['label', 'contact_nric_masked'], errors = 'ignore')
+  test_encoded = preprocessor.transform(test_df_clean)
+  # Aggregate predictions from all models
+  probabilities, test_predictions = aggregate_predictions(model_list, test_encoded, config['inference_threshold'])
+
   if config['evaluation_mode']:  
 
-      test_df_clean = test_df.drop(columns=['label', 'contact_nric_masked'])
-      test_encoded = preprocessor.transform(test_df_clean)
-      # Aggregate predictions from all models
-      probabilities, test_predictions = aggregate_predictions(model_list, test_encoded, config['inference_threshold'])
-
+      
       # Prepare the output DataFrame
       prediction_df = pd.DataFrame({
           'contact_nric_masked': test_df['contact_nric_masked'],
@@ -109,10 +113,6 @@ def test (test_df, config):
       print(f"Metrics result saved to {result_csv_path}")
   
   else:
-      test_df_clean = test_df.drop(columns=['label', 'contact_nric_masked'], errors = 'ignore')
-      test_encoded = preprocessor.transform(test_df_clean)
-      # Aggregate predictions from all models
-      probabilities, test_predictions = aggregate_predictions(model_list, test_encoded, config['inference_threshold'])
 
       # Prepare the output DataFrame
       prediction_df = pd.DataFrame({

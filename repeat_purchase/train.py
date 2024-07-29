@@ -142,7 +142,7 @@ def model_training(df_list, config, preprocessor, categorical_features, numerica
 
   for i, bootstrap_df in enumerate(df_list):
       # Perform train-validation split with 20% of the train set used as validation set and fixed seed
-      train_df, val_df = train_test_split(bootstrap_df, test_size=config['validation_split'], random_state=42)
+      train_df, val_df = train_test_split(bootstrap_df, test_size=config['rp_validation_split'], random_state=42)
 
       # Separate the target variable
       train_target = train_df['label']

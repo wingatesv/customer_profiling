@@ -1,5 +1,16 @@
+# Main mode
+generate_test_label_mode: False
+training_mode: True
+evaluation_mode: False
+inference_mode: True
+
+# Model prediction mode
+repeat_purchase_mode: True
+property_type_mode: True
+
+
 # Data preparation
-save_output: False
+save_output: True
 load_df_from_checkpoint: True
 split_df_for_eval: True
 
@@ -11,16 +22,13 @@ feature_mapping_dir: /content/customer_profiling/feature_mapping/
 data_report_dir: /content/customer_profiling/data_report/
 save_dir: /content/drive/MyDrive/deployment/output
 
-# Main mode
-generate_test_label_mode: False
-training_mode: True
-evaluation_mode: False
-inference_mode: False
+
 
 # Test label generation
 test_file: /content/drive/MyDrive/temp_data/after_2022_df.csv # program will use "for_eval_label_generation.csv" if "split_df_for_eval" is True
 evaluation_start_date: 2023-01-03 #yyyy-mm-dd
 evaluation_end_date: 2023-12-30 #yyyy-mm-dd
+
 
 
 # Repeat purchase mode
@@ -32,11 +40,14 @@ rp_model_training_columns_file: /content/customer_profiling/columns/rp_model_tra
 bagging_split: 3
 down_sampling: True
 down_sampling_ratio: 1 
-validation_split: 0.2
+rp_validation_split: 0.2
 
 # Repeat purchase model testing
+rp_model_testing_columns_file: /content/customer_profiling/columns/rp_model_testing_columns_to_extract.csv
 inference_threshold: 0.6
-result_dir: /content/customer_profiling/result/
+rp_result_dir: /content/customer_profiling/rp_result/
+
+
 
 
 # Property type mode
@@ -44,5 +55,13 @@ pt_model : catboost  #logistic_regression, knn, svm, decision_tree, random_fores
 pt_model_dir: /content/customer_profiling/pt_model/
 
 
-# Repeat purchase model training
+# Property type model training
 pt_model_training_columns_file: /content/customer_profiling/columns/pt_model_training_columns_to_extract.csv
+pt_validation_split: 0.2
+
+# Property type model testing
+pt_model_testingcolumns_file: /content/customer_profiling/columns/pt_model_testing_columns_to_extract.csv
+landed_mode: False
+high_rise_mode: False
+commercial_mode: False
+pt_result_dir: /content/customer_profiling/pt_result/

@@ -143,65 +143,53 @@ def main(config):
           test_df.to_csv(output_csv_path, index=False)
           print(f"Test label generation completed! Saved to {output_csv_path}")
 
-
-      # Training
-      elif config['training_mode']:
-        if config['repeat_purchase_mode']:
-          print()
-          print("------------------------------------------------------------------------------------------------------")
-          print("Starting repeat_purchase model training....")
-          train(df, config)
-
-          test_df = generate_test_label(df, config)
-
-          print()
-          print("------------------------------------------------------------------------------------------------------")
-          print("Starting repeat_purchase model evaluation....")
-          test(test_df, config)
-
-        if config['property_type_mode']:
-          print()
-          print("------------------------------------------------------------------------------------------------------")
-          print("Starting property_type model training....")
-          property_type_train(df, config)
-
-          print()
-          print("------------------------------------------------------------------------------------------------------")
-          print("Starting property_type model evaluation....")
-          property_type_test(df, config)
-
-
-      elif config['evaluation_mode']:
-        if config['repeat_purchase_mode']:
-
-          test_df = generate_test_label(df, config)
-          print()
-          print("------------------------------------------------------------------------------------------------------")
-          print("Starting repeat_purchase model evaluation....")
-          test(test_df, config)
-
-        if config['property_type_mode']:
-          print()
-          print("------------------------------------------------------------------------------------------------------")
-          print("Starting property_type model evaluation....")
-          property_type_test(df, config)
-          
-      elif config['inference_mode']:
-        if config['repeat_purchase_mode']:
-          print()
-          print("------------------------------------------------------------------------------------------------------")
-          print("Starting repeat_purchase model inference....")
-          test(df, config)
-        if config['property_type_mode']:
-          print()
-          print("------------------------------------------------------------------------------------------------------")
-          print("Starting property_type model inference....")
-          property_type_test(df, config)
-       
-      
       else:
-          warnings.warn(f"Cannot perform multiple mode at the same time")
-          sys.exit()
+        # Training
+        if config['training_mode']:
+          if config['repeat_purchase_mode']:
+            print()
+            print("------------------------------------------------------------------------------------------------------")
+            print("Starting repeat_purchase model training....")
+            train(df, config)
+
+          if config['property_type_mode']:
+            print()
+            print("------------------------------------------------------------------------------------------------------")
+            print("Starting property_type model training....")
+            property_type_train(df, config)
+
+           
+        if config['evaluation_mode']:
+          if config['repeat_purchase_mode']:
+
+            test_df = generate_test_label(df, config)
+            print()
+            print("------------------------------------------------------------------------------------------------------")
+            print("Starting repeat_purchase model evaluation....")
+            test(test_df, config)
+
+          if config['property_type_mode']:
+            print()
+            print("------------------------------------------------------------------------------------------------------")
+            print("Starting property_type model evaluation....")
+            property_type_test(df, config)
+            
+        elif config['inference_mode']:
+          if config['repeat_purchase_mode']:
+            print()
+            print("------------------------------------------------------------------------------------------------------")
+            print("Starting repeat_purchase model inference....")
+            test(df, config)
+          if config['property_type_mode']:
+            print()
+            print("------------------------------------------------------------------------------------------------------")
+            print("Starting property_type model inference....")
+            property_type_test(df, config)
+        
+        
+        else:
+            warnings.warn(f"Cannot not perform any or perform both evaluation and inference mode at the same time!!!")
+            sys.exit()
 
       # if config['train_model']:
       #     print()
@@ -238,9 +226,11 @@ def main(config):
 
       # if config['test_property_type_model']:
       #     property_type_test(df=df, config=config)
-      # print()
-      # print("------------------------------------------------------------------------------------------------------")
-      # print("Customer profiling model prediction pipeline done!")
+
+
+      print()
+      print("------------------------------------------------------------------------------------------------------")
+      print("Customer profiling model prediction pipeline done!")
 
 
 
