@@ -84,7 +84,7 @@ def add_features(df, config):
   df = add_derived_township_maturity(df)
   df = add_derived_completion_status(df)
 
-  print("Data extraction phase completed!")
+  print("Feature generation phase completed!")
   if save_csv:
       if save_dir is None:
           raise ValueError("save_dir must be provided if save_csv is True.")

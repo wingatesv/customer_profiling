@@ -222,6 +222,10 @@ def train_model(model_name, train_encoded, train_target, test_encoded, test_targ
     # Predict on the test data
     test_predictions = model.predict(test_encoded)
 
+    # Convert to consistent type
+    test_target = test_target.astype(int)
+    test_predictions = test_predictions.astype(int)
+
     # Evaluate the model using classification report
     report = classification_report(test_target, test_predictions)
 

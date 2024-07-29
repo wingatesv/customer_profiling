@@ -88,7 +88,7 @@ def generate_label(df, config):
             report_content = f"Last row for customer {name}, Label = 0 \n"
             write_report(report_content, report_file_path)
             
-
+    repeated_purchase_df['label'] = repeated_purchase_df['label'].astype(int)
     print("Training label generation completed!")
 
     if save_csv:
