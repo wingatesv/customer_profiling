@@ -179,7 +179,7 @@ def main(config):
             property_type_train(df, config)
 
            
-        if config['evaluation_mode']:
+        if config['evaluation_mode'] and not config['inference_mode']:
           if config['repeat_purchase_mode']:
 
             test_df = generate_test_label(df, config)
@@ -194,7 +194,7 @@ def main(config):
             print("Starting property_type model evaluation....")
             property_type_test(df, config)
             
-        elif config['inference_mode']:
+        elif config['inference_mode'] and not config['evaluation_mode']:
           if config['repeat_purchase_mode']:
             print()
             print("------------------------------------------------------------------------------------------------------")
