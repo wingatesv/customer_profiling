@@ -14,12 +14,13 @@ from data.feature_generation import add_features
 from data.data_grouping import group_data
 from data.data_bining import data_bining
 from data.test_label_generation import generate_test_label
+from data.validate_config import validate_config
+
 
 from repeat_purchase.train import train
 from repeat_purchase.test import test
 from property_type.train import property_type_train
 from property_type.test import property_type_test
-
 
 def clear_directory(directory):
     """
@@ -138,6 +139,8 @@ def main(config):
           os.makedirs(config['save_dir'])
           print(f"Created directory: {config['save_dir']}")
 
+      validate_config(config)
+      
       print()
       print("------------------------------------------------------------------------------------------------------")
       print("Starting data preparation...")

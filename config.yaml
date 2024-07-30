@@ -2,10 +2,10 @@
 ### Main Section
 
 # Main Modes
-generate_test_label_mode: False                                 # Set to True to generate test labels for input_file only
+generate_test_label_mode: True                                 # Set to True to generate test labels for input_file only
 training_mode: False                                             # Set to True to enable training mode
 evaluation_mode: False                                          # Set to True to enable evaluation mode
-inference_mode: False                                            # Set to True to enable inference mode
+inference_mode: True                                            # Set to True to enable inference mode
 
 
 
@@ -102,7 +102,7 @@ pt_model_columns_file: /content/customer_profiling/columns/pt_model_columns_to_e
 pt_validation_split: 0.2
 
 # Property type model testing
-landed_mode: True                                                                             # Set to True to enable landed property type mode
-high_rise_mode: True                                                                          # Set to True to enable high-rise property type mode
-commercial_mode: True                                                                         # Set to True to enable commercial property type mode
+landed_mode: False                                                                             # Set to True to enable landed property type mode
+high_rise_mode: False                                                                          # Set to True to enable high-rise property type mode
+commercial_mode: False                                                                         # Set to True to enable commercial property type mode
 pt_result_dir: /content/2_pt_result/

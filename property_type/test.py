@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 import os
+import warnings
+
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
 from sklearn.preprocessing import OneHotEncoder
 from data.data_extraction import read_columns_to_extract, check_columns_presence, extract_columns
@@ -197,6 +199,8 @@ def property_type_test(test_df, config):
 
 
 
+  if not config['landed_mode'] and config['high_rise_mode'] and config['commercial_mode']:
+     warnings.warn(f"None of the property type mode is selected, please at least select one!!!")
 
   
 
