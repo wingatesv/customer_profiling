@@ -208,8 +208,8 @@ def main(config):
         
         
         else:
-            warnings.warn(f"Cannot not perform any or perform both evaluation and inference mode at the same time!!!")
-            sys.exit()
+            warnings.warn(f"Cannot not perform any or perform both evaluation and inference modes at the same time!!!")
+            
 
 
       print()
