@@ -64,9 +64,7 @@ def validate_config(config):
         if config.get("rp_model") not in valid_models:
             print(f"Error: 'rp_model' must be one of {valid_models}.")
             exit()
-        if not os.path.exists(config.get("rp_model_dir", "")):
-            print(f"Error: 'rp_model_dir' does not exist. Provided path: {config.get('rp_model_dir')}")
-            exit()
+  
         if not config.get("rp_model_columns_file"):
             print("Error: 'rp_model_columns_file' is not specified.")
             exit()
@@ -82,17 +80,12 @@ def validate_config(config):
         if not (0 <= config.get("inference_threshold", 0) <= 1):
             print("Error: 'inference_threshold' must be between 0 and 1.")
             exit()
-        if not os.path.exists(config.get("rp_result_dir", "")):
-            print(f"Error: 'rp_result_dir' does not exist. Provided path: {config.get('rp_result_dir')}")
-            exit()
+      
     
     # Check property type mode section
     if config.get("property_type_mode"):
         if config.get("pt_model") not in valid_models:
             print(f"Error: 'pt_model' must be one of {valid_models}.")
-            exit()
-        if not os.path.exists(config.get("pt_model_dir", "")):
-            print(f"Error: 'pt_model_dir' does not exist. Provided path: {config.get('pt_model_dir')}")
             exit()
         if not config.get("pt_model_columns_file"):
             print("Error: 'pt_model_columns_file' is not specified.")
@@ -100,9 +93,7 @@ def validate_config(config):
         if not (0 <= config.get("pt_validation_split", 0) <= 0.5):
             print("Error: 'pt_validation_split' must be between 0 and 0.5.")
             exit()
-        if not os.path.exists(config.get("pt_result_dir", "")):
-            print(f"Error: 'pt_result_dir' does not exist. Provided path: {config.get('pt_result_dir')}")
-            exit()
+
 
     # If all checks passed
     print("All configurations are valid.... continue....")
