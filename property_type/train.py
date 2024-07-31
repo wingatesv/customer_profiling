@@ -137,7 +137,7 @@ def property_type_train(df, config):
       model, report = train_model(config['pt_model'], train_encoded, train_target, val_encoded, val_target, class_weight=class_weight_dict)
 
       # Get feature importances if possible        
-      feature_importances, feature_names = get_feature_importances(model, train_encoded, preprocessor, categorical_features, numerical_features)
+      feature_importances, feature_names = get_feature_importances(model, train_encoded, preprocessor, categorical_features, numerical_features, config['pt_model'])
 
       print(f"Model: {config['pt_model']}_{property_type_model_label}")
       print("Validation Classification Report:")

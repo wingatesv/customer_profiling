@@ -64,7 +64,7 @@ evaluation_end_date: 2023-12-30 #yyyy-mm-dd                      # End date for 
 ### Repeat Purchase Mode Section
 # This section configures the repeat purchase prediction model.
 
-rp_model : random_forest                                                                            # Model type for repeat purchase prediction
+rp_model : mlp                                                                            # Model type for repeat purchase prediction
 #Possible values: logistic_regression, knn, svm, decision_tree, random_forest, gradient_boosting, lightgbm, catboost, mlp
 
 rp_model_dir: /content/customer_profiling/models/rp_model/                                       # Directory for the repeat purchase model

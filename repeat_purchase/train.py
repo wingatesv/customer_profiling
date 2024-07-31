@@ -124,10 +124,14 @@ def downsample_df(df, ratio):
 
     return df_balanced
 
-def get_feature_importances(model, X_train, preprocessor, categorical_features, numerical_features):
+def get_feature_importances(model, X_train, preprocessor, categorical_features, numerical_features, rp_model):
     # Get feature names from the preprocessor
     ohe = preprocessor.named_transformers_['cat']['onehot']
     feature_names = numerical_features + list(ohe.get_feature_names_out(categorical_features))
+
+    if rp_model == "mlp":
+      X_train = X_train.toarray() if hasattr(X_train, "toarray") else X_train
+
     # Check for feature importance in specific models
     if hasattr(model, 'feature_importances_'):
         return model.feature_importances_ , feature_names
@@ -172,7 +176,7 @@ def model_training(df_list, config, preprocessor, categorical_features, numerica
       print(f"Save model in {output_model_path}...")
 
       # Get feature importances if possible
-      feature_importances, feature_names = get_feature_importances(model, train_encoded, preprocessor, categorical_features, numerical_features)
+      feature_importances, feature_names = get_feature_importances(model, train_encoded, preprocessor, categorical_features, numerical_features, config['rp_model'])
 
       # Create a DataFrame for better visualization
       feature_importances_df = pd.DataFrame({
