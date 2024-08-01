@@ -81,7 +81,7 @@ def test (test_df, config):
   test_df = extract_columns(test_df, columns_to_extract)
 
   
-  test_df_clean = test_df.drop(columns=['label', 'contact_nric_masked'], errors = 'ignore')
+  test_df_clean = test_df.drop(columns=['label', config['unique_customer_id']], errors = 'ignore')
   test_encoded = preprocessor.transform(test_df_clean)
   # Aggregate predictions from all models
   probabilities, test_predictions = aggregate_predictions(model_list, test_encoded, config['inference_threshold'])
@@ -91,7 +91,7 @@ def test (test_df, config):
       
       # Prepare the output DataFrame
       prediction_df = pd.DataFrame({
-          'contact_nric_masked': test_df['contact_nric_masked'],
+          config['unique_customer_id']: test_df[config['unique_customer_id']],
           f"probability": probabilities,       # Probability of class 1
           "predicted label (threshold = {config['inference_threshold']})": test_predictions,
           'truth label': test_df['label']
@@ -127,7 +127,7 @@ def test (test_df, config):
 
       # Prepare the output DataFrame
       prediction_df = pd.DataFrame({
-          'contact_nric_masked': test_df['contact_nric_masked'],
+          config['unique_customer_id']: test_df[config['unique_customer_id']],
           f"probability (threshold = {config['inference_threshold']})": probabilities,       # Probability of class 1
           'predicted label': test_predictions,
       })
