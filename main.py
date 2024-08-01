@@ -59,52 +59,19 @@ def data_preparation(config):
       print(f"Directory {config['data_report_dir']} already exists. Clearing contents...")
       clear_directory(config['data_report_dir'])
       print(f"Cleared contents of directory: {config['data_report_dir']}")
+  
 
   if config['load_df_from_checkpoint']:
         print("Loading df from checkpoint ...")
         if os.path.exists(config['save_dir']):
             files = os.listdir(config['save_dir'])
 
-            if 'bin_df.csv' in files:
+            if 'bin_df.csv' in files and 'pt_test_df.csv' in files:
                 df = read_checkpoint('bin_df.csv')
-                print("Found bin_df.csv! continue from here....")
-                return df
-            elif 'group_df.csv' in files:
-                df = read_checkpoint('group_df.csv')
-                df = data_bining(df, config)
-                print("Found group_df.csv! continue from here....")
-                return df
-            elif 'add_feature_df.csv' in files:
-                df = read_checkpoint('add_feature_df.csv')
-                df = group_data(df, config)
-                df = data_bining(df, config)
-                print("Found add_feature_df.csv! continue from here....")
-                return df
-            elif  'clean_df.csv' in files:
-                df = read_checkpoint('clean_df.csv')
-                df = add_features(df, config)
-                df = group_data(df, config)
-                df = data_bining(df, config)
-                print("Found clean_df.csv! continue from here....")
-                return df
-            elif  'label_df.csv' in files:
-                df = read_checkpoint('label_df.csv')
-                df = data_cleaning(df, config)
-                df = add_features(df, config)
-                df = group_data(df, config)
-                df = data_bining(df, config)
-                print("Found label_df.csv! continue from here....")
-                return df
-            elif 'data_extraction_df.csv' in files:
-                df = read_checkpoint('data_extraction_df.csv')
-                if training_mode or eval_mode:
-                  df = generate_label(df, config)
-                df = data_cleaning(df, config)
-                df = add_features(df, config)
-                df = group_data(df, config)
-                df = data_bining(df, config)
-                print("Found data_extraction_df.csv! continue from here....")
-                return df
+                pt_test_df = read_checkpoint('pt_test_df.csv')
+                print("Found bin_df.csv and pt_test_df.csv! continue from here....")
+                return df, pt_test_df
+
   # If no checkpoint is loaded, start from scratch
   print("Starting from scratch ... loading df from input_file")
   # Check if the input file exists
@@ -117,7 +84,7 @@ def data_preparation(config):
         print('Terminating program....')
         sys.exit()
 
-  df = data_extraction(df, config)
+  df, pt_test_df = data_extraction(df, config)
   if training_mode or eval_mode:
     df = generate_label(df, config)
   df = data_cleaning(df, config)
@@ -125,7 +92,18 @@ def data_preparation(config):
   df = group_data(df, config)
   df = data_bining(df, config)
 
-  return df
+
+  print("Cleaning the pt_test_df.....")
+  pt_test_df = data_cleaning(pt_test_df, config, process_pt_test = True)
+  pt_test_df = add_features(pt_test_df, config, process_pt_test = True)
+  pt_test_df = group_data(pt_test_df, config, process_pt_test = True)
+  pt_test_df = data_bining(pt_test_df, config, process_pt_test = True)
+  
+  output_csv_path = os.path.join(config['save_dir'], 'pt_test_df.csv')
+  pt_test_df.to_csv(output_csv_path, index=False)
+  print(f" pt_test_df cleaning and saving completed! Saved to {output_csv_path}")
+
+  return df, pt_test_df
 
 
 
@@ -144,7 +122,7 @@ def main(config):
       print()
       print("------------------------------------------------------------------------------------------------------")
       print("Starting data preparation...")
-      df = data_preparation(config)
+      df, pt_test_df = data_preparation(config)
 
       if config['training_mode'] or config['evaluation_mode']:
             if 'label' not in df.columns:
@@ -195,7 +173,7 @@ def main(config):
             print()
             print("------------------------------------------------------------------------------------------------------")
             print("Starting property_type model evaluation....")
-            property_type_test(df, config)
+            property_type_test(pt_test_df, config)
             
         elif config['inference_mode'] and not config['evaluation_mode']:
           if config['repeat_purchase_mode']:
@@ -207,7 +185,7 @@ def main(config):
             print()
             print("------------------------------------------------------------------------------------------------------")
             print("Starting property_type model inference....")
-            property_type_test(df, config)
+            property_type_test(pt_test_df, config)
         
         
         else:

@@ -82,7 +82,7 @@ def bin_non_land_posted_features(df):
   return df
 
 
-def data_bining(df, config):
+def data_bining(df, config, process_pt_test = False):
   print("Data bining in progress...")
   save_dir=config['save_dir']
   save_csv=config['save_output']
@@ -97,7 +97,7 @@ def data_bining(df, config):
   df = bin_non_land_posted_features(df)
 
   print("Data bining phase completed!")
-  if save_csv:
+  if save_csv and not process_pt_test:
       if save_dir is None:
           raise ValueError("save_dir must be provided if save_csv is True.")
       

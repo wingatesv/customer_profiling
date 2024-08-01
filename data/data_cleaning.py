@@ -631,7 +631,7 @@ def clean_non_land_posted_features(df):
   return df
 
 
-def data_cleaning(df, config):
+def data_cleaning(df, config, process_pt_test = False):
   print("Data cleaning in progress...")
   derived_data_dir=config['derived_data_dir']
   data_report_dir = config['data_report_dir']
@@ -668,7 +668,7 @@ def data_cleaning(df, config):
   df = clean_non_land_posted_features(df)
 
   print(f"Data cleaning completed!")
-  if save_csv:
+  if save_csv and not process_pt_test:
         if save_dir is None:
             raise ValueError("save_dir must be provided if save_csv is True.")
 

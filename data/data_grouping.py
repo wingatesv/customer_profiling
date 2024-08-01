@@ -268,7 +268,7 @@ def group_annual_income(df, feature_mapping_dir, report_file_path):
   return df
 
 
-def group_data(df, config):
+def group_data(df, config, process_pt_test = False):
   print("Data grouping in progress...")
   feature_mapping_dir=config['feature_mapping_dir']
   save_dir=config['save_dir']
@@ -290,7 +290,7 @@ def group_data(df, config):
 
 
   print("Data grouping phase completed!")
-  if save_csv:
+  if save_csv and not process_pt_test:
       if save_dir is None:
           raise ValueError("save_dir must be provided if save_csv is True.")
       

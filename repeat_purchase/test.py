@@ -92,8 +92,8 @@ def test (test_df, config):
       # Prepare the output DataFrame
       prediction_df = pd.DataFrame({
           'contact_nric_masked': test_df['contact_nric_masked'],
-          f"probability (threshold = {config['inference_threshold']})": probabilities,       # Probability of class 1
-          'predicted label': test_predictions,
+          f"probability": probabilities,       # Probability of class 1
+          "predicted label (threshold = {config['inference_threshold']})": test_predictions,
           'truth label': test_df['label']
       })
 

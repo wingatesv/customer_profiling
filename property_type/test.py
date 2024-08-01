@@ -13,9 +13,12 @@ def preprocess_pt_df(df, config):
   # Read the columns to extract from the CSV file
   columns_to_extract = read_columns_to_extract(config["pt_model_columns_file"])
 
+  columns_to_remove = ['label', 'repeat_phase_property_type']
+
   if config['inference_mode']:
-        columns_to_remove = ['label', 'repeat_phase_property_type']
-        columns_to_extract = [col for col in columns_to_extract if col not in columns_to_remove]
+      columns_to_remove.append('derived_phase_property_type')
+
+  columns_to_extract = [col for col in columns_to_extract if col not in columns_to_remove]
 
   # Check for the presence of columns to extract in df
   check_columns_presence(df, columns_to_extract, "for pt modeling")
@@ -23,27 +26,24 @@ def preprocess_pt_df(df, config):
   df = extract_columns(df, columns_to_extract)
 
 
-  if 'label' in df.columns:
-    df = df[df['label'] != 0]
-    df = df.drop(columns=['label'],  errors='ignore')
 
-  if 'repeat_phase_property_type' in df.columns:
-    df = df[~df['repeat_phase_property_type'].isin(['RSKU', 'Industrial'])]
+  if 'derived_phase_property_type' in df.columns:
+    df = df[~df['derived_phase_property_type'].isin(['RSKU', 'Industrial'])]
 
     # Initialize the OneHotEncoder
     one_hot_encoder = OneHotEncoder(sparse_output=False)
 
     # Fit and transform the `repeat_phase_property_type` column
-    one_hot_labels = one_hot_encoder.fit_transform(df[['repeat_phase_property_type']])
+    one_hot_labels = one_hot_encoder.fit_transform(df[['derived_phase_property_type']])
 
     # Get the names of the new one-hot encoded columns
-    one_hot_label_names = one_hot_encoder.get_feature_names_out(['repeat_phase_property_type'])
+    one_hot_label_names = one_hot_encoder.get_feature_names_out(['derived_phase_property_type'])
 
     # Create a DataFrame from the one-hot encoded labels
     one_hot_labels_df = pd.DataFrame(one_hot_labels, columns=one_hot_label_names, index=df.index)
 
     # Drop the original `repeat_phase_property_type` column from the original DataFrame
-    df = df.drop(columns=['repeat_phase_property_type'])
+    df = df.drop(columns=['derived_phase_property_type'])
 
     # Add the one-hot encoded labels DataFrame to the original DataFrame
     df = pd.concat([df, one_hot_labels_df], axis=1)
@@ -100,19 +100,19 @@ def model_prediction(model, test_encoded, threshold=0.5):
 
 def save_results(test_df, probabilities, test_predictions, config, mode, save_folder):
     if mode == 'landed':
-      label = 'repeat_phase_property_type_Landed'
+      label = 'derived_phase_property_type_Landed'
     elif mode == 'high_rise':
-      label = 'repeat_phase_property_type_High Rise'
+      label = 'derived_phase_property_type_High Rise'
     else:
-      label = 'repeat_phase_property_type_Commercial'
+      label = 'derived_phase_property_type_Commercial'
 
 
     if config['evaluation_mode']:
         # Prepare the output DataFrame
         prediction_df = pd.DataFrame({
             'contact_nric_masked': test_df['contact_nric_masked'],
-            f"probability (threshold = 0.5)": probabilities,  # Probability of class 1
-            'predicted label': test_predictions,
+            f"probability": probabilities,  # Probability of class 1
+            'predicted label (threshold = 0.5)': test_predictions,
             'truth label': test_df[label]
         })
 
@@ -173,7 +173,7 @@ def property_type_test(test_df, config):
 
   test_df = preprocess_pt_df(test_df, config)
 
-  test_df_clean = test_df.drop(columns=['label', 'contact_nric_masked', 'spa_date', 'repeat_phase_property_type', 'repeat_phase_property_type_Landed', 'repeat_phase_property_type_High Rise', 'repeat_phase_property_type_Commercial'], errors='ignore')
+  test_df_clean = test_df.drop(columns=['label', 'contact_nric_masked', 'spa_date', 'repeat_phase_property_type' ,'derived_phase_property_type', 'derived_phase_property_type_Landed', 'derived_phase_property_type_High Rise', 'derived_phase_property_type_Commercial'], errors='ignore')
 
   if config['landed_mode']:
     model, preprocessor = model_list[0], preprocessor_list[0]

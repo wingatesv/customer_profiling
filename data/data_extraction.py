@@ -213,7 +213,6 @@ def data_extraction(df, config):
 
         print(f"Using data from {start_date} to {end_date} for evaluation")
         print(f"Evaluation data saved to {output_csv_path}")
-        print(f"Remaining data before {start_date} saved to 'remaining_output_df.csv'")
 
         # Check for data after the end_date
         after_end_date_df = output_df[output_df['spa_date'] > end_date]
@@ -239,4 +238,4 @@ def data_extraction(df, config):
         output_df.to_csv(output_csv_path, index=False)
         print(f"Data extraction and saving completed! Saved to {output_csv_path}")
 
-    return output_df
+    return output_df, split_eval_df
