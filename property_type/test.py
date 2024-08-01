@@ -111,7 +111,7 @@ def save_results(test_df, probabilities, test_predictions, config, mode, save_fo
     if config['evaluation_mode']:
         # Prepare the output DataFrame
         prediction_df = pd.DataFrame({
-            'contact_nric_masked': test_df['contact_nric_masked'],
+            config['unique_customer_id']: test_df[config['unique_customer_id']],
             f"probability": probabilities,  # Probability of class 1
             'predicted label (threshold = 0.5)': test_predictions,
             'truth label': test_df[label]
@@ -146,7 +146,7 @@ def save_results(test_df, probabilities, test_predictions, config, mode, save_fo
     else:
         # Prepare the output DataFrame
         prediction_df = pd.DataFrame({
-            'contact_nric_masked': test_df['contact_nric_masked'],
+            config['unique_customer_id']: test_df[config['unique_customer_id']],
             f"probability (threshold = 0.5)": probabilities,  # Probability of class 1
             'predicted label': test_predictions,
         })
@@ -174,7 +174,7 @@ def property_type_test(test_df, config):
 
   test_df = preprocess_pt_df(test_df, config)
 
-  test_df_clean = test_df.drop(columns=['label', 'contact_nric_masked', 'spa_date', 'repeat_phase_property_type' ,'derived_phase_property_type', 'derived_phase_property_type_Landed', 'derived_phase_property_type_High Rise', 'derived_phase_property_type_Commercial'], errors='ignore')
+  test_df_clean = test_df.drop(columns=[config['unique_customer_id'],'label', 'spa_date', 'repeat_phase_property_type' ,'derived_phase_property_type', 'derived_phase_property_type_Landed', 'derived_phase_property_type_High Rise', 'derived_phase_property_type_Commercial'], errors='ignore')
 
   if config['landed_mode']:
     model, preprocessor = model_list[0], preprocessor_list[0]
