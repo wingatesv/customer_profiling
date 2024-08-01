@@ -6,7 +6,7 @@ def validate_config(config):
     # List of valid model types
     valid_models = [
         "logistic_regression", "knn", "svm", "decision_tree",
-        "random_forest", "gradient_boosting", "lightgbm", "catboost", "mlp"
+        "random_forest", "gradient_boosting", "mlp"
     ]
     
     # Date format regex
@@ -46,9 +46,6 @@ def validate_config(config):
 
     # Check test label generation section
     if config.get("generate_test_label_mode"):
-        if not config.get("test_file"):
-            print("Error: 'test_file' must be specified when 'generate_test_label_mode' is True.")
-            exit()
         if not (config.get("evaluation_start_date") and config.get("evaluation_end_date")):
             print("Error: 'evaluation_start_date' and 'evaluation_end_date' must be specified when 'generate_test_label_mode' is True.")
             exit()
