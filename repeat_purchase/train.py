@@ -267,7 +267,7 @@ def train(df, config):
 
 
   # Encode features before bootstraping
-  df_temp = df.drop(columns=['label', 'spa_date', 'contact_nric_masked'], errors='ignore')
+  df_temp = df.drop(columns=['label', 'spa_date', config['unique_customer_id']], errors='ignore')
   _, preprocessor, categorical_features, numerical_features = encode_features(df_temp)
   output_preprocessor_path = os.path.join(config['rp_model_dir'], 'preprocessor.pkl')
   joblib.dump(preprocessor, output_preprocessor_path)
