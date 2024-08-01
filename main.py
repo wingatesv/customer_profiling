@@ -45,6 +45,7 @@ def clear_directory(directory):
 def data_preparation(config):
   training_mode=config['training_mode']
   eval_mode=config['evaluation_mode']
+  infer_mode=config['inference_mode']
   
 
   def read_checkpoint(file_name):
@@ -86,7 +87,7 @@ def data_preparation(config):
         sys.exit()
 
   df = data_extraction(df, config)
-  if training_mode or eval_mode:
+  if training_mode or (eval_mode and not infer_mode):
     df = generate_label(df, config)
   df = data_cleaning(df, config)
   df = add_features(df, config)
@@ -118,7 +119,7 @@ def main(config):
       if config['training_mode'] or config['evaluation_mode']:
             if 'label' not in df.columns:
               print('Training labels are not previously generated....generating training labels')
-              df, pt_df = generate_label(df, config)
+              df = generate_label(df, config)
 
 
               output_csv_path = os.path.join(config['save_dir'], 'bin_df.csv')
@@ -129,11 +130,14 @@ def main(config):
 
       if config['generate_test_label_mode']:
           print("Generating test labels only...")
-          test_df = generate_test_label(df, config)
+          test_df, pt_df = generate_test_label(df, config)
           # Save the resulting DataFrame to CSV
-          output_csv_path = os.path.join(config['save_dir'], 'test_df.csv')
+          output_csv_path = os.path.join(config['save_dir'], 'rp_test_df.csv')
           test_df.to_csv(output_csv_path, index=False)
-          print(f"Test label generation completed! Saved to {output_csv_path}")
+          print(f"Test rp label generation completed! Saved to {output_csv_path}")
+          output_csv_path = os.path.join(config['save_dir'], 'pt_test_df.csv')
+          pt_df.to_csv(output_csv_path, index=False)
+          print(f"Test pt label generation completed! Saved to {output_csv_path}")
 
       else:
         # Training
