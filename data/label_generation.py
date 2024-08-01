@@ -12,8 +12,8 @@ def generate_label(df, config):
     save_csv=config['save_output']
     data_report_dir = config['data_report_dir']
     report_file_path = os.path.join(data_report_dir, 'train_label_gen_report.txt')
-    # Convert contact_nric_masked to string using .loc
-    df.loc[:, 'contact_nric_masked'] = df['contact_nric_masked'].astype(str)
+    # Convert config['unique_customer_id'] to string using .loc
+    df.loc[:, config['unique_customer_id'] = df[config['unique_customer_id']].astype(str)
     
     # Convert  date to datetime
     df['spa_stamp_date'] = pd.to_datetime(df['spa_stamp_date'], errors='coerce')
@@ -23,7 +23,7 @@ def generate_label(df, config):
     repeated_purchase_df = pd.DataFrame()
 
     # Group by customer
-    grouped = df.groupby('contact_nric_masked')
+    grouped = df.groupby(config['unique_customer_id'])
 
     # Progress bar for processing each group
     for name, group in tqdm(grouped, desc="Generating training labels"):
