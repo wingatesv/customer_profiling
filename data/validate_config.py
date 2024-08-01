@@ -49,10 +49,10 @@ def validate_config(config):
         if not (config.get("evaluation_start_date") and config.get("evaluation_end_date")):
             print("Error: 'evaluation_start_date' and 'evaluation_end_date' must be specified when 'generate_test_label_mode' is True.")
             exit()
-        if not date_format.match(config.get("evaluation_start_date")):
+        if not date_format.match(str(config.get("evaluation_start_date"))):
             print("Error: 'evaluation_start_date' must be in 'YYYY-MM-DD' format.")
             exit()
-        if not date_format.match(config.get("evaluation_end_date")):
+        if not date_format.match(str(config.get("evaluation_end_date"))):
             print("Error: 'evaluation_end_date' must be in 'YYYY-MM-DD' format.")
             exit()
     
