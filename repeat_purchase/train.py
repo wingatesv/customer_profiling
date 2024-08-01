@@ -253,6 +253,7 @@ def train(df, config):
 
   # Read the columns to extract from the CSV file
   columns_to_extract = read_columns_to_extract(config["rp_model_columns_file"])
+  columns_to_extract = columns_to_extract.append(config['unique_customer_id'])
   # Check for the presence of columns to extract in df
   check_columns_presence(df, columns_to_extract, "for rp_model extraction")
   # Extract the specified columns for df_temp_1
