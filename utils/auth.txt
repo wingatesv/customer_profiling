@@ -1,4 +1,2 @@
 from google.colab import auth
 auth.authenticate_user()
-
-!python /content/customer_profiling/utils/add_buyer_dob.py
