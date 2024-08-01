@@ -120,8 +120,8 @@ def property_type_train(df, config):
       val_target = val_df['label']
 
       # Drop the target variable from the feature set
-      train_df_2 = train_df.drop(columns=['label', 'contact_nric_masked',  'spa_date'], errors='ignore')
-      val_df_2 = val_df.drop(columns=['label', 'contact_nric_masked',  'spa_date'], errors='ignore')
+      train_df_2 = train_df.drop(columns=['label', config['unique_customer_id'],  'spa_date'], errors='ignore')
+      val_df_2 = val_df.drop(columns=['label', config['unique_customer_id'],  'spa_date'], errors='ignore')
 
       # Encode the training features
       train_encoded, preprocessor, categorical_features, numerical_features = encode_features(train_df_2)
