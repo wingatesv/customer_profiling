@@ -71,6 +71,7 @@ def data_preparation(config):
                 pt_test_df = read_checkpoint('pt_test_df.csv')
                 print("Found bin_df.csv and pt_test_df.csv! continue from here....")
                 return df, pt_test_df
+          
 
   # If no checkpoint is loaded, start from scratch
   print("Starting from scratch ... loading df from input_file")

@@ -261,7 +261,8 @@ def clean_gender(df, report_file_path):
                 return 'MALE' if int(str(row['contact_nric'])[-1]) % 2 != 0 else 'FEMALE'
             else:
                 return df['customer_gender'].mode()[0].upper()  # Impute with the mode of customer_gender
-        return row['derived_gender']
+        else:
+          return df['customer_gender'].mode()[0].upper()
 
     # Apply the gender imputation logic
     df['derived_gender'] = df.apply(impute_gender, axis=1)
@@ -287,7 +288,8 @@ def clean_marital_status(df, report_file_path):
               return str(row['contact_marital_status']).upper()
           else:
               return df['customer_marital_status'].mode()[0].upper()
-      return row['derived_marital_status']
+      else:
+        return df['customer_marital_status'].mode()[0].upper()
 
 
     df['derived_marital_status'] = df.apply(impute_marital, axis=1)
