@@ -118,7 +118,7 @@ def main(config):
       if config['training_mode'] or config['evaluation_mode']:
             if 'label' not in df.columns:
               print('Training labels are not previously generated....generating training labels')
-              df = generate_label(df, config)
+              df, pt_df = generate_label(df, config)
 
 
               output_csv_path = os.path.join(config['save_dir'], 'bin_df.csv')
@@ -152,9 +152,10 @@ def main(config):
 
            
         if config['evaluation_mode'] and not config['inference_mode']:
+          test_df, pt_df = generate_test_label(df, config)
           if config['repeat_purchase_mode']:
 
-            test_df = generate_test_label(df, config)
+           
             print()
             print("------------------------------------------------------------------------------------------------------")
             print("Starting repeat_purchase model evaluation....")
