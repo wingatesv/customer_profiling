@@ -8,6 +8,9 @@ import sys
 def generate_test_label(df, config):
   print("Generating testing labels...")
 
+  df = df[df['label'] != 1]
+  df[config['unique_customer_id']] = df[config['unique_customer_id']].astype(str)
+
   if os.path.exists( os.path.join(config['save_dir'], 'for_eval_label_generation.csv')):
      print("Using split df from data extraction for label generation....")
      label_df = pd.read_csv(os.path.join(config['save_dir'], 'for_eval_label_generation.csv'), low_memory=False,  dtype={config['unique_customer_id']: str})
@@ -19,27 +22,6 @@ def generate_test_label(df, config):
 
   label_df['spa_date'] = pd.to_datetime(label_df['spa_date'], errors='coerce')
 
-  oldest_date = label_df['spa_date'].min()
-  latest_date = label_df['spa_date'].max()
-  print(f"Using data for test label from {oldest_date} to {latest_date}...")
-
-  print(f"Using data from {config['evaluation_start_date']} to {config['evaluation_end_date']} for evaluation")
-  # Extract start and end dates from the config
-  start_date = pd.to_datetime(config['evaluation_start_date'], errors='coerce')
-
-  # Check for end date, if not available or out of range, use the latest date from spa_date and raise a warning
-  end_date = pd.to_datetime(config['evaluation_end_date'], errors='coerce')
-
-  # Validate dates within the range of the DataFrame
-  if start_date < label_df['spa_date'].min() or start_date > label_df['spa_date'].max():
-      start_date = label_df['spa_date'].min()
-      warnings.warn(f"evaluation_start_date {config['evaluation_start_date']} is out of range, using the earliest date from spa_date: {start_date}")
- 
-  
-  if end_date < label_df['spa_date'].min() or end_date > label_df['spa_date'].max():
-      warnings.warn(f"evaluation_end_date {config['evaluation_end_date']} is out of range, using the latest date from spa_date: {label_df['spa_date'].max()}")
-      end_date = label_df['spa_date'].max()
-  
   
   # Filter the DataFrame within the date range
   mask = (label_df['spa_date'] >= start_date) & (label_df['spa_date'] <= end_date)
@@ -60,4 +42,8 @@ def generate_test_label(df, config):
   print("Distribution of the test label:")
   print(label_distribution)
 
-  return df
+  pt_df = df[df['label'] != 0]
+  pt_df = pt_df.drop(columns=['label'],  errors='ignore')
+  pt_df.to_csv('/content/pt_df', index=False)
+
+  return df, pt_df
