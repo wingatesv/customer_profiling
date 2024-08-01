@@ -165,7 +165,7 @@ def main(config):
             print()
             print("------------------------------------------------------------------------------------------------------")
             print("Starting property_type model evaluation....")
-            property_type_test(df, config)
+            property_type_test(pt_df, config)
             
         elif config['inference_mode'] and not config['evaluation_mode']:
           if config['repeat_purchase_mode']:

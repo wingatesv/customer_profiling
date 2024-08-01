@@ -71,7 +71,7 @@ def test (test_df, config):
 
   # Read the columns to extract from the CSV file
   columns_to_extract = read_columns_to_extract(config["rp_model_columns_file"])
-  columns_to_extract = columns_to_extract.append(config['unique_customer_id'])
+  columns_to_extract.append(config['unique_customer_id'])
 
   if config['inference_mode']:
         columns_to_remove = ['label']

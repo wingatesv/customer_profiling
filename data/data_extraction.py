@@ -125,7 +125,8 @@ def data_extraction(df, config):
 
     # Read the columns to extract from the CSV file
     columns_to_extract = read_columns_to_extract(columns_file)
-    columns_to_extract = columns_to_extract.append(config['unique_customer_id'])
+    columns_to_extract.append(config['unique_customer_id'])
+
 
     # List of columns to convert to datetime
     date_columns = [
@@ -153,6 +154,7 @@ def data_extraction(df, config):
     )
     df_temp_1 = filter_dataframe(df, filter_conditions_1)
 
+ 
     # Check for the presence of columns to extract in df_temp_1
     check_columns_presence(df_temp_1, columns_to_extract, "for extraction in df_temp_1")
 

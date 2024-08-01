@@ -22,13 +22,9 @@ def generate_test_label(df, config):
 
   label_df['spa_date'] = pd.to_datetime(label_df['spa_date'], errors='coerce')
 
-  
-  # Filter the DataFrame within the date range
-  mask = (label_df['spa_date'] >= start_date) & (label_df['spa_date'] <= end_date)
-  evaluation_year_df = label_df.loc[mask]
 
   # Get the set of config['unique_customer_id'] values from after_2022_df
-  evaluation_year_contact_nric = set(evaluation_year_df[config['unique_customer_id']].unique())
+  evaluation_year_contact_nric = set(label_df[config['unique_customer_id']].unique())
 
   # Drop the existing label column if it exists
   if 'label' in df.columns:
@@ -44,6 +40,18 @@ def generate_test_label(df, config):
 
   pt_df = df[df['label'] != 0]
   pt_df = pt_df.drop(columns=['label'],  errors='ignore')
-  pt_df.to_csv('/content/pt_df', index=False)
+
+
+  # Create a dictionary mapping unique_customer_id to phase_property_type from label_df
+  customer_to_property_type = label_df.set_index(config['unique_customer_id'])['phase_property_type'].to_dict()
+
+  # Create the new "repeat_phase_property_type" column in pt_df
+  pt_df['repeat_phase_property_type'] = pt_df[config['unique_customer_id']].map(customer_to_property_type)
+
+  # See the distribution of the label column
+  pt_df = pt_df['repeat_phase_property_type'].value_counts()
+  print("Distribution of the repeat_phase_property_type test label:")
+  print(label_distribution)
+
 
   return df, pt_df

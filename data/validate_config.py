@@ -91,6 +91,11 @@ def validate_config(config):
             print("Error: 'pt_validation_split' must be between 0 and 0.5.")
             exit()
 
+    # Validate unique_customer_id
+    if config.get("unique_customer_id") not in ["contact_nric_masked", "contact_nric"]:
+        print("Error: 'unique_customer_id' must be either 'contact_nric_masked' or 'contact_nric'.")
+        exit()
+
 
     # If all checks passed
     print("All configurations are valid.... continue....")

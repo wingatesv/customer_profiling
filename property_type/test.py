@@ -12,12 +12,12 @@ from data.data_extraction import read_columns_to_extract, check_columns_presence
 def preprocess_pt_df(df, config):
   # Read the columns to extract from the CSV file
   columns_to_extract = read_columns_to_extract(config["pt_model_columns_file"])
-  columns_to_extract = columns_to_extract.append(config['unique_customer_id'])
+  columns_to_extract.append(config['unique_customer_id'])
 
-  columns_to_remove = ['label', 'repeat_phase_property_type']
+  columns_to_remove = ['label']
 
   if config['inference_mode']:
-      columns_to_remove.append('derived_phase_property_type')
+      columns_to_remove.append('repeat_phase_property_type')
 
   columns_to_extract = [col for col in columns_to_extract if col not in columns_to_remove]
 
@@ -28,24 +28,24 @@ def preprocess_pt_df(df, config):
 
 
 
-  if 'derived_phase_property_type' in df.columns:
-    df = df[~df['derived_phase_property_type'].isin(['RSKU', 'Industrial'])]
+  if 'repeat_phase_property_type' in df.columns:
+    df = df[~df['repeat_phase_property_type'].isin(['RSKU', 'Industrial'])]
 
     # Initialize the OneHotEncoder
     one_hot_encoder = OneHotEncoder(sparse_output=False)
 
     # Fit and transform the `repeat_phase_property_type` column
-    one_hot_labels = one_hot_encoder.fit_transform(df[['derived_phase_property_type']])
+    one_hot_labels = one_hot_encoder.fit_transform(df[['repeat_phase_property_type']])
 
     # Get the names of the new one-hot encoded columns
-    one_hot_label_names = one_hot_encoder.get_feature_names_out(['derived_phase_property_type'])
+    one_hot_label_names = one_hot_encoder.get_feature_names_out(['repeat_phase_property_type'])
 
 
     # Create a DataFrame from the one-hot encoded labels
     one_hot_labels_df = pd.DataFrame(one_hot_labels, columns=one_hot_label_names, index=df.index)
 
     # Drop the original `repeat_phase_property_type` column from the original DataFrame
-    df = df.drop(columns=['derived_phase_property_type'])
+    df = df.drop(columns=['repeat_phase_property_type'])
 
     # Add the one-hot encoded labels DataFrame to the original DataFrame
     df = pd.concat([df, one_hot_labels_df], axis=1)
@@ -102,11 +102,11 @@ def model_prediction(model, test_encoded, threshold=0.5):
 
 def save_results(test_df, probabilities, test_predictions, config, mode, save_folder):
     if mode == 'landed':
-      label = 'derived_phase_property_type_LANDED'
+      label = 'repeat_phase_property_type_Landed'
     elif mode == 'high_rise':
-      label = 'derived_phase_property_type_HIGH RISE'
+      label = 'repeat_phase_property_type_High Rise'
     else:
-      label = 'derived_phase_property_type_COMMERCIAL'
+      label = 'repeat_phase_property_type_Commercial'
 
 
     if config['evaluation_mode']:
@@ -175,7 +175,7 @@ def property_type_test(test_df, config):
 
   test_df = preprocess_pt_df(test_df, config)
 
-  test_df_clean = test_df.drop(columns=[config['unique_customer_id'],'label', 'spa_date', 'repeat_phase_property_type' ,'derived_phase_property_type', 'derived_phase_property_type_Landed', 'derived_phase_property_type_High Rise', 'derived_phase_property_type_Commercial'], errors='ignore')
+  test_df_clean = test_df.drop(columns=[config['unique_customer_id'],'label', 'spa_date', 'repeat_phase_property_type' , 'repeat_phase_property_type_Landed', 'repeat_phase_property_type_High Rise', 'repeat_phase_property_type_Commercial'], errors='ignore')
 
   if config['landed_mode']:
     model, preprocessor = model_list[0], preprocessor_list[0]

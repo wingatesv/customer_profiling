@@ -13,7 +13,7 @@ def generate_label(df, config):
     data_report_dir = config['data_report_dir']
     report_file_path = os.path.join(data_report_dir, 'train_label_gen_report.txt')
     # Convert config['unique_customer_id'] to string using .loc
-    df.loc[:, config['unique_customer_id'] = df[config['unique_customer_id']].astype(str)
+    df.loc[:, config['unique_customer_id']] = df[config['unique_customer_id']].astype(str)
     
     # Convert  date to datetime
     df['spa_stamp_date'] = pd.to_datetime(df['spa_stamp_date'], errors='coerce')
