@@ -12,6 +12,7 @@ from data.data_extraction import read_columns_to_extract, check_columns_presence
 def preprocess_pt_df(df, config):
   # Read the columns to extract from the CSV file
   columns_to_extract = read_columns_to_extract(config["pt_model_columns_file"])
+  columns_to_extract = columns_to_extract.append(config['unique_customer_id'])
 
   columns_to_remove = ['label', 'repeat_phase_property_type']
 
