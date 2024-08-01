@@ -75,7 +75,7 @@ def add_derived_completion_status(df):
   return df
 
 
-def add_features(df, config, process_pt_test = False):
+def add_features(df, config):
   print("Adding features in progress...")
   save_dir=config['save_dir']
   save_csv=config['save_output']
@@ -85,7 +85,7 @@ def add_features(df, config, process_pt_test = False):
   df = add_derived_completion_status(df)
 
   print("Feature generation phase completed!")
-  if save_csv and not process_pt_test:
+  if save_csv:
       if save_dir is None:
           raise ValueError("save_dir must be provided if save_csv is True.")
       
