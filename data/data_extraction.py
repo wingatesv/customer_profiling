@@ -72,7 +72,7 @@ def extract_columns(df, columns_to_extract):
 
 def remove_recent_transaction(df, config):
     """
-    Removes rows with transactions within one month for each contact_nric_masked.
+    Removes rows with transactions within one month for each config['unique_customer_id'].
     
     Args:
     df (pd.DataFrame): The DataFrame containing the transaction data.
@@ -80,14 +80,14 @@ def remove_recent_transaction(df, config):
     Returns:
     pd.DataFrame: The DataFrame with recent transactions removed.
     """
-    # Sort the DataFrame by 'contact_nric_masked' and 'spa_date'
+    # Sort the DataFrame by config['unique_customer_id'] and 'spa_date'
     df = df.sort_values(by=[config['unique_customer_id'], 'spa_date'])
     # Track the number of excluded rows
     # excluded_count = 0
     # Initialize an empty DataFrame to collect the rows that meet the condition
     result_df = pd.DataFrame()
 
-    # Iterate over each contact_nric_masked group
+    # Iterate over each config['unique_customer_id'] group
     for _, group in tqdm(df.groupby(config['unique_customer_id']), desc="Checking the recency of the rows"):
         # Initialize a list to keep track of rows to retain
         to_retain = []
@@ -242,4 +242,4 @@ def data_extraction(df, config):
         output_df.to_csv(output_csv_path, index=False)
         print(f"Data extraction and saving completed! Saved to {output_csv_path}")
 
-    return output_df, split_eval_df
+    return output_df
