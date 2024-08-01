@@ -66,11 +66,11 @@ def data_preparation(config):
         if os.path.exists(config['save_dir']):
             files = os.listdir(config['save_dir'])
 
-            if 'bin_df.csv' in files and 'pt_test_df.csv' in files:
+            if 'bin_df.csv' in files:
                 df = read_checkpoint('bin_df.csv')
-                pt_test_df = read_checkpoint('pt_test_df.csv')
-                print("Found bin_df.csv and pt_test_df.csv! continue from here....")
-                return df, pt_test_df
+              
+                print("Found bin_df.csv! continue from here....")
+                return df
           
 
   # If no checkpoint is loaded, start from scratch
@@ -85,7 +85,7 @@ def data_preparation(config):
         print('Terminating program....')
         sys.exit()
 
-  df, pt_test_df = data_extraction(df, config)
+  df = data_extraction(df, config)
   if training_mode or eval_mode:
     df = generate_label(df, config)
   df = data_cleaning(df, config)
@@ -94,17 +94,7 @@ def data_preparation(config):
   df = data_bining(df, config)
 
 
-  print("Cleaning the pt_test_df.....")
-  pt_test_df = data_cleaning(pt_test_df, config, process_pt_test = True)
-  pt_test_df = add_features(pt_test_df, config, process_pt_test = True)
-  pt_test_df = group_data(pt_test_df, config, process_pt_test = True)
-  pt_test_df = data_bining(pt_test_df, config, process_pt_test = True)
-  
-  output_csv_path = os.path.join(config['save_dir'], 'pt_test_df.csv')
-  pt_test_df.to_csv(output_csv_path, index=False)
-  print(f" pt_test_df cleaning and saving completed! Saved to {output_csv_path}")
-
-  return df, pt_test_df
+  return df
 
 
 
@@ -174,7 +164,7 @@ def main(config):
             print()
             print("------------------------------------------------------------------------------------------------------")
             print("Starting property_type model evaluation....")
-            property_type_test(pt_test_df, config)
+            property_type_test(df, config)
             
         elif config['inference_mode'] and not config['evaluation_mode']:
           if config['repeat_purchase_mode']:
@@ -186,7 +176,7 @@ def main(config):
             print()
             print("------------------------------------------------------------------------------------------------------")
             print("Starting property_type model inference....")
-            property_type_test(pt_test_df, config)
+            property_type_test(df, config)
         
         
         else:
