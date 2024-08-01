@@ -39,6 +39,7 @@ def preprocess_pt_df(df, config):
     # Get the names of the new one-hot encoded columns
     one_hot_label_names = one_hot_encoder.get_feature_names_out(['derived_phase_property_type'])
 
+
     # Create a DataFrame from the one-hot encoded labels
     one_hot_labels_df = pd.DataFrame(one_hot_labels, columns=one_hot_label_names, index=df.index)
 
@@ -100,11 +101,11 @@ def model_prediction(model, test_encoded, threshold=0.5):
 
 def save_results(test_df, probabilities, test_predictions, config, mode, save_folder):
     if mode == 'landed':
-      label = 'derived_phase_property_type_Landed'
+      label = 'derived_phase_property_type_LANDED'
     elif mode == 'high_rise':
-      label = 'derived_phase_property_type_High Rise'
+      label = 'derived_phase_property_type_HIGH RISE'
     else:
-      label = 'derived_phase_property_type_Commercial'
+      label = 'derived_phase_property_type_COMMERCIAL'
 
 
     if config['evaluation_mode']:

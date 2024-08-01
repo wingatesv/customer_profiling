@@ -42,17 +42,17 @@ def generate_one_hot_label(df):
 
   # Extract the columns for commercial_df
   commercial_df = df.drop(columns=[
-      'repeat_phase_property_type_High Rise', 'repeat_phase_property_type_Landed'
+      'repeat_phase_property_type_High Rise', 'repeat_phase_property_type_Landed' , 'derived_phase_property_type'
   ]).rename(columns={'repeat_phase_property_type_Commercial': 'label'})
 
   # Extract the columns for high_rise_df
   high_rise_df = df.drop(columns=[
-      'repeat_phase_property_type_Commercial', 'repeat_phase_property_type_Landed'
+      'repeat_phase_property_type_Commercial', 'repeat_phase_property_type_Landed', 'derived_phase_property_type'
   ]).rename(columns={'repeat_phase_property_type_High Rise': 'label'})
 
   # Extract the columns for landed_df
   landed_df = df.drop(columns=[
-      'repeat_phase_property_type_Commercial', 'repeat_phase_property_type_High Rise'
+      'repeat_phase_property_type_Commercial', 'repeat_phase_property_type_High Rise', 'derived_phase_property_type'
   ]).rename(columns={'repeat_phase_property_type_Landed': 'label'})
 
 

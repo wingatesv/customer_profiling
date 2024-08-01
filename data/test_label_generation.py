@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import warnings
 from data.data_extraction import read_columns_to_extract, check_columns_presence, extract_columns, convert_date_columns, filter_dataframe, remove_recent_transaction
-
+import sys
 
 # def generate_test_label(df, config):
 #   print("Generating testing labels...")
@@ -47,16 +47,14 @@ from data.data_extraction import read_columns_to_extract, check_columns_presence
 def generate_test_label(df, config):
   print("Generating testing labels...")
 
-  if config['split_df_for_eval'] and os.path.exists( os.path.join(config['save_dir'], 'for_eval_label_generation.csv')):
+  if os.path.exists( os.path.join(config['save_dir'], 'for_eval_label_generation.csv')):
      print("Using split df from data extraction for label generation....")
      label_df = pd.read_csv(os.path.join(config['save_dir'], 'for_eval_label_generation.csv'), low_memory=False,  dtype={'contact_nric_masked': str})
 
   else:
-    print("Using test_file for label generation....")
-    if not os.path.exists(config['test_file']):
-      raise FileNotFoundError(f"{config['test_file']} not found.")
+    print(f"Cannot find for_eval_label_generation.csv for eval!")
+    sys.exit()
 
-    label_df = pd.read_csv(config['test_file'], low_memory=False,  dtype={'contact_nric_masked': str})
 
   if label_df['sales_id'].duplicated().any():
       print("Duplicates found in sales_id..... preprocessing the raw test file")

@@ -48,7 +48,7 @@ def data_preparation(config):
   
 
   def read_checkpoint(file_name):
-        return pd.read_csv(os.path.join(config['save_dir'], file_name), low_memory=False, dtype={'contact_nric_masked': str})
+        return pd.read_csv(os.path.join(config['save_dir'], file_name), low_memory=False, dtype={config['unique_customer_id']: str})
 
   # Create directory if it doesn't exist
   if not os.path.exists(config['data_report_dir']):
@@ -78,7 +78,7 @@ def data_preparation(config):
   # Check if the input file exists
   if not os.path.exists(config['input_file']):
       raise FileNotFoundError(f"{config['input_file']} not found.")
-  df = pd.read_csv(config['input_file'], low_memory=False, dtype={'contact_nric_masked': str})
+  df = pd.read_csv(config['input_file'], low_memory=False, dtype={config['unique_customer_id']: str})
 
   if 'buyer_dob' not in df.columns:
         print('Feature: "buyer_dob" is not in the input_file!')

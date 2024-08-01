@@ -70,7 +70,7 @@ def extract_columns(df, columns_to_extract):
     """
     return df.loc[:, columns_to_extract]
 
-def remove_recent_transaction(df):
+def remove_recent_transaction(df, config):
     """
     Removes rows with transactions within one month for each contact_nric_masked.
     
@@ -81,15 +81,17 @@ def remove_recent_transaction(df):
     pd.DataFrame: The DataFrame with recent transactions removed.
     """
     # Sort the DataFrame by 'contact_nric_masked' and 'spa_date'
-    df = df.sort_values(by=['contact_nric_masked', 'spa_date'])
-
+    df = df.sort_values(by=[config['unique_customer_id'], 'spa_date'])
+    # Track the number of excluded rows
+    # excluded_count = 0
     # Initialize an empty DataFrame to collect the rows that meet the condition
     result_df = pd.DataFrame()
 
     # Iterate over each contact_nric_masked group
-    for _, group in tqdm(df.groupby('contact_nric_masked'), desc="Checking the recency of the rows"):
+    for _, group in tqdm(df.groupby(config['unique_customer_id']), desc="Checking the recency of the rows"):
         # Initialize a list to keep track of rows to retain
         to_retain = []
+
 
         # Iterate through the group to find rows to retain
         i = 0
@@ -105,8 +107,11 @@ def remove_recent_transaction(df):
             # Move to the next range
             i = j + 1
 
+        # Calculate the number of excluded rows for this group
+        # excluded_count += len(group) - len(to_retain)
         # Append the rows to retain to the result DataFrame
         result_df = pd.concat([result_df, group.loc[to_retain]])
+        # print(f"Total rows excluded: {excluded_count}")
 
     return result_df
 
@@ -116,7 +121,6 @@ def data_extraction(df, config):
 
     columns_file= config['data_extraction_columns_file'] 
     save_dir= config['save_dir']
-    split_df_for_eval= config['split_df_for_eval']
     save_csv= config['save_output']
 
     # Read the columns to extract from the CSV file
@@ -179,49 +183,49 @@ def data_extraction(df, config):
     output_df = pd.merge(df_temp_1, df_temp_2, on=['sales_id'], how='inner')
 
     # Remove rows with transactions within one month
-    output_df = remove_recent_transaction(output_df)
+    output_df = remove_recent_transaction(output_df, config)
 
     oldest_date = output_df['spa_date'].min()
     latest_date = output_df['spa_date'].max()
     print(f"Using data from {oldest_date} to {latest_date}...")
+    
+    
+    print(f"Using data from {config['evaluation_start_date']} to {config['evaluation_end_date']} for evaluation")
+    # Extract start and end dates from the config
+    start_date = pd.to_datetime(config['evaluation_start_date'], errors='coerce')
+    # Check for end date, if not available or out of range, use the latest date from spa_date and raise a warning
+    end_date = pd.to_datetime(config['evaluation_end_date'], errors='coerce')
 
-    if split_df_for_eval:
-        print(f"Using data from {config['evaluation_start_date']} to {config['evaluation_end_date']} for evaluation")
-        # Extract start and end dates from the config
-        start_date = pd.to_datetime(config['evaluation_start_date'], errors='coerce')
-        # Check for end date, if not available or out of range, use the latest date from spa_date and raise a warning
-        end_date = pd.to_datetime(config['evaluation_end_date'], errors='coerce')
+    # Validate dates within the range of the DataFrame
+    if start_date < output_df['spa_date'].min() or start_date > output_df['spa_date'].max():
+        max_year = output_df['spa_date'].max().year
+        start_date = pd.Timestamp(year=max_year - 1, month=1, day=1)
+        warnings.warn(f"evaluation_start_date {config['evaluation_start_date']} is out of range, using the latest second year date from spa_date: {start_date}")
 
-        # Validate dates within the range of the DataFrame
-        if start_date < output_df['spa_date'].min() or start_date > output_df['spa_date'].max():
-            max_year = output_df['spa_date'].max().year
-            start_date = pd.Timestamp(year=max_year - 1, month=1, day=1)
-            warnings.warn(f"evaluation_start_date {config['evaluation_start_date']} is out of range, using the latest second year date from spa_date: {start_date}")
+            
+    if end_date < output_df['spa_date'].min() or end_date > output_df['spa_date'].max():
+        end_date = output_df['spa_date'].max()
+        warnings.warn(f"evaluation_end_date {config['evaluation_end_date']} is out of range, using the latest date from spa_date: {end_date}")
 
-                
-        if end_date < output_df['spa_date'].min() or end_date > output_df['spa_date'].max():
-            end_date = output_df['spa_date'].max()
-            warnings.warn(f"evaluation_end_date {config['evaluation_end_date']} is out of range, using the latest date from spa_date: {end_date}")
+    # Split the DataFrame based on the validated start and end dates
+    split_eval_df = output_df[(output_df['spa_date'] >= start_date) & (output_df['spa_date'] <= end_date)]
+    output_df = output_df[output_df['spa_date'] < start_date]
+    
+    # Save the split dataframes to CSV files
+    output_csv_path = os.path.join(save_dir, 'for_eval_label_generation.csv')
+    split_eval_df.to_csv(output_csv_path, index=False)
 
-        # Split the DataFrame based on the validated start and end dates
-        split_eval_df = output_df[(output_df['spa_date'] >= start_date) & (output_df['spa_date'] <= end_date)]
-        output_df = output_df[output_df['spa_date'] < start_date]
-        
-        # Save the split dataframes to CSV files
-        output_csv_path = os.path.join(save_dir, 'for_eval_label_generation.csv')
-        split_eval_df.to_csv(output_csv_path, index=False)
+    print(f"Using data from {start_date} to {end_date} for evaluation")
+    print(f"Evaluation data saved to {output_csv_path}")
 
-        print(f"Using data from {start_date} to {end_date} for evaluation")
-        print(f"Evaluation data saved to {output_csv_path}")
+    # Check for data after the end_date
+    after_end_date_df = output_df[output_df['spa_date'] > end_date]
+    if not after_end_date_df.empty:
+        print(f"Data after {end_date} exists but will be appended back to the training df")
+        print(f"Number of rows appended: {len(after_end_date_df)}")
 
-        # Check for data after the end_date
-        after_end_date_df = output_df[output_df['spa_date'] > end_date]
-        if not after_end_date_df.empty:
-            print(f"Data after {end_date} exists but will be appended back to the training df")
-            print(f"Number of rows appended: {len(after_end_date_df)}")
-
-            # Append after_end_date_df back to output_df
-            output_df = pd.concat([output_df, after_end_date_df])
+        # Append after_end_date_df back to output_df
+        output_df = pd.concat([output_df, after_end_date_df])
             
 
     print("Data extraction phase completed!")

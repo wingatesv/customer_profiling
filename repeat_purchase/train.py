@@ -3,11 +3,11 @@ import numpy as np
 import subprocess
 import sys
 import joblib
-import lightgbm as lgb
+# import lightgbm as lgb
 import os
 import warnings
 import shutil
-import catboost as cb
+# import catboost as cb
 from sklearn.utils import resample
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
@@ -197,8 +197,8 @@ def train_model(model_name, train_encoded, train_target, test_encoded, test_targ
         'decision_tree': DecisionTreeClassifier(class_weight=class_weight),
         'random_forest': RandomForestClassifier(class_weight=class_weight),
         'gradient_boosting': GradientBoostingClassifier(),  # Gradient Boosting does not support class_weight directly
-        'lightgbm': lgb.LGBMClassifier(class_weight=class_weight),
-        'catboost': cb.CatBoostClassifier(verbose=0, class_weights=class_weight),  # CatBoost uses class_weights parameter
+        # 'lightgbm': lgb.LGBMClassifier(class_weight=class_weight),
+        # 'catboost': cb.CatBoostClassifier(verbose=0, class_weights=class_weight),  # CatBoost uses class_weights parameter
          'mlp': MLPClassifier(
                               hidden_layer_sizes=(64, 32),  # two hidden layers
                               activation='relu',          # ReLU activation function
