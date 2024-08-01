@@ -113,7 +113,7 @@ def main(config):
       print()
       print("------------------------------------------------------------------------------------------------------")
       print("Starting data preparation...")
-      df, pt_test_df = data_preparation(config)
+      df = data_preparation(config)
 
       if config['training_mode'] or config['evaluation_mode']:
             if 'label' not in df.columns:

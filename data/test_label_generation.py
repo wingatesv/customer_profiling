@@ -47,9 +47,9 @@ def generate_test_label(df, config):
 
   # Create the new "repeat_phase_property_type" column in pt_df
   pt_df['repeat_phase_property_type'] = pt_df[config['unique_customer_id']].map(customer_to_property_type)
-
+  pt_df = pt_df[~pt_df['repeat_phase_property_type'].isin(['RSKU', 'Industrial'])]
   # See the distribution of the label column
-  pt_df = pt_df['repeat_phase_property_type'].value_counts()
+  label_distribution = pt_df['repeat_phase_property_type'].value_counts()
   print("Distribution of the repeat_phase_property_type test label:")
   print(label_distribution)
 
