@@ -93,8 +93,8 @@ def test (test_df, config):
       # Prepare the output DataFrame
       prediction_df = pd.DataFrame({
           config['unique_customer_id']: test_df[config['unique_customer_id']],
-          f"probability": probabilities,       # Probability of class 1
-          "predicted label (threshold = {config['inference_threshold']})": test_predictions,
+          "probability": probabilities,       # Probability of class 1
+          f"predicted label (threshold = {config['inference_threshold']})": test_predictions,
           'truth label': test_df['label']
       })
 
@@ -129,8 +129,8 @@ def test (test_df, config):
       # Prepare the output DataFrame
       prediction_df = pd.DataFrame({
           config['unique_customer_id']: test_df[config['unique_customer_id']],
-          f"probability (threshold = {config['inference_threshold']})": probabilities,       # Probability of class 1
-          'predicted label': test_predictions,
+          "probability": probabilities,       # Probability of class 1
+          f"predicted label (threshold = {config['inference_threshold']})": test_predictions,
       })
 
       output_csv_path = os.path.join(save_folder, 'inference_result.csv')
