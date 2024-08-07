@@ -3,9 +3,9 @@
 
 # Main Modes
 generate_test_label_mode: False                                 # Set to True to generate test labels for input_file only
-training_mode: True                                             # Set to True to enable training mode
-evaluation_mode: True                                          # Set to True to enable evaluation mode
-inference_mode: False                                            # Set to True to enable inference mode
+training_mode: False                                             # Set to True to enable training mode
+evaluation_mode: False                                          # Set to True to enable evaluation mode
+inference_mode: True                                            # Set to True to enable inference mode
 
 
 

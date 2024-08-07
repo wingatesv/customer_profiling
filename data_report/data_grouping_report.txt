@@ -1,1 +1,0 @@
-The following city values do not have mapping targets and were mapped to 'UNKNOWN': ['BANDAR TASIK SENANGIN LENGGENG']
