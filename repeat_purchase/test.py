@@ -137,5 +137,11 @@ def test (test_df, config):
       prediction_df.to_csv(output_csv_path, index=False)
       print(f"Model prediction saved to {output_csv_path}")
 
+      # Filter and save the rows where the model prediction is 1
+      positive_predictions_df = test_df[test_predictions == 1]
+      positive_output_csv_path = os.path.join(config['save_dir'], 'positive_predictions.csv')
+      positive_predictions_df.to_csv(positive_output_csv_path, index=False)
+      print(f"Positive predictions saved to {positive_output_csv_path}")
+
   
 

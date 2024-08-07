@@ -129,15 +129,19 @@ def main(config):
                 
 
       if config['generate_test_label_mode']:
-          print("Generating test labels only...")
-          test_df, pt_df = generate_test_label(df, config)
-          # Save the resulting DataFrame to CSV
-          output_csv_path = os.path.join(config['save_dir'], 'rp_test_df.csv')
-          test_df.to_csv(output_csv_path, index=False)
-          print(f"Test rp label generation completed! Saved to {output_csv_path}")
-          output_csv_path = os.path.join(config['save_dir'], 'pt_test_df.csv')
-          pt_df.to_csv(output_csv_path, index=False)
-          print(f"Test pt label generation completed! Saved to {output_csv_path}")
+          if config['split_df_for_eval']:
+            print("Generating test labels only...")
+            test_df, pt_df = generate_test_label(df, config)
+            # Save the resulting DataFrame to CSV
+            output_csv_path = os.path.join(config['save_dir'], 'rp_test_df.csv')
+            test_df.to_csv(output_csv_path, index=False)
+            print(f"Test rp label generation completed! Saved to {output_csv_path}")
+            output_csv_path = os.path.join(config['save_dir'], 'pt_test_df.csv')
+            pt_df.to_csv(output_csv_path, index=False)
+            print(f"Test pt label generation completed! Saved to {output_csv_path}")
+
+          else:
+            print("Please set 'split_df_for_eval' to True and try again.... ")
 
       else:
         # Training
@@ -156,22 +160,36 @@ def main(config):
 
            
         if config['evaluation_mode'] and not config['inference_mode']:
-          test_df, pt_df = generate_test_label(df, config)
-          if config['repeat_purchase_mode']:
+          if config['split_df_for_eval']:
+            test_df, pt_df = generate_test_label(df, config)
+            if config['repeat_purchase_mode']:
 
-           
-            print()
-            print("------------------------------------------------------------------------------------------------------")
-            print("Starting repeat_purchase model evaluation....")
-            test(test_df, config)
+            
+              print()
+              print("------------------------------------------------------------------------------------------------------")
+              print("Starting repeat_purchase model evaluation....")
+              test(test_df, config)
 
-          if config['property_type_mode']:
-            print()
-            print("------------------------------------------------------------------------------------------------------")
-            print("Starting property_type model evaluation....")
-            property_type_test(pt_df, config)
+            if config['property_type_mode']:
+              print()
+              print("------------------------------------------------------------------------------------------------------")
+              print("Starting property_type model evaluation....")
+              property_type_test(pt_df, config)
+
+          else:
+            print("Unable to perform model_evaluation.... ")
+            print("Please set 'split_df_for_eval' to True and try again.... ")
             
         elif config['inference_mode'] and not config['evaluation_mode']:
+          if config['split_df_for_eval']:
+            print(f"Warning.... data from {config['evaluation_start_date']} to {config['evaluation_end_date']} are reserved for evaluation....")
+            print(f"Please set 'split_df_for_eval' to False if you want to include all data for model inference....otherwise continue.....")
+
+          if 'label' in df.columns:
+            df = df[df['label'] != 1]
+            print('Training labels detected....')
+            print('Rows with training label "1" or "Y" class are removed to ensure testing consistency.....')
+
           if config['repeat_purchase_mode']:
             print()
             print("------------------------------------------------------------------------------------------------------")
@@ -181,7 +199,10 @@ def main(config):
             print()
             print("------------------------------------------------------------------------------------------------------")
             print("Starting property_type model inference....")
-            property_type_test(df, config)
+            pos_pred_path = os.path.join(config['save_dir'], 'positive_predictions.csv')
+            print(f"Using {pos_pred_path} for prediction...")
+            pos_pred_df = pd.read_csv(pos_pred_path, low_memory=False, dtype={config['unique_customer_id']: str})
+            property_type_test(pos_pred_df, config)
         
         
         else:

@@ -192,43 +192,43 @@ def data_extraction(df, config):
     latest_date = output_df['spa_date'].max()
     print(f"Using data from {oldest_date} to {latest_date}...")
     
-    
-    print(f"Using data from {config['evaluation_start_date']} to {config['evaluation_end_date']} for evaluation")
-    # Extract start and end dates from the config
-    start_date = pd.to_datetime(config['evaluation_start_date'], errors='coerce')
-    # Check for end date, if not available or out of range, use the latest date from spa_date and raise a warning
-    end_date = pd.to_datetime(config['evaluation_end_date'], errors='coerce')
+    if config['split_df_for_eval']:
+      print(f"Using data from {config['evaluation_start_date']} to {config['evaluation_end_date']} for evaluation")
+      # Extract start and end dates from the config
+      start_date = pd.to_datetime(config['evaluation_start_date'], errors='coerce')
+      # Check for end date, if not available or out of range, use the latest date from spa_date and raise a warning
+      end_date = pd.to_datetime(config['evaluation_end_date'], errors='coerce')
 
-    # Validate dates within the range of the DataFrame
-    if start_date < output_df['spa_date'].min() or start_date > output_df['spa_date'].max():
-        max_year = output_df['spa_date'].max().year
-        start_date = pd.Timestamp(year=max_year - 1, month=1, day=1)
-        warnings.warn(f"evaluation_start_date {config['evaluation_start_date']} is out of range, using the latest second year date from spa_date: {start_date}")
+      # Validate dates within the range of the DataFrame
+      if start_date < output_df['spa_date'].min() or start_date > output_df['spa_date'].max():
+          max_year = output_df['spa_date'].max().year
+          start_date = pd.Timestamp(year=max_year - 1, month=1, day=1)
+          warnings.warn(f"evaluation_start_date {config['evaluation_start_date']} is out of range, using the latest second year date from spa_date: {start_date}")
 
-            
-    if end_date < output_df['spa_date'].min() or end_date > output_df['spa_date'].max():
-        end_date = output_df['spa_date'].max()
-        warnings.warn(f"evaluation_end_date {config['evaluation_end_date']} is out of range, using the latest date from spa_date: {end_date}")
+              
+      if end_date < output_df['spa_date'].min() or end_date > output_df['spa_date'].max():
+          end_date = output_df['spa_date'].max()
+          warnings.warn(f"evaluation_end_date {config['evaluation_end_date']} is out of range, using the latest date from spa_date: {end_date}")
 
-    # Split the DataFrame based on the validated start and end dates
-    split_eval_df = output_df[(output_df['spa_date'] >= start_date) & (output_df['spa_date'] <= end_date)]
-    output_df = output_df[output_df['spa_date'] < start_date]
-    
-    # Save the split dataframes to CSV files
-    output_csv_path = os.path.join(save_dir, 'for_eval_label_generation.csv')
-    split_eval_df.to_csv(output_csv_path, index=False)
+      # Split the DataFrame based on the validated start and end dates
+      split_eval_df = output_df[(output_df['spa_date'] >= start_date) & (output_df['spa_date'] <= end_date)]
+      output_df = output_df[output_df['spa_date'] < start_date]
+      
+      # Save the split dataframes to CSV files
+      output_csv_path = os.path.join(save_dir, 'for_eval_label_generation.csv')
+      split_eval_df.to_csv(output_csv_path, index=False)
 
-    print(f"Using data from {start_date} to {end_date} for evaluation")
-    print(f"Evaluation data saved to {output_csv_path}")
+      print(f"Using data from {start_date} to {end_date} for evaluation")
+      print(f"Evaluation data saved to {output_csv_path}")
 
-    # Check for data after the end_date
-    after_end_date_df = output_df[output_df['spa_date'] > end_date]
-    if not after_end_date_df.empty:
-        print(f"Data after {end_date} exists but will be appended back to the training df")
-        print(f"Number of rows appended: {len(after_end_date_df)}")
+      # Check for data after the end_date
+      after_end_date_df = output_df[output_df['spa_date'] > end_date]
+      if not after_end_date_df.empty:
+          print(f"Data after {end_date} exists but will be appended back to the training df")
+          print(f"Number of rows appended: {len(after_end_date_df)}")
 
-        # Append after_end_date_df back to output_df
-        output_df = pd.concat([output_df, after_end_date_df])
+          # Append after_end_date_df back to output_df
+          output_df = pd.concat([output_df, after_end_date_df])
             
 
     print("Data extraction phase completed!")

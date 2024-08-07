@@ -24,7 +24,7 @@ unique_customer_id: contact_nric_masked
 
 save_output: True                                                 # Set to True to save the output of the data preparation
 load_df_from_checkpoint: True                                     # Set to True to load the DataFrame from a checkpoint
-                                    
+split_df_for_eval: True                                    
 
 # File paths for data preparation (USER NEED TO MAINTAIN)
 input_file: /content/drive/MyDrive/eval_data/raw_df/raw_df.csv                                    # Path to the input raw data file

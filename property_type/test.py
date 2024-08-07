@@ -201,7 +201,7 @@ def property_type_test(test_df, config):
 
 
 
-  if not config['landed_mode'] and config['high_rise_mode'] and config['commercial_mode']:
+  if not config['landed_mode'] and not config['high_rise_mode'] and not config['commercial_mode']:
      warnings.warn(f"None of the property type mode is selected, please at least select one!!!")
 
   
