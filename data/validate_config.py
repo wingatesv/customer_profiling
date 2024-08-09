@@ -19,8 +19,8 @@ def validate_config(config):
             exit()
     else:
         if not (config.get("training_mode") or config.get("evaluation_mode") or config.get("inference_mode")):
-            print("Error: At least one of 'training_mode', 'evaluation_mode', or 'inference_mode' must be True.")
-            exit()
+            print("Warning: 'training_mode', 'evaluation_mode', or 'inference_mode' are False.")
+            print("Preparing and cleaning data only.....")
 
     # Check model prediction modes
     if not config.get("repeat_purchase_mode") and not config.get("property_type_mode"):
