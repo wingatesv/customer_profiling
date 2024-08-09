@@ -1,0 +1,6 @@
+The following occupation values do not have mapping targets and were mapped to 'UNKNOWN': ['SENIOR GENERAL MANAGER']The following race values do not have mapping targets and were mapped to 'UNKNOWN': ['EUROPEAN' 'CAUCASIAN']The following city values do not have mapping targets and were mapped to 'UNKNOWN': ['OFF JLN KLANG LAMA' 'BANDAR UTAMA DAMANSARA' 'JALAN PUDU' 'SEPANG,'
+ 'TITI' 'CHERAS BATU 9' 'SEMABOK' 'HULU BERNAM' 'JALAN KLANG LAMA,'
+ 'BANDAR SRI SENDAYAN' 'TANJUNG TOKONG,' 'BUKIT KIARA' 'BATU BERENDAM,'
+ 'KUALA BERANG' 'KUALA LUNMPUR' 'GUA MUSANG' 'LANGKAP'
+ 'BANDAR TASIK SENANGIN LENGGENG' 'BUKIT INDAH' 'MELAKA,'
+ 'BANDAR BARU KLANG' 'SERI KEMBANGANG' 'MENGGATAL']

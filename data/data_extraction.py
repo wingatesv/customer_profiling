@@ -83,7 +83,7 @@ def remove_recent_transaction(df, config):
     # Sort the DataFrame by config['unique_customer_id'] and 'spa_date'
     df = df.sort_values(by=[config['unique_customer_id'], 'spa_date'])
     # Track the number of excluded rows
-    # excluded_count = 0
+    excluded_count = 0
     # Initialize an empty DataFrame to collect the rows that meet the condition
     result_df = pd.DataFrame()
 
@@ -108,10 +108,10 @@ def remove_recent_transaction(df, config):
             i = j + 1
 
         # Calculate the number of excluded rows for this group
-        # excluded_count += len(group) - len(to_retain)
+        excluded_count += len(group) - len(to_retain)
         # Append the rows to retain to the result DataFrame
         result_df = pd.concat([result_df, group.loc[to_retain]])
-        # print(f"Total rows excluded: {excluded_count}")
+    print(f"{excluded_count} rows are removed for transactions within one month...")
 
     return result_df
 
