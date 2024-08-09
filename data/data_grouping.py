@@ -1,4 +1,5 @@
 import os
+import sys
 import pandas as pd
 
 from data.data_cleaning import write_report
@@ -267,6 +268,40 @@ def group_annual_income(df, feature_mapping_dir, report_file_path):
   print("Done grouping annual_income")
   return df
 
+def check_duplicates_in_second_column(directory):
+    duplicates_found = False
+    
+    # Iterate over each file in the directory
+    for filename in os.listdir(directory):
+        if filename.endswith(".csv"):
+            file_path = os.path.join(directory, filename)
+            print(f"Checking file: {file_path}")
+            
+            # Read the CSV file
+            df = pd.read_csv(file_path)
+            
+            # Check if the file has at least two columns
+            if df.shape[1] < 2:
+                print(f"Skipping {filename} as it does not have at least two columns.")
+                continue
+            
+            # Get the second column's values
+            second_column_values = df.iloc[:, 1]
+            
+            # Check for duplicates
+            duplicates = df[second_column_values.duplicated(keep=False)]
+            
+            if not duplicates.empty:
+                duplicates_found = True
+                print(f"Duplicates found in the second column of {filename}:")
+                print(duplicates)
+    
+    # After checking all files, exit if duplicates were found
+    if duplicates_found:
+        sys.exit("Exiting due to duplicates found in one or more files.")
+    else:
+        print("All files checked and no duplicates found in the second column.")
+
 
 def group_data(df, config):
   print("Data grouping in progress...")
@@ -279,6 +314,8 @@ def group_data(df, config):
 
   if feature_mapping_dir == None:
       raise ValueError(f"Derived data directory is missing")
+
+  check_duplicates_in_second_column(feature_mapping_dir)
 
   df = group_salutation(df, feature_mapping_dir, report_file_path)
   df = group_nationality(df, feature_mapping_dir, report_file_path)
