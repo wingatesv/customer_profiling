@@ -186,7 +186,7 @@ def model_training(df_list, config, preprocessor, categorical_features, numerica
       feature_importances_df = feature_importances_df.sort_values(by='Importance', ascending=False)
       output_csv_path = os.path.join(config['rp_model_dir'], f'feature_importance_{(i+1)}.csv')
       feature_importances_df.to_csv(output_csv_path, index=False)
-      print(f"Model prediction saved to {output_csv_path}")
+      print(f"Feature importance saved to {output_csv_path}")
 
  
 def train_model(model_name, train_encoded, train_target, test_encoded, test_target, class_weight=None):
