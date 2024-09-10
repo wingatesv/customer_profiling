@@ -161,7 +161,7 @@ def property_type_train(df, config):
       feature_importances_df = feature_importances_df.sort_values(by='Importance', ascending=False)
       output_csv_path = os.path.join(config['pt_model_dir'], f'feature_importance_{property_type_model_label}.csv')
       feature_importances_df.to_csv(output_csv_path, index=False)
-      print(f"Model prediction saved to {output_csv_path}")
+      print(f"Feature importance saved to {output_csv_path}")
 
 
 
